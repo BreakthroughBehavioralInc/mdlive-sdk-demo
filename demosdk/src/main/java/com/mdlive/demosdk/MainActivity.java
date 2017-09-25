@@ -43,16 +43,16 @@ public class MainActivity extends AppCompatActivity {
         showProgressBar(true);
 
         Calendar birthdateCalendar = GregorianCalendar.getInstance();
-        birthdateCalendar.set(1917, 0, 1);
+        birthdateCalendar.set(1985, 03, 10);
 
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
-                .ou("BCBSTEST")
-                .firstName("Test")
-                .lastName("Patient")
+                .ou("Cigna")
+                .firstName("Bella")
+                .lastName("Fraser")
                 .gender(FwfSSOGender.MALE)
                 .birthdate(birthdateCalendar.getTime())
-                .subscriberId("TEST12345")
-                .memberId("")
+                .subscriberId("11627701")
+                .memberId("[PUT YOUR MEMBER ID HERE]")
                 .phone("555-555-5555")
                 .email("ahadida@mdlive.com")
                 .address1("address1")
