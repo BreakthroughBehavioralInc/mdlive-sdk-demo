@@ -35,15 +35,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mSeeProviderButton = findViewById(R.id.enter);
-        mProgressBar = findViewById(R.id.progress_bar);
+        mSeeProviderButton = (Button) findViewById(R.id.enter);
+        mProgressBar = (ProgressBar) findViewById(R.id.progress_bar);
     }
 
     public void enterSDK(View v) {
         showProgressBar(true);
 
         Calendar birthdateCalendar = GregorianCalendar.getInstance();
-        birthdateCalendar.set(1985, 03, 10);
+        birthdateCalendar.set(1985, 3, 10);
 
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
                 .ou("Cigna")
