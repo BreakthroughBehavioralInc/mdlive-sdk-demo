@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/demosdk/demosdk.iml" filepath="$PROJECT_DIR$/demosdk/demosdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demosdk/demosdk.iml" filepath="$PROJECT_DIR$/demosdk/demosdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mdlive-sdk-demo.iml" filepath="$PROJECT_DIR$/mdlive-sdk-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mdlive-sdk-demo.iml" filepath="$PROJECT_DIR$/mdlive-sdk-demo.iml" />
     </modules>
   </component>
