@@ -35,15 +35,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mSeeProviderButton = findViewById(R.id.enter);
-        mProgressBar = findViewById(R.id.progress_bar);
+        mSeeProviderButton = (Button) findViewById(R.id.enter);
+        mProgressBar = (ProgressBar) findViewById(R.id.progress_bar);
     }
 
     public void enterSDK(View v) {
         showProgressBar(true);
 
         Calendar birthdateCalendar = GregorianCalendar.getInstance();
-        birthdateCalendar.set(1985, 03, 10);
+        birthdateCalendar.set(1985, 3, 10);
 
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
                 .ou("Cigna")
@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
                 .lastName("Fraser")
                 .gender(FwfSSOGender.MALE)
                 .birthdate(birthdateCalendar.getTime())
-                .subscriberId("10067837300")
-                .memberId("bellafraser|1506456366.5|MmMxMmVkOWI5NTRjMmIwM2Y3NmY2OGRmNTAyNGIxYjgxNjk0MjA0Y2I0ODc0N2JhNzE4MjA3ZDY3ZWUwNjAzOA==")
+                .subscriberId("11627701")
+                .memberId("bellafraser|1507238705.8816943|NjI3YzkwMGJlZGI5YjU2N2U1ZGRmM2IwNGRlYTJkNjA5NWJlOGU5MzkxZmNlN2IwYzkyYjc5YWEzZjE5NjNhZQ==")
                 .phone("555-555-5555")
                 .email("ahadida@mdlive.com")
                 .address1("address1")
