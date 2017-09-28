@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         showProgressBar(true);
 
         Calendar birthdateCalendar = GregorianCalendar.getInstance();
-        birthdateCalendar.set(1985, 03, 10);
+        birthdateCalendar.set(1985, 3, 10);
 
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
                 .ou("Cigna")
