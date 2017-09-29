@@ -62,6 +62,30 @@ Once your root `build.gradle` file has been successfully configured, you will ne
 ## Configuration
 This section describes the required code configuration before using the MDLive SDK.
 
+In your `AndroidManifest.xml` file add this code by replacing `[PUT CIGNA PACKAGE ID HERE]` with your package/application id.
+
+```xml
+<manifest ...>
+...
+    <application
+        android:name=".DemoApplication">
+    ...
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="[PUT CIGNA PACKAGE ID HERE].fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        ...
+    </application>
+    ...
+</manifest>
+```
+
 If you are not using a custom Application class for your app, you will need to create one.  Let's say you named it `DemoApplication`.  Your class should look like the following:
 
 Your `DemoApplication` class must inherit from `MultiDexApplication`.
