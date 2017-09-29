@@ -4,6 +4,15 @@ buildscript {
 
     repositories {
         jcenter()
+        mavenLocal()
+        maven {
+            credentials {
+                username repoUser
+                password repoPassword
+            }
+            url nexusDependencies
+        }
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
@@ -17,6 +26,15 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        mavenLocal()
+        maven {
+            credentials {
+                username repoUser
+                password repoPassword
+            }
+            url nexusDependencies
+        }
+
         //Google
         maven {
             url "https://maven.google.com"
