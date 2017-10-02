@@ -42,21 +42,24 @@ dependencies {
     compile "com.android.support:exifinterface:$supportLibraryVersion"
     compile 'com.android.support:multidex:1.0.1'
     testCompile 'junit:junit:4.12'
+    compile project(":App_Base-0.13.4")
 
+/*
     compile ('com.cigna.mobile.base:App_Base:0.13.4'){
         exclude group: 'net.hockeyapp.android'
     }
     compile 'com.cigna.mobile.service:Core_Services:0.9.1'
     compile 'com.cigna.mobile.ui:Cigna_CommonUI:0.13'
+*/
 
-/*
+
     androidTestCompile('com.android.support.test:runner:1.0.1') {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
     androidTestCompile('com.android.support.test.espresso:espresso-core:3.0.1') {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
-*/
+
 
     // Module libraries
     compile(MDL_android_sdk) {
