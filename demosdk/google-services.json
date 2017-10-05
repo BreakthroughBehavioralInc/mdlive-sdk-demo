@@ -1,58 +1,35 @@
 {
   "project_info": {
-    "project_number": "556621845098",
-    "firebase_url": "https://white-label-da937.firebaseio.com",
-    "project_id": "white-label-da937",
-    "storage_bucket": "white-label-da937.appspot.com"
+    "project_number": "880033725646",
+    "firebase_url": "https://sdk-test-harness.firebaseio.com",
+    "project_id": "sdk-test-harness",
+    "storage_bucket": "sdk-test-harness.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:556621845098:android:7e9775a819b14340",
-        "android_client_info": {
-          "package_name": "com.mdlive.whitelabel"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "556621845098-sih74cavpptkveo6ds49tt5f4iq9i7q1.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCoUGikAPNcwlK5nxInwW-_DyilNjfQp18"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:556621845098:android:027b26f429578995",
+        "mobilesdk_app_id": "1:880033725646:android:027b26f429578995",
         "android_client_info": {
           "package_name": "com.mdlive.demosdk"
         }
       },
       "oauth_client": [
         {
-          "client_id": "556621845098-sih74cavpptkveo6ds49tt5f4iq9i7q1.apps.googleusercontent.com",
+          "client_id": "880033725646-asshlh0rkjlhqutovoihk61rhhsg0215.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mdlive.demosdk",
+            "certificate_hash": "b1f979cb84464fbe6bddb14b049854ced46b4da2"
+          }
+        },
+        {
+          "client_id": "880033725646-3vvqq9r9kcr9etmchk47bt240jhgrsms.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCoUGikAPNcwlK5nxInwW-_DyilNjfQp18"
+          "current_key": "AIzaSyB6MKwmM_id_c73a8U7Jqfoa1RjWdttO0I"
         }
       ],
       "services": {
@@ -60,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880033725646-3vvqq9r9kcr9etmchk47bt240jhgrsms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
