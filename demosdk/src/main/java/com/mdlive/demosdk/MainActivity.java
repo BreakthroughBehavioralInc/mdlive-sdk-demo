@@ -15,7 +15,11 @@ import com.mdlive.mdlcore.fwfrodeo.fwf.enumz.FwfState;
 import com.mdlive.mdlcore.model.MdlSSODetail;
 import com.mdlive.mdlcore.model.MdlUserSession;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 import rx.android.schedulers.AndroidSchedulers;
@@ -45,6 +49,21 @@ public class MainActivity extends AppCompatActivity {
         Calendar birthdateCalendar = GregorianCalendar.getInstance();
         birthdateCalendar.set(1985, 3, 10);
 
+
+  /*      String str = "10-04-1985";
+        Date dt = null;
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+        try {
+            dt = formatter.parse(str);
+            birthdateCalendar.setTime(dt);
+            Log.v("Emilio", "dt ==> "+dt.toString());
+            Log.v("Emilio", "birthdateCalendar ==> "+birthdateCalendar.toString());
+            Log.v("Emilio", "birthdateCalendar.getTime() ==> "+birthdateCalendar.getTime());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+*/
+
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
                 .ou("Cigna")
                 .firstName("Bella")
@@ -52,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 .gender(FwfSSOGender.MALE)
                 .birthdate(birthdateCalendar.getTime())
                 .subscriberId("11627701")
-                .memberId("bellafraser|1507238705.8816943|NjI3YzkwMGJlZGI5YjU2N2U1ZGRmM2IwNGRlYTJkNjA5NWJlOGU5MzkxZmNlN2IwYzkyYjc5YWEzZjE5NjNhZQ==")
+                .memberId("bellafraser|1507903780.2657652|MTM5N2U2MWU4Yjk2YjBiODVmNGE1NjgwNzMzODdjNmQ2MmE4MGZkNGZiMGI2NWQyNWI4NzI3MmU5NjhkNmYyZg==")
                 .phone("555-555-5555")
                 .email("ahadida@mdlive.com")
                 .address1("address1")

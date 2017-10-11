@@ -43,6 +43,7 @@ dependencies {
     compile 'com.android.support:multidex:1.0.1'
     testCompile 'junit:junit:4.12'
     compile project(":App_Base-0.13.4")
+//    compile project(":android-core")
 
 /*
     compile ('com.cigna.mobile.base:App_Base:0.13.4'){
