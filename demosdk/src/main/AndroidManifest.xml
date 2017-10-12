@@ -33,7 +33,7 @@
 
         <activity
             android:name="com.mdlive.mdlcore.activity.findprovider.MdlFindProviderActivity"
-            android:theme="@style/mdlive_FindProviderActivityStyle"
+            android:theme="@style/cigna_FindProviderActivityStyle"
             tools:replace="android:theme" />
 
         <activity
