@@ -64,7 +64,7 @@
     </style>
 
     <!-- Dashboard -->
-    <style name="cigna_SSODashboardActivityStyle" parent="rodeo__SSODashboardActivityStyle">
+    <style name="mdlive_SSODashboardActivityStyle" parent="rodeo__SSODashboardActivityStyle">
         <!-- mdl__sso_dashboard_title_icon has higher priority than mdl__sso_dashboard_title_text, this must be a drawable resource -->
         <!--<item name="mdl__sso_dashboard_title_icon">@drawable/mdlive_logo_small</item>-->
         <!-- Text to use as title, this must be a string resource -->
@@ -92,13 +92,13 @@
     </style>
 
     <style name="cigna__AccentLayoutStyle" parent="rodeo__PageLayoutStylePrimary">
-        <item name="android:background">@color/cigna_blue</item>
+        <item name="android:background">@color/cigna_blue_light</item>
     </style>
 
    <!--Find a provider, Reason For Visit-->
     <style name="cigna_FindProviderActivityStyle" parent="mdlive_FindProviderActivityStyle">
         <!--<item name="rodeo__accent_layout_style">@style/cigna__AccentLayoutStyle</item>-->
-        <item name="rodeo__menu_background">@color/cigna_blue</item>
+        <item name="rodeo__menu_background">@color/cigna_blue_light</item>
         <item name="fwf__card_view_background_color">@android:color/white</item>
         <item name="fwf__fab_widget_background_tint">@android:color/white</item>
         <item name="fwf__fab_widget_alternative_tint">@color/mdl__red</item>
@@ -111,10 +111,10 @@
         <item name="fwf__spinner_hint_text_color">@color/cigna_blue</item>
     </style>
 
-
+     <!--TO BE CONTINUED From Here!...-->
     <!--Medical History -->
-    <style name="cigna_MedicalHistoryActivityStyle" parent="rodeo__ActivityStyle">
-        <item name="rodeo__menu_background">@color/cigna_blue</item>
+    <style name="mdlive_MedicalHistoryActivityStyle" parent="rodeo__ActivityStyle">
+        <item name="rodeo__menu_background">@color/cigna_blue_light</item>
         <item name="fwf__card_view_background_color">@android:color/white</item>
         <item name="fwf__fab_widget_background_tint">@android:color/white</item>
         <item name="fwf__fab_widget_alternative_tint">@color/mdl__red</item>
@@ -129,13 +129,13 @@
     <style name="rodeo__PageLayoutStylePrimary">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">@color/cigna_blue</item>
+        <item name="android:background">@color/cigna_blue_light</item>
         <item name="android:padding">?attr/rodeo__page_background_primary_padding</item>
     </style>
 
     <!--Add medication -->
-    <style name="cigna_AddMecicationActivityStyle" parent="rodeo__DialogActivityStyle">
-        <item name="rodeo__menu_background">@color/cigna_blue</item>
+    <style name="mdlive_AddMecicationActivityStyle" parent="rodeo__DialogActivityStyle">
+        <item name="rodeo__menu_background">@color/cigna_blue_light</item>
         <item name="fwf__card_view_background_color">@android:color/white</item>
         <item name="fwf__fab_widget_background_tint">@android:color/white</item>
         <item name="fwf__fab_widget_alternative_tint">@color/mdl__red</item>
@@ -196,17 +196,7 @@
 
     <!--Find a provider Lets get started screen background color -->
     <style name="rodeo__AccentLayoutStyle" parent="rodeo__PageLayoutStylePrimary">
-        <item name="android:background">@color/cigna_blue</item>
-    </style>
-
-    <style name="cigna_ActionBarTextStyle" parent="rodeo__ActionBarTextStyle">
-        <item name="android:textColor">@color/cigna_blue</item>
-        <item name="android:textSize">@dimen/action_bar__text_size</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="fwf__default_text_size">@dimen/fwf__default_text_size</item>
-        <item name="fwf__menu_button_text">@color/fwf__near_black</item>
-        <item name="fwf__spinner_hint_text_color">@color/fwf__gray</item>
+        <item name="android:background">@color/cigna_blue_light</item>
     </style>
 
     <!-- END -->
