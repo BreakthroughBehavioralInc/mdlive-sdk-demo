@@ -20,11 +20,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="com.mdlive.mdlcore.activity.home.MdlHomeActivity"
-            android:theme="@style/Cigna_HomeActivityStyle"
-            tools:replace="android:theme" />
-
         <!-- MDLive Activity Configuration-->
         <activity
             android:name="com.mdlive.mdlcore.activity.ssodashboard.MdlSSODashboardActivity"
@@ -58,39 +53,7 @@
             android:name="com.mdlive.mdlcore.activity.addprocedure.MdlAddProcedureActivity"
             android:theme="@style/mdlive_AddMecicationActivityStyle"
             tools:replace="android:theme" />
-       <!--
 
-        <activity
-            android:name="com.mdlive.mdlcore.activity.findprovider.MdlFindProviderActivity"
-            android:theme="@style/harness__FindProviderActivityStyle"
-            tools:replace="android:theme" />
-
-        <activity
-            android:name="com.mdlive.mdlcore.activity.medicalhistory.MdlMedicalHistoryActivity"
-            android:theme="@style/harness__MedicalHistoryActivityStyle"
-            tools:replace="android:theme" />
-
-        <activity
-            android:name="com.mdlive.mdlcore.activity.addmedication.MdlAddMedicationActivity"
-            android:theme="@style/harness__addMedicationsActivityStyle"
-            tools:replace="android:theme" />
-
-        <activity
-            android:name="com.mdlive.mdlcore.activity.addmedicalcondition.MdlAddMedicalConditionActivity"
-            android:theme="@style/harness__addMedicalConditionsActivityStyle"
-            tools:replace="android:theme" />
-
-        <activity
-            android:name="com.mdlive.mdlcore.activity.addprocedure.MdlAddProcedureActivity"
-            android:theme="@style/harness__addProceduresActivityStyle"
-            tools:replace="android:theme" />
-
-        <activity
-            android:name="com.mdlive.mdlcore.activity.addallergy.MdlAddAllergyActivity"
-            android:theme="@style/harness__addAllergiesActivityStyle"
-            tools:replace="android:theme" />
-
-        -->
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.mdlive.demosdk.fileprovider"

@@ -3,6 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+<!--
 
     <color name="cigna_blue_light">#00A9E0</color>
     <color name="cigna_orange_light">#F1B434</color>
@@ -13,8 +14,9 @@
     <color name="fwf__selectedCardColor">@color/cigna_orange_light</color>
     <color name="mdl__caribbean_shoreline_green">@color/cigna_blue</color>
 
-    <!-- Lets get started page text color-->
+    &lt;!&ndash; Lets get started page text color&ndash;&gt;
     <color name="rodeo__page_title_text_color">@android:color/white</color>
     <color name="fwf__menu_button_text">@android:color/white</color>
+-->
 
 </resources>
