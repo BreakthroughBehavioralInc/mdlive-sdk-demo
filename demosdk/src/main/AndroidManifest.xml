@@ -31,10 +31,10 @@
             android:theme="@style/cigna_FindProviderActivityStyle"
             tools:replace="android:theme" />
 
-        <activity
+     <!--   <activity
             android:name="com.mdlive.mdlcore.activity.medicalhistory.MdlMedicalHistoryActivity"
             android:theme="@style/mdlive_MedicalHistoryActivityStyle"
-            tools:replace="android:theme" />
+            tools:replace="android:theme" />-->
 
         <!--<activity
             android:name="com.mdlive.mdlcore.activity.addmedication.MdlAddMedicationActivity"
