@@ -6,4 +6,10 @@
     <string name="dashboard_title">MDLive for Cigna</string>
     <string name="dashboard_text">Find the best care available from a provider near you.</string>
     <string name="dashboard_footer">Take control of your health and access MDLive virtual care without waiting for an appointment and enjoy the benefits of the myCigna app in one seamless experience – anywhere, any time.</string>
+    <string name="cigna">CIGNA</string>
+
+    <!--This string replaces the Screen title 'Find a Provider'.-->
+    <string name="page_title__find_provider">Select a Provider</string>
+    <!--Small grammer correction.-->
+    <string name="find_provider_instructions">Please review the following information so that we can find the best care available</string>
 </resources>
