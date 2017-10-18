@@ -6,6 +6,7 @@
 
     <color name="cigna_blue_light">#00A9E0</color>
     <color name="cigna_orange_light">#F1B434</color>
+    <color name="cigna_orange_dark">#EFAB1C</color>
     <color name="cigna_blue">#188CCC</color>
     <color name="cigna_dark_blue">#0069AA</color>
     <color name="cigna_blue2">#2999cb</color>
