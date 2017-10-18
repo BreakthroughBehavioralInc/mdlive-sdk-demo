@@ -16,7 +16,7 @@
         <!--Card 1 backgrounf color.-->
         <item name="fwf__card_view_background_color">@android:color/white</item>
         <!--Card 2 backgrounf color.-->
-        <!--<item name="fwf__spinner_tint">@color/cigna_blue</item>-->
+        <item name="fwf__spinner_tint">@color/cigna_blue</item>
         <item name="fwf__page_smaller_instructions_text_color">@android:color/white</item>
         <item name="fwf__spinner_hint_text_color">@color/cigna_blue</item>
 
