@@ -20,6 +20,7 @@ public class DemoApplication extends MultiDexApplication {
                 .debug(BuildConfig.DEBUG)
                 .isSessionTimeoutEnabled(false)
                 .isSSOsession(true)
+                .shouldConfirmWizardsExit(false)
                 .defaultFirebaseFilename("mdlive__firebase_defaults.json");
         MdlBootstrap.start(this, configuration);
     }

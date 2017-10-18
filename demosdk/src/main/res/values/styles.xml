@@ -8,47 +8,69 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
     <!--MDLive Styles -->
-    <!-- ActionBar - ProgressBar color -->
-    <style name="mdl__ProgressBar_Horizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
-        <item name="android:progressDrawable">@drawable/cigna_progress_horizontal</item>
-        <item name="android:minHeight">6dp</item>
-        <item name="android:maxHeight">6dp</item>
+    <!-- ############ Custom Base Style ############ -->
+    <style name="cigna_ActivityStyle" parent="rodeo__ActivityStyle">
+        <!-- Find a Provider Lets get started screen background color. -->
+        <item name="rodeo__menu_background">@color/cigna_blue2</item>
+        <!--Card 1 backgrounf color.-->
+        <item name="fwf__card_view_background_color">@android:color/white</item>
+        <!--Card 2 backgrounf color.-->
+        <!--<item name="fwf__spinner_tint">@color/cigna_blue</item>-->
+        <item name="fwf__page_smaller_instructions_text_color">@android:color/white</item>
+        <item name="fwf__spinner_hint_text_color">@color/cigna_blue</item>
+
+        <!-- ActionBar - ProgressBar color -->
+        <item name="fwf__wizard_progress_bar_style">@style/cigna__ProgressBar_Horizontal</item>
+
+        <!-- ActionBar Title Text Style -->
+        <item name="rodeo__action_bar_title_text_style">@style/cigna__ActionBarTitleTextAppearance
+        </item>
+        <!-- File chooser background color -->
+        <item name="fwf__file_chooser_dialog_background">@color/cigna_blue2</item>
+
+        <!--Find a Provider inner Title Text Color, plus-->
+        <item name="rodeo__page_title_style">@style/cigna__PageTitleStyle</item>
+        <item name="rodeo__page_smaller_instructions_style">
+            @style/cigna__PageSmallerInstructionsStyle
+        </item>
+
+        <!--General FAB Styles -->
+        <item name="fwf__fab_widget_background_tint">@android:color/white</item>
+        <item name="fwf__fab_widget_icon_tint">@color/cigna_blue</item>
+        <item name="fwf__fab_widget_alternative_tint">@color/cigna_blue</item>
+        <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_dark</item>
     </style>
+    <!-- ############ Custom Base Style ############ -->
+
+    <!-- ######################## Specific Custom Styles ######################## -->
+    <!-- ActionBar - ProgressBar color -->
+    <style name="cigna__ProgressBar_Horizontal" parent="@style/mdl__ProgressBar_Horizontal">
+        <item name="android:progressDrawable">@drawable/cigna_progress_horizontal</item>
+    </style>
+
     <!-- ActionBar Title Text Color -->
-    <style name="rodeo__ActionBarTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <style name="cigna__ActionBarTitleTextAppearance" parent="@style/rodeo__ActionBarTitleTextAppearance">
         <item name="android:textColor">@color/cigna_blue_light</item>
     </style>
 
-    <!--FAB Styles -->
-    <style name="fwf__FabOkWidgetStyle">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:scaleType">center</item>
-        <item name="android:background">@android:color/transparent</item>
-        <!--Floating Action Bar background color.-->
-        <item name="backgroundTint">@android:color/white</item>
-        <!--Floating Action Bar icon drawable.-->
-        <item name="imageSrc">@drawable/fwf__fab_widget_src</item>
-        <item name="invalidBackgroundTint">@color/cigna_blue</item>
-        <!--Floating Action Bar icon temporary selected background color. -->
-        <item name="rippleColor">@color/cigna_orange_dark</item>
-    </style>
-    <style name="fwf__FabNextWidgetStyle" parent="fwf__FabOkWidgetStyle">
-        <!--Set the FAB icon to the attribute 'fwf__fab_next_arrow_white' , which is overwritten in 'drawables'.-->
-        <!--This is because 'fwf__fab_next_arrow_white' is used in Find a Provider wizard to set icon in soruce code. -->
-        <item name="fwf__fab_widget_src">@drawable/fwf__fab_next_arrow_white</item>
-        <item name="fwf__fab_widget_alternative_tint">?colorAccent</item>
+    <!-- ##### Find a provider, Reason For Visit- #### -->
+    <!--Find a Provider inner Title Text Color, plus-->
+    <style name="cigna__PageTitleStyle" parent="rodeo__PageTitleStyle">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <style name="cigna__PageSmallerInstructionsStyle" parent="rodeo__PageSmallerInstructionsStyle">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!-- ######################## Specific Custom Styles ######################## -->
 
-    <!-- #### Dashboard #### -->
-    <style name="mdlive_SSODashboardActivityStyle" parent="rodeo__SSODashboardActivityStyle">
+    <!-- ############ Dashboard ############ -->
+    <style name="cigna_SSODashboardActivityStyle" parent="rodeo__SSODashboardActivityStyle">
         <!-- mdl__sso_dashboard_title_icon has higher priority than mdl__sso_dashboard_title_text, this must be a drawable resource -->
-        <!--<item name="mdl__sso_dashboard_title_icon">@drawable/mdlive_logo_small</item>-->
+        <item name="mdl__sso_dashboard_title_icon">@null</item>
         <!-- Text to use as title, this must be a string resource -->
-        <item name="mdl__sso_dashboard_title_text">CIGNA</item>
+        <item name="mdl__sso_dashboard_title_text">@string/cigna</item>
         <!-- Layout to be used as header, if we change this layout the next header styles will be ignored -->
         <item name="mdl__sso_dashboard_header_layout">@layout/mdl__sso_dashboard_header</item>
         <!-- Color to use as header background -->
@@ -70,85 +92,6 @@
             @style/Base.TextAppearance.AppCompat.Medium
         </item>
     </style>
-
-    <!-- ##### Find a provider, Reason For Visit- #### -->
-    <!-- Find a Provider Lets get started screen background color. -->
-    <style name="rodeo__AccentLayoutStyle" parent="rodeo__PageLayoutStylePrimary">
-        <item name="android:background">@color/cigna_blue2</item>
-    </style>
-    <!--Find a Provider smaller Title text size and color.-->
-    <style name="rodeo__PageSmallerInstructionsStyle" parent="rodeo__PageInstructionsStyle">
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">14sp</item>
-    </style>
-    <!--Find a Provider  inner Title Text Color, plus-->
-    <style name="rodeo__PageTitleStyle" parent="android:Widget.TextView">`
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">@dimen/fwf__page_title_text_size</item>
-        <item name="android:textStyle">bold</item>
-        <item name="fwf__spinner_hint_text_color">@color/cigna_blue</item>
-    </style>
-    <!--Find a Provider, Reason for Visit generic Style. -->
-     <style name="cigna_FindProviderActivityStyle" parent="mdlive_FindProviderActivityStyle">
-         <item name="rodeo__menu_background">@color/cigna_blue2</item>
-         <!--Card 1 backgrounf color.-->
-         <item name="fwf__card_view_background_color">@android:color/white</item>
-         <!--Card 2 backgrounf color.-->
-         <!--<item name="fwf__spinner_tint">@android:color/white</item>-->
-         <item name="fwf__spinner_tint">@color/cigna_blue</item>
-         <item name="fwf__page_smaller_instructions_text_color">@android:color/white</item>
-         <item name="fwf__spinner_hint_text_color">@color/fwf__gray</item>
-    </style>
-
-     <!--TO BE CONTINUED From Here!...-->
-    <!--Medical History -->
-<!--    <style name="mdlive_MedicalHistoryActivityStyle" parent="rodeo__ActivityStyle">
-        <item name="rodeo__menu_background">@color/cigna_blue_light</item>
-        <item name="fwf__card_view_background_color">@android:color/white</item>
-        <item name="fwf__fab_widget_background_tint">@android:color/white</item>
-        <item name="fwf__fab_widget_alternative_tint">@color/mdl__red</item>
-        <item name="fwf__spinner_tint">@android:color/white</item>
-        <item name="fwf__menu_button_text">@color/fwf__near_white</item>
-        <item name="fwf__focus_view_color">@color/colorAccent</item>
-        <item name="fwf__page_smaller_instructions_text_color">@android:color/white</item>
-        <item name="fwf__hint_text_color">@android:color/white</item>
-        <item name="fwf__dialog_text_color">@color/mdl__red</item>
-        <item name="fwf__spinner_hint_text_color">@color/cigna_blue</item>
-    </style>-->
-
-
-    <!--Add medication -->
-    <!--<style name="mdlive_AddMecicationActivityStyle" parent="rodeo__DialogActivityStyle">
-        <item name="rodeo__menu_background">@color/cigna_blue_light</item>
-        <item name="fwf__card_view_background_color">@android:color/white</item>
-        <item name="fwf__fab_widget_background_tint">@android:color/white</item>
-        <item name="fwf__fab_widget_alternative_tint">@color/mdl__red</item>
-        <item name="fwf__spinner_tint">@android:color/white</item>
-        <item name="fwf__menu_button_text">@color/fwf__near_white</item>
-        <item name="fwf__focus_view_color">@color/colorAccent</item>
-        <item name="fwf__page_smaller_instructions_text_color">@android:color/white</item>
-        <item name="fwf__hint_text_color">@android:color/white</item>
-        <item name="fwf__dialog_text_color">@color/mdl__red</item>
-        <item name="fwf__spinner_hint_text_color">@color/cigna_blue</item>
-    </style>-->
-
-
-    <!--<style name="fwf__EditTextStyle" parent="fwf__DefaultWidgetStyle">
-        <item name="colorControlNormal">@color/fwf__has_focus</item>
-        <item name="colorControlActivated">@color/fwf__has_focus</item>
-        <item name="colorControlHighlight">@color/mdl__white</item>
-        <item name="android:textColor">@color/mdl__black</item>
-    </style>-->
-
-    <!--<style name="fwf__FindProviderButtonStyle" parent="fwf__FormButtonWidgetStyle">
-        <item name="backgroundTint">@android:color/white</item>
-    </style>-->
-
-
-
-    <!-- END -->
+    <!-- ############ Dashboard ############ -->
 
 </resources>

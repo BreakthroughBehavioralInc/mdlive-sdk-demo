@@ -23,12 +23,17 @@
         <!-- MDLive Activity Configuration-->
         <activity
             android:name="com.mdlive.mdlcore.activity.ssodashboard.MdlSSODashboardActivity"
-            android:theme="@style/mdlive_SSODashboardActivityStyle"
+            android:theme="@style/cigna_SSODashboardActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.findprovider.MdlFindProviderActivity"
-            android:theme="@style/cigna_FindProviderActivityStyle"
+            android:theme="@style/cigna_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.pageactivity.MdlPageActivity"
+            android:theme="@style/cigna_ActivityStyle"
             tools:replace="android:theme" />
 
      <!--   <activity
@@ -65,7 +70,11 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyB6MKwmM_id_c73a8U7Jqfoa1RjWdttO0I"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBDsbj4tSNRpU3X6opkVj1nXXD1u_Nw_0c"
+            tools:replace="android:value" />
+
     </application>
 
 </manifest>
