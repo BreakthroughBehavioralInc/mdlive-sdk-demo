@@ -38,7 +38,7 @@
         <!--General FAB Styles -->
         <item name="fwf__fab_widget_background_tint">@android:color/white</item>
         <item name="fwf__fab_widget_icon_tint">@color/cigna_blue</item>
-        <item name="fwf__fab_widget_alternative_tint">@color/cigna_blue</item>
+        <item name="fwf__fab_widget_alternative_tint">@color/cigna_blue2</item>
         <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_dark</item>
     </style>
     <!-- ############ Custom Base Style ############ -->
@@ -51,7 +51,7 @@
 
     <!-- ActionBar Title Text Color -->
     <style name="cigna__ActionBarTitleTextAppearance" parent="@style/rodeo__ActionBarTitleTextAppearance">
-        <item name="android:textColor">@color/cigna_blue_light</item>
+        <item name="android:textColor">@color/cigna_blue2</item>
     </style>
 
     <!-- ##### Find a provider, Reason For Visit- #### -->
