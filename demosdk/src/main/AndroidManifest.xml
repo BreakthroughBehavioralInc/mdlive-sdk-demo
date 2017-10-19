@@ -36,28 +36,23 @@
             android:theme="@style/cigna_ActivityStyle"
             tools:replace="android:theme" />
 
-     <!--   <activity
-            android:name="com.mdlive.mdlcore.activity.medicalhistory.MdlMedicalHistoryActivity"
-            android:theme="@style/mdlive_MedicalHistoryActivityStyle"
-            tools:replace="android:theme" />-->
-
-        <!--<activity
+        <activity
             android:name="com.mdlive.mdlcore.activity.addmedication.MdlAddMedicationActivity"
-            android:theme="@style/mdlive_AddMecicationActivityStyle"
+            android:theme="@style/cigna_DialogActivityStyle"
             tools:replace="android:theme" />
         <activity
             android:name="com.mdlive.mdlcore.activity.addallergy.MdlAddAllergyActivity"
-            android:theme="@style/mdlive_AddMecicationActivityStyle"
+            android:theme="@style/cigna_DialogActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.addmedicalcondition.MdlAddMedicalConditionActivity"
-            android:theme="@style/mdlive_AddMecicationActivityStyle"
+            android:theme="@style/cigna_DialogActivityStyle"
             tools:replace="android:theme" />
         <activity
             android:name="com.mdlive.mdlcore.activity.addprocedure.MdlAddProcedureActivity"
-            android:theme="@style/mdlive_AddMecicationActivityStyle"
-            tools:replace="android:theme" />-->
+            android:theme="@style/cigna_DialogActivityStyle"
+            tools:replace="android:theme" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
