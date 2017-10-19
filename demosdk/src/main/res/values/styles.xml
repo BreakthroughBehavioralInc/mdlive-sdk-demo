@@ -16,8 +16,8 @@
         <!--Card 1 backgrounf color.-->
         <item name="fwf__card_view_background_color">@android:color/white</item>
         <!--Card 2 backgrounf color.-->
-        <item name="fwf__spinner_tint">@color/cigna_blue</item>
-        <item name="fwf__page_smaller_instructions_text_color">@android:color/white</item>
+        <item name="fwf__spinner_tint">@android:color/white</item>
+        <item name="fwf__page_smaller_instructions_text_color">@color/cigna_blue2</item>
         <item name="fwf__spinner_hint_text_color">@color/cigna_blue</item>
 
         <!-- ActionBar - ProgressBar color -->
@@ -40,6 +40,11 @@
         <item name="fwf__fab_widget_icon_tint">@color/cigna_blue</item>
         <item name="fwf__fab_widget_alternative_tint">@color/cigna_blue</item>
         <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_dark</item>
+
+        <!--Configurable 'Load a Photo" set for 2nd card on Reason for Visit screen.-->
+        <item name="fwf__ic_photo_camera">@drawable/ic_photo_camera</item>
+        <item name="fwf__photo_camera_tint">@color/cigna_blue2</item>
+        <item name="fwf__text_view_alternate_text_color">@color/cigna_blue2</item>
     </style>
     <!-- ############ Custom Base Style ############ -->
 
