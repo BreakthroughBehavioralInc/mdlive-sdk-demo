@@ -79,6 +79,21 @@
             android:theme="@style/cigna_ActivityStyle"
             tools:replace="android:theme" />
 
+        <activity
+            android:name="com.mdlive.mdlcore.activity.sendmessage.MdlSendMessageActivity"
+            android:theme="@style/cigna_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <!--<activity-->
+        <!--android:name="com.mdlive.mdlcore.activity.messages.MdlMessagesActivity"-->
+        <!--android:theme="@style/cigna_ActivityStyle"-->
+        <!--tools:replace="android:theme" />-->
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.addfamilymember.MdlAddFamilyMemberActivity"
+            android:theme="@style/cigna_ActivityStyle"
+            tools:replace="android:theme" />
+
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.mdlive.demosdk.fileprovider"
@@ -92,8 +107,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBDsbj4tSNRpU3X6opkVj1nXXD1u_Nw_0c"
-            tools:replace="android:value" />
+            android:value="AIzaSyBDsbj4tSNRpU3X6opkVj1nXXD1u_Nw_0c" />
 
     </application>
 
