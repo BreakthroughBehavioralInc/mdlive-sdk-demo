@@ -13,50 +13,35 @@
     <style name="cigna_ActivityStyle" parent="rodeo__ActivityStyle">
         <!-- Find a Provider Lets get started screen background color. -->
         <item name="rodeo__menu_background">@color/cigna_blue2</item>
-        <!--Card 1 backgrounf color.-->
+        <!-- 'Reason for Visit' Card 1 backgrounf color.-->
         <item name="fwf__card_view_background_color">@android:color/white</item>
-        <!--Card 2 backgrounf color.-->
-
-        <item name="fwf__spinner_tint">@android:color/white</item>
         <item name="fwf__page_smaller_instructions_text_color">@color/cigna_blue2</item>
         <item name="fwf__spinner_hint_text_color">@color/cigna_blue</item>
-
         <!-- ActionBar - ProgressBar color -->
         <item name="fwf__wizard_progress_bar_style">@style/cigna__ProgressBar_Horizontal</item>
         <item name="fwf__progress_bar_indeterminate_tint_color">@color/cigna_orange_dark</item>
-
         <!-- ActionBar Title Text Style -->
         <item name="rodeo__action_bar_title_text_style">@style/cigna__ActionBarTitleTextAppearance
         </item>
         <!-- File chooser background color -->
         <item name="fwf__file_chooser_dialog_background">@color/cigna_blue2</item>
-
         <!--Find a Provider inner Title Text Color, plus-->
         <item name="rodeo__page_title_style">@style/cigna__PageTitleStyle</item>
         <item name="rodeo__page_smaller_instructions_style">
             @style/cigna__PageSmallerInstructionsStyle
         </item>
-
-        <!-- Reason - Upload Button Style -->
+        <!-- Reason for Visit - Upload Button Style -->
         <item name="fwf__upload_photo_button_style">@style/cigna__UploadPhotoButtonStyle</item>
-
         <!-- Medical History - Card View -->
         <item name="mdl__medical_history_style">@style/cigna__MedicalHistoryStyle</item>
         <item name="fwf__question_card_view_style">@style/cigna__QuestionCardViewStyle</item>
-
         <!--General FAB Styles -->
         <item name="fwf__fab_widget_background_tint">@android:color/white</item>
         <item name="fwf__fab_widget_icon_tint">@color/cigna_blue</item>
         <item name="fwf__fab_widget_alternative_tint">@color/cigna_blue2</item>
         <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_dark</item>
-
-        <!-- Apply same ripple color to touchable views -->
+        <!-- Apply same ripple color to all touchable views -->
         <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
-
-        <!--Configurable 'Load a Photo" set for 2nd card on Reason for Visit screen.-->
-        <item name="fwf__ic_photo_camera">@drawable/ic_photo_camera</item>
-        <item name="fwf__photo_camera_tint">@color/cigna_blue2</item>
-        <item name="fwf__text_view_alternate_text_color">@color/cigna_blue2</item>
     </style>
 
     <style name="cigna_DialogActivityStyle" parent="rodeo__DialogActivityStyle">
@@ -68,8 +53,7 @@
         <!-- Apply same ripple color to touchable views -->
         <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
     </style>
-
-    <!-- ############ Custom Base Style ############ -->
+    <!-- ############ End of Custom Base Style ############ -->
 
     <!-- ######################## Specific Custom Styles ######################## -->
     <!-- ActionBar - ProgressBar color -->
@@ -87,15 +71,17 @@
     <style name="cigna__PageTitleStyle" parent="rodeo__PageTitleStyle">
         <item name="android:textColor">@android:color/white</item>
     </style>
-
     <style name="cigna__PageSmallerInstructionsStyle" parent="rodeo__PageSmallerInstructionsStyle">
         <item name="android:textColor">@android:color/white</item>
     </style>
-
+    <!--Configuration for 'Upload a Photo' 2nd card on Reason for Visit screen.-->
     <style name="cigna__UploadPhotoButtonStyle" parent="fwf__UploadPhotoButtonStyle">
-        <item name="fwf__upload_photo_button_background_color">@color/cigna_blue</item>
+        <item name="fwf__upload_photo_button_background_color">@android:color/white</item>
+        <item name="fwf__upload_photo_button_icon_tint_color">@color/cigna_blue2</item>
+        <item name="fwf__text_view_alternate_text_color">@color/cigna_blue2</item>
+        <item name="fwf__upload_photo_nav_arrow_icon_tint_color">@color/cigna_blue2</item>
     </style>
-    <!-- ##### Find a provider, Reason For Visit- #### -->
+    <!-- ##### End of Find a provider, Reason For Visit- #### -->
 
     <!-- ##### Find a provider, Medical History #### -->
     <!--Card View Icons -->
@@ -110,8 +96,8 @@
         <item name="fwf__question_card_view_summary_text_color">@color/cigna_blue_light</item>
         <item name="fwf__question_card_view_arrow_tint_color">@color/cigna_orange_dark</item>
     </style>
-    <!-- ##### Find a provider, Medical History #### -->
-    <!-- ######################## Specific Custom Styles ######################## -->
+    <!-- ##### End of Find a provider, Medical History #### -->
+    <!-- ######################## End of pecific Custom Styles ######################## -->
 
     <!-- ############ Dashboard ############ -->
     <style name="cigna_SSODashboardActivityStyle" parent="rodeo__SSODashboardActivityStyle">
@@ -140,6 +126,6 @@
             @style/Base.TextAppearance.AppCompat.Medium
         </item>
     </style>
-    <!-- ############ Dashboard ############ -->
+    <!-- ############ End of Dashboard ############ -->
 
 </resources>
