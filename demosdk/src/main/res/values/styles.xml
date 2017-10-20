@@ -35,12 +35,17 @@
         <!-- Medical History - Card View -->
         <item name="mdl__medical_history_style">@style/cigna__MedicalHistoryStyle</item>
         <item name="fwf__question_card_view_style">@style/cigna__QuestionCardViewStyle</item>
+
+        <!-- Availability and consultation radio card views -->
+        <item name="fwf__card_view_style">@style/cigna__CardViewStyle</item>
+        <item name="fwf__radio_card_view_style">@style/cigna__RadioCardViewStyle</item>
+
         <!--General FAB Styles -->
         <item name="fwf__fab_widget_background_tint">@android:color/white</item>
         <item name="fwf__fab_widget_icon_tint">@color/cigna_blue</item>
         <item name="fwf__fab_widget_alternative_tint">@color/cigna_blue2</item>
         <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_dark</item>
-        <!-- Apply same ripple color to all touchable views -->
+        <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
     </style>
 
@@ -50,7 +55,7 @@
         <item name="fwf__fab_widget_icon_tint">@android:color/white</item>
         <item name="fwf__fab_widget_alternative_tint">@android:color/white</item>
         <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_dark</item>
-        <!-- Apply same ripple color to touchable views -->
+        <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
     </style>
     <!-- ############ End of Custom Base Style ############ -->
@@ -97,6 +102,23 @@
         <item name="fwf__question_card_view_arrow_tint_color">@color/cigna_orange_dark</item>
     </style>
     <!-- ##### End of Find a provider, Medical History #### -->
+
+    <!-- ##### Find a provider, Availability and consultation #### -->
+    <style name="cigna__RadioCardViewStyle" parent="@style/fwf__RadioCardViewStyle">
+        <!-- This is just for reference purpose, go to parent to see the what attributes can be overridden -->
+        <item name="fwf__radio_card_view_selected_background_color">@color/cigna_blue_light
+        </item>
+        <!-- Ripple effect for radio card view -->
+        <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
+    </style>
+    <!-- ##### End of Find a provider, Availability and consultation #### -->
+
+    <!-- ##### Find a provider, Provider List Card View #### -->
+    <style name="cigna__CardViewStyle" parent="@style/fwf__CardViewStyle">
+        <!-- Ripple effect for card view -->
+        <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
+    </style>
+    <!-- ##### End of Find a provider, Provider List Card View #### -->
     <!-- ######################## End of pecific Custom Styles ######################## -->
 
     <!-- ############ Dashboard ############ -->
