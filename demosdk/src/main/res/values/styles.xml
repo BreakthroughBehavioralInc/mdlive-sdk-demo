@@ -11,7 +11,7 @@
     <!--MDLive Styles -->
     <!-- ############ Custom Base Style ############ -->
     <style name="cigna_ActivityStyle" parent="rodeo__ActivityStyle">
-        <!-- Find a Provider Lets get started screen background color. -->
+        <!-- Select a Provider Lets get started screen background color. -->
         <item name="rodeo__menu_background">@color/cigna_blue2</item>
         <!-- 'Reason for Visit' Card 1 backgrounf color.-->
         <item name="fwf__card_view_background_color">@android:color/white</item>
@@ -105,7 +105,7 @@
 
     <!-- ##### Find a provider, Availability and consultation #### -->
     <style name="cigna__RadioCardViewStyle" parent="@style/fwf__RadioCardViewStyle">
-        <!-- This is just for reference purpose, go to parent to see the what attributes can be overridden -->
+        <!-- This is just for reference purposes only. Pleas go to parent to see  what attributes can be overridden -->
         <item name="fwf__radio_card_view_selected_background_color">@color/cigna_blue_light
         </item>
         <!-- Ripple effect for radio card view -->
