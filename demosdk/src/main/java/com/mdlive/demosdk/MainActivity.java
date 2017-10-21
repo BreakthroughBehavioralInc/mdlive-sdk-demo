@@ -15,11 +15,7 @@ import com.mdlive.mdlcore.fwfrodeo.fwf.enumz.FwfState;
 import com.mdlive.mdlcore.model.MdlSSODetail;
 import com.mdlive.mdlcore.model.MdlUserSession;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 
 import rx.android.schedulers.AndroidSchedulers;
@@ -71,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 .gender(FwfSSOGender.MALE)
                 .birthdate(birthdateCalendar.getTime())
                 .subscriberId("11627701")
-                .memberId("bellafraser|1508509088.9120774|ZDJjMDU0NDEwMzQyODZkZmE4MzQ4ZjM3MmY3NmVhNWQ3NjAzMWFlZGRmOWFjMGRjOThkOTkzODEzMzJkMmU4MQ==")
+                .memberId("bellafraser|1509727623.5845659|YTBmNjVlNzFlODJlNmU3ZGQ5NjZlZDExODlhYTE2MDhmZWY4NDVmYTQ0ZmZkMmI0NzFlOGMyMWQ4ZWM3N2FjZg==")
                 .phone("555-555-5555")
                 .email("ahadida@mdlive.com")
                 .address1("address1")

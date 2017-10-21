@@ -10,6 +10,7 @@
     <color name="cigna_blue">#188CCC</color>
     <color name="cigna_dark_blue">#0069AA</color>
     <color name="cigna_blue2">#2999cb</color>
+    <color name="black_transparent">#11000000</color>
 
 <!--    <color name="fwf__green_aqua">@color/cigna_blue_light</color>
     <color name="mdl__blue_button_2">@color/cigna_blue_light</color>

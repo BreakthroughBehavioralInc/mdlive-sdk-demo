@@ -15,7 +15,6 @@
         <item name="rodeo__menu_background">@color/cigna_blue2</item>
         <!-- 'Reason for Visit' Card 1 backgrounf color.-->
         <item name="fwf__card_view_background_color">@android:color/white</item>
-        <item name="fwf__page_smaller_instructions_text_color">@color/cigna_blue2</item>
         <item name="fwf__spinner_hint_text_color">@color/cigna_blue</item>
         <!-- ActionBar - ProgressBar color -->
         <item name="fwf__wizard_progress_bar_style">@style/cigna__ProgressBar_Horizontal</item>
@@ -40,8 +39,17 @@
         <item name="fwf__card_view_style">@style/cigna__CardViewStyle</item>
         <item name="fwf__radio_card_view_style">@style/cigna__RadioCardViewStyle</item>
 
+        <!-- Payment and CC Subhead -->
+        <item name="fwf__subhead_bar_payment_style">@style/cigna__SubheadBarPaymentStyle</item>
+
+        <!-- Add Primary Care Physician Button -->
+        <item name="mdl__add_primary_care_physician_button_style">
+            @style/cigna__AddPrimaryCarePhysicianButtonStyle
+        </item>
+
         <!--General FAB Styles -->
         <item name="fwf__fab_widget_background_tint">@android:color/white</item>
+        <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
         <item name="fwf__fab_widget_icon_tint">@color/cigna_blue</item>
         <item name="fwf__fab_widget_alternative_tint">@color/cigna_blue2</item>
         <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_dark</item>
@@ -52,6 +60,7 @@
     <style name="cigna_DialogActivityStyle" parent="rodeo__DialogActivityStyle">
         <!--General FAB Styles -->
         <item name="fwf__fab_widget_background_tint">@color/cigna_blue2</item>
+        <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
         <item name="fwf__fab_widget_icon_tint">@android:color/white</item>
         <item name="fwf__fab_widget_alternative_tint">@android:color/white</item>
         <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_dark</item>
@@ -119,6 +128,19 @@
         <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
     </style>
     <!-- ##### End of Find a provider, Provider List Card View #### -->
+
+    <!-- ##### Payment and CC Subhead #### -->
+    <style name="cigna__SubheadBarPaymentStyle" parent="@style/fwf__SubheadBarPaymentStyle">
+        <item name="fwf__subhead_bar_payment_background_color">@color/cigna_orange_dark</item>
+    </style>
+    <!-- ##### End of Payment and CC Subhead #### -->
+
+    <!-- ##### My Providers, Add Primary Care Physician Button #### -->
+    <style name="cigna__AddPrimaryCarePhysicianButtonStyle" parent="@style/mdl__AddPrimaryCarePhysicianButtonStyle">
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/cigna_blue_light</item>
+    </style>
+    <!-- ##### End of My Providers, Add Primary Care Physician Button #### -->
     <!-- ######################## End of pecific Custom Styles ######################## -->
 
     <!-- ############ Dashboard ############ -->

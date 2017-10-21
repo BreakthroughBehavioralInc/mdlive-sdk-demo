@@ -84,13 +84,38 @@
             android:theme="@style/cigna_ActivityStyle"
             tools:replace="android:theme" />
 
-        <!--<activity-->
-        <!--android:name="com.mdlive.mdlcore.activity.messages.MdlMessagesActivity"-->
-        <!--android:theme="@style/cigna_ActivityStyle"-->
-        <!--tools:replace="android:theme" />-->
+        <activity
+            android:name="com.mdlive.mdlcore.activity.messages.MdlMessagesActivity"
+            android:theme="@style/cigna_ActivityStyle"
+            tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.addfamilymember.MdlAddFamilyMemberActivity"
+            android:theme="@style/cigna_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.checkeligibilitycost.MdlCheckEligibilityCostActivity"
+            android:theme="@style/cigna_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.confirmappointment.MdlConfirmAppointmentActivity"
+            android:theme="@style/cigna_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.editcreditcardwebview.MdlEditCreditCardWebViewActivity"
+            android:theme="@style/cigna_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.editprimarycarephysician.MdlEditPrimaryCarePhysicianActivity"
+            android:theme="@style/cigna_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.requestappointment.MdlRequestAppointmentActivity"
             android:theme="@style/cigna_ActivityStyle"
             tools:replace="android:theme" />
 
