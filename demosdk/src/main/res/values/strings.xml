@@ -14,4 +14,6 @@
     <string name="find_provider_instructions">Please review the following information so that we can find the best care available</string>
     <!--Replaces original string 'Phone Number'.-->
     <string name="find_provider_label_phone_number">Preferred Contact Number</string>
+    <!--Removed "..." at end of sentence.-->
+    <string name="find_provider_watermark_reason">Enter your symptoms here</string>
 </resources>
