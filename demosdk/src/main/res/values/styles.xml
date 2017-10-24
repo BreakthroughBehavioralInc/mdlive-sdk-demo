@@ -226,8 +226,7 @@
         <!-- Text to use as header, this must be a string resource -->
         <item name="mdl__sso_dashboard_header_text">@string/dashboard_text</item>
         <!-- Text appearance for the header text, this must be a style resource -->
-        <item name="mdl__sso_dashboard_header_text_appearance">@style/cigna__HeaderTextAppearance
-        </item>
+        <item name="mdl__sso_dashboard_header_text_appearance">@style/cigna__HeaderTextAppearance</item>
 
         <item name="mdl__sso_dashboard_sub_header_background_color">
             @color/cigna_blue2
@@ -279,7 +278,7 @@
         <item name="fwf__sso_dashboard_card_view_icon_tint_color">@color/cigna_orange_dark</item>
         <item name="fwf__sso_dashboard_card_view_title_text_color">@color/cigna_dark_blue</item>
         <item name="fwf__sso_dashboard_card_view_summary_text_color">@color/cigna_blue_light</item>
-        <item name="fwf__sso_dashboard_card_view_divider_color">@color/cigna_orange_dark</item>
+        <item name="fwf__sso_dashboard_card_view_divider_color">@android:color/darker_gray</item>
     </style>
 
     <style name="cigna__FooterTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
