@@ -13,10 +13,10 @@
     <style name="cigna_ActivityStyle" parent="rodeo__ActivityStyle">
         <item name="rodeo__app_name">@string/cigna</item>
         <!-- Select a Provider Lets get started screen background color. -->
-        <item name="rodeo__menu_background">@color/cigna_blue2</item>
+        <item name="rodeo__menu_background">@color/mycigna_blue_logo</item>
         <!-- 'Reason for Visit' Card 1 backgrounf color.-->
         <item name="fwf__card_view_background_color">@android:color/white</item>
-        <item name="fwf__spinner_hint_text_color">@color/cigna_blue</item>
+        <item name="fwf__spinner_hint_text_color">@color/mycigna_blue_logo</item>
         <!-- ActionBar - ProgressBar color -->
         <item name="fwf__wizard_progress_bar_style">@style/cigna__ProgressBar_Horizontal</item>
         <item name="fwf__progress_bar_indeterminate_tint_color">@color/cigna_orange_light</item>
@@ -24,7 +24,7 @@
         <item name="rodeo__action_bar_title_text_style">@style/cigna__ActionBarTitleTextAppearance
         </item>
         <!-- File chooser background color -->
-        <item name="fwf__file_chooser_dialog_background">@color/cigna_blue2</item>
+        <item name="fwf__file_chooser_dialog_background">@color/mycigna_blue_logo</item>
         <!--Find a Provider inner Title Text Color, and for Medication, Allergies, -->
         <!--Pre-Conditions, and Procedures default background Text color.-->
         <item name="rodeo__page_title_style">@style/cigna__PageTitleStyle</item>
@@ -68,7 +68,7 @@
         <!--General FAB Styles -->
         <item name="fwf__fab_widget_background_tint">@android:color/white</item>
         <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
-        <item name="fwf__fab_widget_icon_tint">@color/cigna_blue</item>
+        <item name="fwf__fab_widget_icon_tint">@color/mycigna_blue_logo</item>
         <item name="fwf__fab_widget_alternative_tint">@color/cigna_orange_light</item>
         <item name="fwf__fab_widget_ripple_color">@color/mdl__light_gray</item>
         <!-- Ripple effect for touchable views -->
@@ -77,7 +77,7 @@
 
     <style name="cigna_DialogActivityStyle" parent="rodeo__DialogActivityStyle">
         <!--General FAB Styles -->
-        <item name="fwf__fab_widget_background_tint">@color/cigna_blue2</item>
+        <item name="fwf__fab_widget_background_tint">@color/mycigna_blue_logo</item>
         <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
         <item name="fwf__fab_widget_icon_tint">@android:color/white</item>
         <item name="fwf__fab_widget_alternative_tint">@android:color/white</item>
@@ -95,7 +95,7 @@
 
     <!-- ActionBar Title Text Color -->
     <style name="cigna__ActionBarTitleTextAppearance" parent="@style/rodeo__ActionBarTitleTextAppearance">
-        <item name="android:textColor">@color/cigna_blue</item>
+        <item name="android:textColor">@color/mycigna_blue_logo</item>
     </style>
 
     <!-- ##### Find a provider, Reason For Visit- #### -->
@@ -109,9 +109,9 @@
     <!--Configuration for 'Upload a Photo' 2nd card on Reason for Visit screen.-->
     <style name="cigna__UploadPhotoButtonStyle" parent="fwf__UploadPhotoButtonStyle">
         <item name="fwf__upload_photo_button_background_color">@android:color/white</item>
-        <item name="fwf__upload_photo_button_icon_tint_color">@color/cigna_blue2</item>
-        <item name="fwf__text_view_alternate_text_color">@color/cigna_blue2</item>
-        <item name="fwf__upload_photo_nav_arrow_icon_tint_color">@color/cigna_blue2</item>
+        <item name="fwf__upload_photo_button_icon_tint_color">@color/mycigna_blue_logo</item>
+        <item name="fwf__text_view_alternate_text_color">@color/mycigna_blue_logo</item>
+        <item name="fwf__upload_photo_nav_arrow_icon_tint_color">@color/mycigna_blue_logo</item>
     </style>
     <!-- ##### End of Find a provider, Reason For Visit- #### -->
 
@@ -124,8 +124,8 @@
     <!--Card View Colors -->
     <style name="cigna__QuestionCardViewStyle" parent="fwf__QuestionCardViewStyle">
         <item name="fwf__question_card_view_icon_tint_color">@color/cigna_orange_light</item>
-        <item name="fwf__question_card_view_title_text_color">@color/cigna_dark_blue</item>
-        <item name="fwf__question_card_view_summary_text_color">@color/cigna_blue_light</item>
+        <item name="fwf__question_card_view_title_text_color">@color/mycigna_blue_logo</item>
+        <item name="fwf__question_card_view_summary_text_color">@color/mycigna_blue_logo</item>
         <item name="fwf__question_card_view_arrow_tint_color">@color/cigna_orange_light</item>
     </style>
     <!-- ##### End of Find a provider, Medical History #### -->
@@ -149,26 +149,26 @@
 
     <!-- ##### Payment and CC Subhead #### -->
     <style name="cigna__SubheadBarPaymentStyle" parent="@style/fwf__SubheadBarPaymentStyle">
-        <item name="fwf__subhead_bar_payment_background_color">@color/cigna_dark_blue</item>
+        <item name="fwf__subhead_bar_payment_background_color">@color/mycigna_blue_logo</item>
     </style>
     <!-- ##### End of Payment and CC Subhead #### -->
 
     <!-- ##### My Providers, Add Primary Care Physician Button #### -->
     <style name="cigna__AddPrimaryCarePhysicianButtonStyle" parent="@style/mdl__AddPrimaryCarePhysicianButtonStyle">
         <item name="backgroundTint">@android:color/white</item>
-        <item name="android:textColor">@color/cigna_blue_light</item>
+        <item name="android:textColor">@color/mycigna_blue_logo</item>
     </style>
     <!-- ##### End of My Providers, Add Primary Care Physician Button #### -->
 
     <!-- ##### User profile widget style #### -->
     <style name="cigna__UserProfileWidgetStyle" parent="@style/fwf__UserProfileWidgetStyle">
-        <item name="fillerTextColor">@color/cigna_blue_light</item>
+        <item name="fillerTextColor">@color/mycigna_blue_logo</item>
         <item name="profilePictureBackgroundColor">@android:color/white</item>
     </style>
 
     <style name="cigna__SwitchUserAccountItemStyle" parent="@style/fwf__SwitchUserAccountItemStyle">
         <item name="fillerTextColor">@android:color/white</item>
-        <item name="profilePictureBackgroundColor">@color/cigna_blue2</item>
+        <item name="profilePictureBackgroundColor">@color/mycigna_blue_logo</item>
         <item name="lineOneTextAppearance">
             @style/cigna__UserProfileWidgetStyleLineOneTextAppearance
         </item>
@@ -187,14 +187,14 @@
 
     <style name="cigna__DashboardCardViewButtonStyle" parent="@style/fwf__DashboardCardViewButtonStyle">
         <item name="backgroundTint">@android:color/white</item>
-        <item name="android:textColor">@color/cigna_blue</item>
+        <item name="android:textColor">@color/mycigna_blue_logo</item>
     </style>
 
     <style name="cigna__WaitingRoomAndVideoSessionStyle" parent="@style/mdl__WaitingRoomAndVideoSessionStyle">
         <item name="mdl__waiting_room_text_appearance">@style/cigna__WaitingRoomTextAppearance
         </item>
         <item name="mdl__video_session_background_color">@color/cigna_blue_light</item>
-        <item name="mdl__video_session_control_buttons_background_color">@color/cigna_dark_blue
+        <item name="mdl__video_session_control_buttons_background_color">@color/cigna_blue
         </item>
         <item name="mdl__video_session_primary_button_tint_color">@color/cigna_orange_dark</item>
         <item name="mdl__video_session_secondary_buttons_tint_color">@android:color/white</item>
@@ -206,7 +206,7 @@
 
     <style name="cigna__FindProviderButtonStyle" parent="@style/mdl__FindProviderButtonStyle">
         <item name="backgroundTint">@android:color/white</item>
-        <item name="android:textColor">@color/cigna_blue</item>
+        <item name="android:textColor">@color/mycigna_blue_logo</item>
     </style>
 
     <!-- ##### End of User profile widget style #### -->
@@ -276,8 +276,8 @@
 
     <style name="cigna__SsoDashboardCardViewStyle" parent="@style/fwf__SsoDashboardCardViewStyle">
         <item name="fwf__sso_dashboard_card_view_icon_tint_color">@color/cigna_orange_light</item>
-        <item name="fwf__sso_dashboard_card_view_title_text_color">@color/cigna_dark_blue</item>
-        <item name="fwf__sso_dashboard_card_view_summary_text_color">@color/cigna_blue_light</item>
+        <item name="fwf__sso_dashboard_card_view_title_text_color">@color/mycigna_blue_logo</item>
+        <item name="fwf__sso_dashboard_card_view_summary_text_color">@color/mycigna_blue_logo</item>
         <item name="fwf__sso_dashboard_card_view_divider_color">@android:color/darker_gray</item>
     </style>
 
@@ -290,7 +290,7 @@
     </style>
 
     <style name="cigna__FamilyMemberChooserDialogStyle" parent="@style/mdl__FamilyMemberChooserDialogStyle">
-        <item name="mdl__family_member_chooser_dialog_background_color">@color/cigna_blue2</item>
+        <item name="mdl__family_member_chooser_dialog_background_color">@color/mycigna_blue_logo</item>
         <item name="mdl__family_member_chooser_dialog_title_text_appearance">
             @style/cigna__FamilyMemberChooserDialogTitleTextAppearance
         </item>
