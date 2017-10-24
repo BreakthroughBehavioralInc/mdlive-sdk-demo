@@ -149,7 +149,8 @@
 
     <!-- ##### Payment and CC Subhead #### -->
     <style name="cigna__SubheadBarPaymentStyle" parent="@style/fwf__SubheadBarPaymentStyle">
-        <item name="fwf__subhead_bar_payment_background_color">@color/mycigna_blue_logo</item>
+        <item name="fwf__subhead_bar_payment_background_color">@color/mdl__white</item>
+        <item name="fwf__subhead_bar_payment_text_color">@color/mdl__black</item>
     </style>
     <!-- ##### End of Payment and CC Subhead #### -->
 
@@ -251,7 +252,7 @@
         <!-- Layout to be used as footer, if we change this layout the next footer styles will be ignored -->
         <!--<item name="mdl__sso_dashboard_footer_layout">@layout/mdl__sso_dashboard_footer</item>-->
         <!-- Color to use as footer background -->
-        <item name="mdl__sso_dashboard_footer_background_color">@color/mdl__white</item>
+        <item name="mdl__sso_dashboard_footer_background_color">@color/mycigna_blue_logo</item>
         <!-- Text to use as footer, this must be a string resource -->
         <item name="mdl__sso_dashboard_footer_text">@string/dashboard_footer</item>
         <!-- Text appearance for the footer text, this must be a style resource -->
@@ -286,7 +287,7 @@
     </style>
 
     <style name="cigna__sso_dashboard_terms_and_conditions_text_appearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
     <style name="cigna__FamilyMemberChooserDialogStyle" parent="@style/mdl__FamilyMemberChooserDialogStyle">
