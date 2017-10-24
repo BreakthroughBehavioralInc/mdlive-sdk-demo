@@ -95,7 +95,7 @@
 
     <!-- ActionBar Title Text Color -->
     <style name="cigna__ActionBarTitleTextAppearance" parent="@style/rodeo__ActionBarTitleTextAppearance">
-        <item name="android:textColor">@color/cigna_blue2</item>
+        <item name="android:textColor">@color/cigna_blue</item>
     </style>
 
     <!-- ##### Find a provider, Reason For Visit- #### -->
@@ -123,10 +123,10 @@
 
     <!--Card View Colors -->
     <style name="cigna__QuestionCardViewStyle" parent="fwf__QuestionCardViewStyle">
-        <item name="fwf__question_card_view_icon_tint_color">@color/cigna_orange_dark</item>
+        <item name="fwf__question_card_view_icon_tint_color">@color/cigna_orange_light</item>
         <item name="fwf__question_card_view_title_text_color">@color/cigna_dark_blue</item>
         <item name="fwf__question_card_view_summary_text_color">@color/cigna_blue_light</item>
-        <item name="fwf__question_card_view_arrow_tint_color">@color/cigna_orange_dark</item>
+        <item name="fwf__question_card_view_arrow_tint_color">@color/cigna_orange_light</item>
     </style>
     <!-- ##### End of Find a provider, Medical History #### -->
 
@@ -206,7 +206,7 @@
 
     <style name="cigna__FindProviderButtonStyle" parent="@style/mdl__FindProviderButtonStyle">
         <item name="backgroundTint">@android:color/white</item>
-        <item name="android:textColor">@color/cigna_blue_light</item>
+        <item name="android:textColor">@color/cigna_blue</item>
     </style>
 
     <!-- ##### End of User profile widget style #### -->
@@ -275,7 +275,7 @@
     </style>
 
     <style name="cigna__SsoDashboardCardViewStyle" parent="@style/fwf__SsoDashboardCardViewStyle">
-        <item name="fwf__sso_dashboard_card_view_icon_tint_color">@color/cigna_orange_dark</item>
+        <item name="fwf__sso_dashboard_card_view_icon_tint_color">@color/cigna_orange_light</item>
         <item name="fwf__sso_dashboard_card_view_title_text_color">@color/cigna_dark_blue</item>
         <item name="fwf__sso_dashboard_card_view_summary_text_color">@color/cigna_blue_light</item>
         <item name="fwf__sso_dashboard_card_view_divider_color">@android:color/darker_gray</item>
