@@ -19,7 +19,7 @@
         <item name="fwf__spinner_hint_text_color">@color/cigna_blue</item>
         <!-- ActionBar - ProgressBar color -->
         <item name="fwf__wizard_progress_bar_style">@style/cigna__ProgressBar_Horizontal</item>
-        <item name="fwf__progress_bar_indeterminate_tint_color">@color/cigna_orange_dark</item>
+        <item name="fwf__progress_bar_indeterminate_tint_color">@color/cigna_orange_light</item>
         <!-- ActionBar Title Text Style -->
         <item name="rodeo__action_bar_title_text_style">@style/cigna__ActionBarTitleTextAppearance
         </item>
@@ -69,8 +69,8 @@
         <item name="fwf__fab_widget_background_tint">@android:color/white</item>
         <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
         <item name="fwf__fab_widget_icon_tint">@color/cigna_blue</item>
-        <item name="fwf__fab_widget_alternative_tint">@color/cigna_orange_dark</item>
-        <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_dark</item>
+        <item name="fwf__fab_widget_alternative_tint">@color/cigna_orange_light</item>
+        <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_light</item>
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
     </style>
@@ -81,7 +81,7 @@
         <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
         <item name="fwf__fab_widget_icon_tint">@android:color/white</item>
         <item name="fwf__fab_widget_alternative_tint">@android:color/white</item>
-        <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_dark</item>
+        <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_light</item>
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
     </style>
@@ -149,7 +149,7 @@
 
     <!-- ##### Payment and CC Subhead #### -->
     <style name="cigna__SubheadBarPaymentStyle" parent="@style/fwf__SubheadBarPaymentStyle">
-        <item name="fwf__subhead_bar_payment_background_color">@color/cigna_orange_dark</item>
+        <item name="fwf__subhead_bar_payment_background_color">@color/cigna_dark_blue</item>
     </style>
     <!-- ##### End of Payment and CC Subhead #### -->
 
@@ -168,7 +168,7 @@
 
     <style name="cigna__SwitchUserAccountItemStyle" parent="@style/fwf__SwitchUserAccountItemStyle">
         <item name="fillerTextColor">@android:color/white</item>
-        <item name="profilePictureBackgroundColor">@color/cigna_blue_light</item>
+        <item name="profilePictureBackgroundColor">@color/cigna_blue2</item>
         <item name="lineOneTextAppearance">
             @style/cigna__UserProfileWidgetStyleLineOneTextAppearance
         </item>
@@ -217,12 +217,12 @@
         <!-- mdl__sso_dashboard_title_icon has higher priority than mdl__sso_dashboard_title_text, this must be a drawable resource -->
         <!--<item name="mdl__sso_dashboard_title_icon">@null</item>-->
         <!-- Text to use as title, this must be a string resource -->
-        <item name="mdl__sso_dashboard_title_text">@string/cigna</item>
+        <item name="mdl__sso_dashboard_title_text">@string/dashboard_title</item>
 
         <!-- Layout to be used as header, if we change this layout the next header styles will be ignored -->
         <!--<item name="mdl__sso_dashboard_header_layout">@layout/mdl__sso_dashboard_header</item>-->
         <!-- Color to use as header background -->
-        <item name="mdl__sso_dashboard_header_background_color">@color/cigna_blue2</item>
+        <item name="mdl__sso_dashboard_header_background_color">@color/mdl__white</item>
         <!-- Text to use as header, this must be a string resource -->
         <item name="mdl__sso_dashboard_header_text">@string/dashboard_text</item>
         <!-- Text appearance for the header text, this must be a style resource -->
@@ -230,10 +230,10 @@
         </item>
 
         <item name="mdl__sso_dashboard_sub_header_background_color">
-            @color/cigna_blue_light
+            @color/cigna_blue2
         </item>
 
-        <item name="mdl__switch_user_arrow_tint_color">@color/cigna_orange_dark</item>
+        <item name="mdl__switch_user_arrow_tint_color">@color/cigna_orange_light</item>
 
         <item name="mdl__text_under_find_provider_text_appearance">
             @style/cigna__TextUnderFindProviderTextAppearance
@@ -252,7 +252,7 @@
         <!-- Layout to be used as footer, if we change this layout the next footer styles will be ignored -->
         <!--<item name="mdl__sso_dashboard_footer_layout">@layout/mdl__sso_dashboard_footer</item>-->
         <!-- Color to use as footer background -->
-        <item name="mdl__sso_dashboard_footer_background_color">@color/cigna_blue2</item>
+        <item name="mdl__sso_dashboard_footer_background_color">@color/mdl__white</item>
         <!-- Text to use as footer, this must be a string resource -->
         <item name="mdl__sso_dashboard_footer_text">@string/dashboard_footer</item>
         <!-- Text appearance for the footer text, this must be a style resource -->
@@ -263,7 +263,7 @@
             @style/cigna__sso_dashboard_terms_and_conditions_text_appearance
         </item>
         <item name="mdl__sso_dashboard_terms_and_conditions_text_link_color">
-            @color/cigna_orange_dark
+            @color/cigna_orange_light
         </item>
 
         <item name="mdl__family_member_chooser_dialog_style">
@@ -272,7 +272,7 @@
     </style>
 
     <style name="cigna__HeaderTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
     <style name="cigna__SsoDashboardCardViewStyle" parent="@style/fwf__SsoDashboardCardViewStyle">
@@ -283,11 +283,11 @@
     </style>
 
     <style name="cigna__FooterTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
     <style name="cigna__sso_dashboard_terms_and_conditions_text_appearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
     <style name="cigna__FamilyMemberChooserDialogStyle" parent="@style/mdl__FamilyMemberChooserDialogStyle">
@@ -298,11 +298,11 @@
     </style>
 
     <style name="cigna__FamilyMemberChooserDialogTitleTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Title">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/cigna_blue2</item>
     </style>
 
     <style name="cigna__TextUnderFindProviderTextAppearance" parent="@style/mdl__TextUnderFindProviderTextAppearance">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/cigna_blue2</item>
     </style>
     <!-- ############ End of Dashboard ############ -->
 
