@@ -23,7 +23,7 @@
         <!-- MDLive Activity Configuration-->
         <activity
             android:name="com.mdlive.mdlcore.activity.ssodashboard.MdlSSODashboardActivity"
-            android:theme="@style/cigna_SSODashboardActivityStyle"
+            android:theme="@style/cigna_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
@@ -116,6 +116,16 @@
 
         <activity
             android:name="com.mdlive.mdlcore.activity.requestappointment.MdlRequestAppointmentActivity"
+            android:theme="@style/cigna_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.videosession.vendor.frozenmountain.FrozenMountainSessionActivity"
+            android:theme="@style/cigna_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.rating.MdlRatingActivity"
             android:theme="@style/cigna_ActivityStyle"
             tools:replace="android:theme" />
 

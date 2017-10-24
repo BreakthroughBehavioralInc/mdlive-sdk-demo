@@ -11,6 +11,7 @@
     <!--MDLive Styles -->
     <!-- ############ Custom Base Style ############ -->
     <style name="cigna_ActivityStyle" parent="rodeo__ActivityStyle">
+        <item name="rodeo__app_name">@string/cigna</item>
         <!-- Select a Provider Lets get started screen background color. -->
         <item name="rodeo__menu_background">@color/cigna_blue2</item>
         <!-- 'Reason for Visit' Card 1 backgrounf color.-->
@@ -48,11 +49,27 @@
             @style/cigna__AddPrimaryCarePhysicianButtonStyle
         </item>
 
+        <item name="mdl__sso_dashboard_style">@style/cigna__SsoDashboardStyle</item>
+
+        <item name="fwf__user_profile_widget_style">@style/cigna__UserProfileWidgetStyle</item>
+        <item name="fwf__switch_user_account_item_style">@style/cigna__SwitchUserAccountItemStyle
+        </item>
+
+        <item name="fwf__dashboard_card_view_button_style">
+            @style/cigna__DashboardCardViewButtonStyle
+        </item>
+
+        <item name="mdl__waiting_room_and_video_session_style">
+            @style/cigna__WaitingRoomAndVideoSessionStyle
+        </item>
+
+        <item name="mdl__find_provider_button_style">@style/cigna__FindProviderButtonStyle</item>
+
         <!--General FAB Styles -->
         <item name="fwf__fab_widget_background_tint">@android:color/white</item>
         <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
         <item name="fwf__fab_widget_icon_tint">@color/cigna_blue</item>
-        <item name="fwf__fab_widget_alternative_tint">@color/cigna_blue2</item>
+        <item name="fwf__fab_widget_alternative_tint">@color/cigna_orange_dark</item>
         <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_dark</item>
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
@@ -142,34 +159,150 @@
         <item name="android:textColor">@color/cigna_blue_light</item>
     </style>
     <!-- ##### End of My Providers, Add Primary Care Physician Button #### -->
+
+    <!-- ##### User profile widget style #### -->
+    <style name="cigna__UserProfileWidgetStyle" parent="@style/fwf__UserProfileWidgetStyle">
+        <item name="fillerTextColor">@color/cigna_blue_light</item>
+        <item name="profilePictureBackgroundColor">@android:color/white</item>
+    </style>
+
+    <style name="cigna__SwitchUserAccountItemStyle" parent="@style/fwf__SwitchUserAccountItemStyle">
+        <item name="fillerTextColor">@android:color/white</item>
+        <item name="profilePictureBackgroundColor">@color/cigna_blue_light</item>
+        <item name="lineOneTextAppearance">
+            @style/cigna__UserProfileWidgetStyleLineOneTextAppearance
+        </item>
+        <item name="lineTwoTextAppearance">
+            @style/cigna__UserProfileWidgetStyleLineTwoTextAppearance
+        </item>
+    </style>
+
+    <style name="cigna__UserProfileWidgetStyleLineOneTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="cigna__UserProfileWidgetStyleLineTwoTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="cigna__DashboardCardViewButtonStyle" parent="@style/fwf__DashboardCardViewButtonStyle">
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/cigna_blue</item>
+    </style>
+
+    <style name="cigna__WaitingRoomAndVideoSessionStyle" parent="@style/mdl__WaitingRoomAndVideoSessionStyle">
+        <item name="mdl__waiting_room_text_appearance">@style/cigna__WaitingRoomTextAppearance
+        </item>
+        <item name="mdl__video_session_background_color">@color/cigna_blue_light</item>
+        <item name="mdl__video_session_control_buttons_background_color">@color/cigna_dark_blue
+        </item>
+        <item name="mdl__video_session_primary_button_tint_color">@color/cigna_orange_dark</item>
+        <item name="mdl__video_session_secondary_buttons_tint_color">@android:color/white</item>
+    </style>
+
+    <style name="cigna__WaitingRoomTextAppearance" parent="@style/mdl__WaitingRoomTextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="cigna__FindProviderButtonStyle" parent="@style/mdl__FindProviderButtonStyle">
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/cigna_blue_light</item>
+    </style>
+
+    <!-- ##### End of User profile widget style #### -->
     <!-- ######################## End of pecific Custom Styles ######################## -->
 
     <!-- ############ Dashboard ############ -->
-    <style name="cigna_SSODashboardActivityStyle" parent="rodeo__SSODashboardActivityStyle">
+    <style name="cigna__SsoDashboardStyle" parent="mdl__SsoDashboardStyle">
         <!-- mdl__sso_dashboard_title_icon has higher priority than mdl__sso_dashboard_title_text, this must be a drawable resource -->
-        <item name="mdl__sso_dashboard_title_icon">@null</item>
+        <!--<item name="mdl__sso_dashboard_title_icon">@null</item>-->
         <!-- Text to use as title, this must be a string resource -->
         <item name="mdl__sso_dashboard_title_text">@string/cigna</item>
+
         <!-- Layout to be used as header, if we change this layout the next header styles will be ignored -->
-        <item name="mdl__sso_dashboard_header_layout">@layout/mdl__sso_dashboard_header</item>
+        <!--<item name="mdl__sso_dashboard_header_layout">@layout/mdl__sso_dashboard_header</item>-->
         <!-- Color to use as header background -->
-        <item name="mdl__sso_dashboard_header_background_color">@android:color/white</item>
+        <item name="mdl__sso_dashboard_header_background_color">@color/cigna_blue2</item>
         <!-- Text to use as header, this must be a string resource -->
         <item name="mdl__sso_dashboard_header_text">@string/dashboard_text</item>
         <!-- Text appearance for the header text, this must be a style resource -->
-        <item name="mdl__sso_dashboard_header_text_appearance">
-            @style/Base.TextAppearance.AppCompat.Title
+        <item name="mdl__sso_dashboard_header_text_appearance">@style/cigna__HeaderTextAppearance
         </item>
+
+        <item name="mdl__sso_dashboard_sub_header_background_color">
+            @color/cigna_blue_light
+        </item>
+
+        <item name="mdl__switch_user_arrow_tint_color">@color/cigna_orange_dark</item>
+
+        <item name="mdl__text_under_find_provider_text_appearance">
+            @style/cigna__TextUnderFindProviderTextAppearance
+        </item>
+
+        <!-- Card view and icons -->
+        <item name="fwf__sso_dashboard_card_view_style">@style/cigna__SsoDashboardCardViewStyle
+        </item>
+        <!--<item name="mdl__sso_dashboard_card_view_messages_icon">@drawable/mdl__messages_icon-->
+        <!--</item>-->
+        <!--<item name="mdl__sso_dashboard_card_view_family_icon">@drawable/mdl__family_icon</item>-->
+        <!--<item name="mdl__sso_dashboard_card_view_visit_history_icon">-->
+        <!--@drawable/mdl__my_providers_icon-->
+        <!--</item>-->
+
         <!-- Layout to be used as footer, if we change this layout the next footer styles will be ignored -->
-        <item name="mdl__sso_dashboard_footer_layout">@layout/mdl__sso_dashboard_footer</item>
+        <!--<item name="mdl__sso_dashboard_footer_layout">@layout/mdl__sso_dashboard_footer</item>-->
         <!-- Color to use as footer background -->
-        <item name="mdl__sso_dashboard_footer_background_color">@android:color/white</item>
+        <item name="mdl__sso_dashboard_footer_background_color">@color/cigna_blue2</item>
         <!-- Text to use as footer, this must be a string resource -->
         <item name="mdl__sso_dashboard_footer_text">@string/dashboard_footer</item>
         <!-- Text appearance for the footer text, this must be a style resource -->
-        <item name="mdl__sso_dashboard_footer_text_appearance">
-            @style/Base.TextAppearance.AppCompat.Medium
+        <item name="mdl__sso_dashboard_footer_text_appearance">@style/cigna__FooterTextAppearance
+
         </item>
+        <item name="mdl__sso_dashboard_terms_and_conditions_text_appearance">
+            @style/cigna__sso_dashboard_terms_and_conditions_text_appearance
+        </item>
+        <item name="mdl__sso_dashboard_terms_and_conditions_text_link_color">
+            @color/cigna_orange_dark
+        </item>
+
+        <item name="mdl__family_member_chooser_dialog_style">
+            @style/cigna__FamilyMemberChooserDialogStyle
+        </item>
+    </style>
+
+    <style name="cigna__HeaderTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="cigna__SsoDashboardCardViewStyle" parent="@style/fwf__SsoDashboardCardViewStyle">
+        <item name="fwf__sso_dashboard_card_view_icon_tint_color">@color/cigna_orange_dark</item>
+        <item name="fwf__sso_dashboard_card_view_title_text_color">@color/cigna_dark_blue</item>
+        <item name="fwf__sso_dashboard_card_view_summary_text_color">@color/cigna_blue_light</item>
+        <item name="fwf__sso_dashboard_card_view_divider_color">@color/cigna_orange_dark</item>
+    </style>
+
+    <style name="cigna__FooterTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="cigna__sso_dashboard_terms_and_conditions_text_appearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="cigna__FamilyMemberChooserDialogStyle" parent="@style/mdl__FamilyMemberChooserDialogStyle">
+        <item name="mdl__family_member_chooser_dialog_background_color">@color/cigna_blue2</item>
+        <item name="mdl__family_member_chooser_dialog_title_text_appearance">
+            @style/cigna__FamilyMemberChooserDialogTitleTextAppearance
+        </item>
+    </style>
+
+    <style name="cigna__FamilyMemberChooserDialogTitleTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="cigna__TextUnderFindProviderTextAppearance" parent="@style/mdl__TextUnderFindProviderTextAppearance">
+        <item name="android:textColor">@android:color/white</item>
     </style>
     <!-- ############ End of Dashboard ############ -->
 
