@@ -70,7 +70,7 @@
         <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
         <item name="fwf__fab_widget_icon_tint">@color/cigna_blue</item>
         <item name="fwf__fab_widget_alternative_tint">@color/cigna_orange_light</item>
-        <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_light</item>
+        <item name="fwf__fab_widget_ripple_color">@color/mdl__light_gray</item>
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
     </style>
@@ -81,7 +81,7 @@
         <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
         <item name="fwf__fab_widget_icon_tint">@android:color/white</item>
         <item name="fwf__fab_widget_alternative_tint">@android:color/white</item>
-        <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_light</item>
+        <item name="fwf__fab_widget_ripple_color">@color/mdl__light_gray</item>
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
     </style>
