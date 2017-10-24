@@ -24,7 +24,8 @@
         </item>
         <!-- File chooser background color -->
         <item name="fwf__file_chooser_dialog_background">@color/cigna_blue2</item>
-        <!--Find a Provider inner Title Text Color, plus-->
+        <!--Find a Provider inner Title Text Color, and for Medication, Allergies, -->
+        <!--Pre-Conditions, and Procedures default background Text color.-->
         <item name="rodeo__page_title_style">@style/cigna__PageTitleStyle</item>
         <item name="rodeo__page_smaller_instructions_style">
             @style/cigna__PageSmallerInstructionsStyle
