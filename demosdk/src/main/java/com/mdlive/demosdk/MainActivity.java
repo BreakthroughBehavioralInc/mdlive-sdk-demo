@@ -45,21 +45,6 @@ public class MainActivity extends AppCompatActivity {
         Calendar birthdateCalendar = GregorianCalendar.getInstance();
         birthdateCalendar.set(1985, 3, 10);
 
-
-  /*      String str = "10-04-1985";
-        Date dt = null;
-        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
-        try {
-            dt = formatter.parse(str);
-            birthdateCalendar.setTime(dt);
-            Log.v("Emilio", "dt ==> "+dt.toString());
-            Log.v("Emilio", "birthdateCalendar ==> "+birthdateCalendar.toString());
-            Log.v("Emilio", "birthdateCalendar.getTime() ==> "+birthdateCalendar.getTime());
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-*/
-
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
                 .ou("Cigna")
                 .firstName("Bella")
