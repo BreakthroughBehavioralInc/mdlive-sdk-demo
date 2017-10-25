@@ -51,6 +51,9 @@
 
         <item name="mdl__sso_dashboard_style">@style/cigna__SsoDashboardStyle</item>
 
+        <!--Family Memeber's Image default circle place holder.-->
+        <item name="fwf__circle_image_default_src">@drawable/fwf__cigna_blue_circle</item>
+
         <item name="fwf__user_profile_widget_style">@style/cigna__UserProfileWidgetStyle</item>
         <item name="fwf__switch_user_account_item_style">@style/cigna__SwitchUserAccountItemStyle
         </item>
@@ -75,7 +78,7 @@
         <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
     </style>
 
-    <style name="cigna_DialogActivityStyle" parent="rodeo__DialogActivityStyle">
+    <style name="cigna_DialogActivityStyle" parent="@style/rodeo__DialogActivityStyle">
         <!--General FAB Styles -->
         <item name="fwf__fab_widget_background_tint">@color/cigna_blue2</item>
         <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
@@ -84,6 +87,8 @@
         <item name="fwf__fab_widget_ripple_color">@color/cigna_orange_dark</item>
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
+        <!--Family Memeber's Image default circle place holder.-->
+        <item name="fwf__circle_image_default_src">@drawable/fwf__cigna_blue_circle</item>
     </style>
     <!-- ############ End of Custom Base Style ############ -->
 
@@ -208,7 +213,6 @@
         <item name="backgroundTint">@android:color/white</item>
         <item name="android:textColor">@color/cigna_blue_light</item>
     </style>
-
     <!-- ##### End of User profile widget style #### -->
     <!-- ######################## End of pecific Custom Styles ######################## -->
 
