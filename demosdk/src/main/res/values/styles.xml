@@ -212,7 +212,7 @@
 
     <style name="cigna__FindProviderButtonStyle" parent="@style/mdl__FindProviderButtonStyle">
         <item name="backgroundTint">@android:color/white</item>
-        <item name="android:textColor">@color/mycigna_blue_logo</item>
+        <item name="android:textColor">@color/cigna_orange_light</item>
     </style>
     <!-- ##### End of User profile widget style #### -->
     <!-- ######################## End of pecific Custom Styles ######################## -->
@@ -237,7 +237,7 @@
             @color/cigna_blue2
         </item>
 
-        <item name="mdl__switch_user_arrow_tint_color">@color/cigna_orange_light</item>
+        <item name="mdl__switch_user_arrow_tint_color">@color/mdl__white</item>
 
         <item name="mdl__text_under_find_provider_text_appearance">
             @style/cigna__TextUnderFindProviderTextAppearance
@@ -281,8 +281,8 @@
 
     <style name="cigna__SsoDashboardCardViewStyle" parent="@style/fwf__SsoDashboardCardViewStyle">
         <item name="fwf__sso_dashboard_card_view_icon_tint_color">@color/cigna_orange_light</item>
-        <item name="fwf__sso_dashboard_card_view_title_text_color">@color/mycigna_blue_logo</item>
-        <item name="fwf__sso_dashboard_card_view_summary_text_color">@color/mycigna_blue_logo</item>
+        <item name="fwf__sso_dashboard_card_view_title_text_color">@color/mdl__black</item>
+        <item name="fwf__sso_dashboard_card_view_summary_text_color">@color/mdl__black</item>
         <item name="fwf__sso_dashboard_card_view_divider_color">@android:color/darker_gray</item>
     </style>
 
@@ -302,7 +302,7 @@
     </style>
 
     <style name="cigna__FamilyMemberChooserDialogTitleTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Title">
-        <item name="android:textColor">@color/cigna_blue2</item>
+        <item name="android:textColor">@color/mdl__white</item>
     </style>
 
     <style name="cigna__TextUnderFindProviderTextAppearance" parent="@style/mdl__TextUnderFindProviderTextAppearance">
