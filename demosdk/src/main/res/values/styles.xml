@@ -41,6 +41,8 @@
         <item name="fwf__card_view_style">@style/cigna__CardViewStyle</item>
         <!-- Dashboard Appointment card views -->
         <item name="fwf__appointment_card_view_style">@style/cigna__AppointmentCardViewStyle</item>
+        <!-- See a Family Physician - Search for a Provider Button card views -->
+        <item name="fwf__provider_search_button_card_view_style">@style/cigna__ProviderSearchButtonCardViewStyle</item>
         <item name="fwf__radio_card_view_style">@style/cigna__RadioCardViewStyle</item>
 
         <!-- Payment and CC Subhead -->
@@ -169,7 +171,15 @@
         <item name="fwf__appointment_provider_text_color">@color/cigna_blue</item>
         <item name="fwf__provider_specialty_text_color">@color/cigna_blue_light</item>
     </style>
+    <!-- ##### End of Dashboard Appointment Card View #### -->
     <!-- ##### End of Find a provider, Provider List Card View #### -->
+
+    <!-- ##### See a Physician - Search for a Provider Button Card View #### -->
+    <style name="cigna__ProviderSearchButtonCardViewStyle" parent="@style/fwf__ProviderSearchButtonCardViewStyle">
+        <item name="fwf__provider_search_button_background_color">@android:color/white</item>
+        <item name="fwf__provider_search_button_text_icon_color">@color/cigna_blue</item>
+    </style>
+    <!-- ##### End of See a Physician - Search for a Provider Button Card View #### -->
 
     <!-- ##### Payment and CC Subhead #### -->
     <style name="cigna__SubheadBarPaymentStyle" parent="@style/fwf__SubheadBarPaymentStyle">
