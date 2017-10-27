@@ -16,4 +16,6 @@
     <string name="find_provider_label_phone_number">Preferred Contact Number</string>
     <!--Removed "..." at end of sentence.-->
     <string name="find_provider_watermark_reason">Enter your symptoms here</string>
+    <!-- dashboard - Search for Providers button text-->
+    <string name="mdl__dashboard_find_a_provider">Search for Providers</string>
 </resources>
