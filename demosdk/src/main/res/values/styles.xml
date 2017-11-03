@@ -257,7 +257,6 @@
         <!--<item name="mdl__sso_dashboard_title_icon">@null</item>-->
         <!-- Text to use as title, this must be a string resource -->
         <item name="mdl__sso_dashboard_title_text">@string/dashboard_title</item>
-        <item name="mdl__sso_dashboard_title_text_gravity">@string/dashboard_title</item>
 
         <!-- Layout to be used as header, if we change this layout the next header styles will be ignored -->
         <!--<item name="mdl__sso_dashboard_header_layout">@layout/mdl__sso_dashboard_header</item>-->
