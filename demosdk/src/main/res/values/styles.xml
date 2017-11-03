@@ -86,6 +86,10 @@
         <item name="fwf__fab_widget_ripple_color">@color/mdl__light_gray</item>
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">@color/cigna_orange_light</item>
+        <item name="rodeo__find_provider_check_availability_main_message">
+            @string/find_provider_check_availability_main_message</item>
+        <item name="rodeo__find_provider_check_availability_wait_message">
+            @string/find_provider_check_availability_wait_message</item>
     </style>
 
     <style name="cigna_DialogActivityStyle" parent="@style/rodeo__DialogActivityStyle">
@@ -160,7 +164,7 @@
     <!-- ##### Find a provider, Provider List Card View #### -->
     <style name="cigna__CardViewStyle" parent="@style/fwf__CardViewStyle">
         <!-- Ripple effect for card view -->
-        <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
+        <item name="colorControlHighlight">@color/cigna_orange_light</item>
     </style>
     <!-- ##### Dashboard Appointment Card View #### -->
     <style name="cigna__AppointmentCardViewStyle" parent="fwf__AppointmentCardViewStyle">

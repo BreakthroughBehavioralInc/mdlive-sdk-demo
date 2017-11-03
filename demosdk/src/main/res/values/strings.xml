@@ -18,4 +18,6 @@
     <string name="find_provider_watermark_reason">Enter your symptoms here</string>
     <!-- dashboard - Search for Providers button text-->
     <string name="mdl__dashboard_find_a_provider">Search for Providers</string>
+    <string name="find_provider_check_availability_main_message">Cigna to display whatever they like here..</string>
+    <string name="find_provider_check_availability_wait_message">Hold on, wait a minute.  Let me put some Cigna in it!</string>
 </resources>
