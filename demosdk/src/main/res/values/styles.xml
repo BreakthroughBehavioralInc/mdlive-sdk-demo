@@ -11,6 +11,10 @@
     <!--MDLive Styles -->
     <!-- ############ Custom Base Style ############ -->
     <style name="cigna_ActivityStyle" parent="rodeo__ActivityStyle">
+        <!--ActionBar - customize back/home button. -->
+        <item name="homeAsUpIndicator">@drawable/rodeo__activity_cancel_icon</item>
+        <item name="windowActionBarOverlay">false</item>
+        <!-- Support library compatibility -->
         <item name="rodeo__app_name">@string/cigna</item>
         <!-- Select a Provider Lets get started screen background color. -->
         <item name="rodeo__menu_background">@color/mycigna_blue_logo</item>
@@ -79,7 +83,11 @@
         <item name="fwf__fab_widget_alternative_tint">@color/cigna_orange_light</item>
         <item name="fwf__fab_widget_ripple_color">@color/mdl__light_gray</item>
         <!-- Ripple effect for touchable views -->
-        <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
+        <item name="colorControlHighlight">@color/mdl__light_gray</item>
+        <item name="rodeo__find_provider_check_availability_main_message">
+            @string/find_provider_check_availability_main_message</item>
+        <item name="rodeo__find_provider_check_availability_wait_message">
+            @string/find_provider_check_availability_wait_message</item>
     </style>
 
     <style name="cigna_DialogActivityStyle" parent="@style/rodeo__DialogActivityStyle">
@@ -90,7 +98,7 @@
         <item name="fwf__fab_widget_alternative_tint">@android:color/white</item>
         <item name="fwf__fab_widget_ripple_color">@color/mdl__light_gray</item>
         <!-- Ripple effect for touchable views -->
-        <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
+        <item name="colorControlHighlight">@color/mdl__light_gray</item>
         <!--Family Memeber's Image default circle place holder.-->
         <!--<item name="fwf__circle_image_default_src">@drawable/fwf__cigna_blue_circle</item>-->
         <!-- Provider Profile background Drawable or Color.-->
@@ -147,14 +155,14 @@
         <item name="fwf__radio_card_view_selected_background_color">@color/cigna_blue_light
         </item>
         <!-- Ripple effect for radio card view -->
-        <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
+        <item name="colorControlHighlight">@color/mdl__light_gray</item>
     </style>
     <!-- ##### End of Find a provider, Availability and consultation #### -->
 
     <!-- ##### Find a provider, Provider List Card View #### -->
     <style name="cigna__CardViewStyle" parent="@style/fwf__CardViewStyle">
         <!-- Ripple effect for card view -->
-        <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
+        <item name="colorControlHighlight">@color/mdl__light_gray</item>
     </style>
     <!-- ##### Dashboard Appointment Card View #### -->
     <style name="cigna__AppointmentCardViewStyle" parent="fwf__AppointmentCardViewStyle">
