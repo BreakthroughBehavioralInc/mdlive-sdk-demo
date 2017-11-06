@@ -61,8 +61,6 @@
         <item name="fwf__provider_profile_default_image">@color/cigna_blue2</item>
 
         <item name="fwf__user_profile_widget_style">@style/cigna__UserProfileWidgetStyle</item>
-        <item name="fwf__switch_user_account_item_style">@style/cigna__SwitchUserAccountItemStyle
-        </item>
 
         <item name="fwf__dashboard_card_view_button_style">
             @style/cigna__DashboardCardViewButtonStyle
@@ -94,7 +92,7 @@
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">?attr/fwf__fab_widget_ripple_color</item>
         <!--Family Memeber's Image default circle place holder.-->
-        <item name="fwf__circle_image_default_src">@drawable/fwf__cigna_blue_circle</item>
+        <!--<item name="fwf__circle_image_default_src">@drawable/fwf__cigna_blue_circle</item>-->
         <!-- Provider Profile background Drawable or Color.-->
         <item name="fwf__provider_profile_default_image">@color/cigna_blue2</item>
     </style>
@@ -199,25 +197,6 @@
     <style name="cigna__UserProfileWidgetStyle" parent="@style/fwf__UserProfileWidgetStyle">
         <item name="fillerTextColor">@color/mycigna_blue_logo</item>
         <item name="profilePictureBackgroundColor">@android:color/white</item>
-    </style>
-
-    <style name="cigna__SwitchUserAccountItemStyle" parent="@style/fwf__SwitchUserAccountItemStyle">
-        <item name="fillerTextColor">@android:color/white</item>
-        <item name="profilePictureBackgroundColor">@color/mycigna_blue_logo</item>
-        <item name="lineOneTextAppearance">
-            @style/cigna__UserProfileWidgetStyleLineOneTextAppearance
-        </item>
-        <item name="lineTwoTextAppearance">
-            @style/cigna__UserProfileWidgetStyleLineTwoTextAppearance
-        </item>
-    </style>
-
-    <style name="cigna__UserProfileWidgetStyleLineOneTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Body1">
-        <item name="android:textColor">@android:color/white</item>
-    </style>
-
-    <style name="cigna__UserProfileWidgetStyleLineTwoTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Caption">
-        <item name="android:textColor">@android:color/white</item>
     </style>
 
     <style name="cigna__DashboardCardViewButtonStyle" parent="@style/fwf__DashboardCardViewButtonStyle">
@@ -329,6 +308,27 @@
         <item name="mdl__family_member_chooser_dialog_title_text_appearance">
             @style/cigna__FamilyMemberChooserDialogTitleTextAppearance
         </item>
+        <item name="fwf__switch_user_account_item_style">@style/cigna__SwitchUserAccountItemStyle
+        </item>
+    </style>
+
+    <style name="cigna__SwitchUserAccountItemStyle" parent="@style/fwf__SwitchUserAccountItemStyle">
+        <item name="fillerTextColor">@android:color/white</item>
+        <item name="profilePictureBackgroundColor">@color/mycigna_blue_logo</item>
+        <item name="lineOneTextAppearance">
+            @style/cigna__UserProfileWidgetStyleLineOneTextAppearance
+        </item>
+        <item name="lineTwoTextAppearance">
+            @style/cigna__UserProfileWidgetStyleLineTwoTextAppearance
+        </item>
+    </style>
+
+    <style name="cigna__UserProfileWidgetStyleLineOneTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="cigna__UserProfileWidgetStyleLineTwoTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
     <style name="cigna__FamilyMemberChooserDialogTitleTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Title">
