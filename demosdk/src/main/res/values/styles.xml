@@ -90,6 +90,10 @@
             @string/find_provider_check_availability_main_message</item>
         <item name="rodeo__find_provider_check_availability_wait_message">
             @string/find_provider_check_availability_wait_message</item>
+        <!-- 'Clear' button effect for card view -->
+        <item name="fwf__data_reset_image_src">@null</item>
+        <!-- Phone Number card views - Treatment for 'Clear' icon. -->
+        <item name="fwf__phone_number_card_view_style">@style/cigna__PhoneCardViewStyle</item>
     </style>
 
     <style name="cigna_DialogActivityStyle" parent="@style/rodeo__DialogActivityStyle">
@@ -105,6 +109,7 @@
         <item name="fwf__circle_image_default_src">@drawable/fwf__cigna_blue_circle</item>
         <!-- Provider Profile background Drawable or Color.-->
         <item name="fwf__provider_profile_default_image">@color/cigna_blue2</item>
+        <item name="fwf__phone_number_card_view_style">@style/cigna__PhoneCardViewStyle</item>
     </style>
     <!-- ############ End of Custom Base Style ############ -->
 
@@ -166,8 +171,13 @@
         <!-- Ripple effect for card view -->
         <item name="colorControlHighlight">@color/cigna_orange_light</item>
     </style>
+    <!-- ##### Find a provider, Phone Number Card View #### -->
+    <style name="cigna__PhoneCardViewStyle" parent="@style/fwf__PhoneCardViewStyle">
+        <!-- 'Clear' button effect for card view -->
+        <item name="fwf__data_reset_image_src">@null</item>
+    </style>
     <!-- ##### Dashboard Appointment Card View #### -->
-    <style name="cigna__AppointmentCardViewStyle" parent="fwf__AppointmentCardViewStyle">
+    <style name="cigna__AppointmentCardViewStyle" parent="@style/fwf__AppointmentCardViewStyle">
         <item name="fwf__videocam_icon_accent_2">@drawable/fwf__videocam_icon_accent_2</item>
         <item name="fwf__appointment_videocam_tint">@color/cigna_blue</item>
         <item name="fwf__call_icon_accent_2">@drawable/fwf__call_icon_accent_2</item>
