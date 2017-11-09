@@ -35,6 +35,9 @@
         <item name="rodeo__page_smaller_instructions_style">
             @style/cigna__PageSmallerInstructionsStyle
         </item>
+        <item name="rodeo__page_smaller_notes_style">
+            @style/cigna__PageSmallerNotesStyle
+        </item>
         <!-- Reason for Visit - Upload Button Style -->
         <item name="fwf__upload_photo_button_style">@style/cigna__UploadPhotoButtonStyle</item>
         <!-- Medical History - Card View -->
@@ -127,8 +130,17 @@
     <style name="cigna__PageTitleStyle" parent="rodeo__PageTitleStyle">
         <item name="android:textColor">@android:color/white</item>
     </style>
+   <!-- My Pharmacy Intructions text. -->
     <style name="cigna__PageSmallerInstructionsStyle" parent="rodeo__PageSmallerInstructionsStyle">
         <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!-- My Pharmacy NOTE: text. -->
+    <style name="cigna__PageSmallerNotesStyle" parent="rodeo__PageSmallerNotesStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:text">@string/find_provider_pharmacy_note</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:visibility">visible</item>
     </style>
     <!--Configuration for 'Upload a Photo' 2nd card on Reason for Visit screen.-->
     <style name="cigna__UploadPhotoButtonStyle" parent="fwf__UploadPhotoButtonStyle">
