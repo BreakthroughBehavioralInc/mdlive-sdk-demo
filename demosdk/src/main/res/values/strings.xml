@@ -7,6 +7,7 @@
     <string name="dashboard_text">Find the best care available from a provider near you.</string>
     <string name="dashboard_footer"></string>
     <string name="cigna">CIGNA</string>
+    <string name="find_provider_see_a_provider">Choose a %1$s</string>
 
     <!--This string replaces the Screen title 'Find a Provider'.-->
     <string name="page_title__find_provider">Select a Provider</string>
