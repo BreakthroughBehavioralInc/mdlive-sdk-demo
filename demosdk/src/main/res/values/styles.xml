@@ -95,6 +95,11 @@
         <item name="fwf__data_reset_image_src">@null</item>
         <!-- Phone Number card views - Treatment for 'Clear' icon. -->
         <item name="fwf__phone_number_card_view_style">@style/cigna__PhoneCardViewStyle</item>
+
+        <!-- Expiration Token Error Message Dialog -->
+        <item name="mdl__expired_token_error_title">@string/mdl__expired_token_error_title</item>
+        <item name="mdl__expired_token_error_message">@string/mdl__expired_token_error_message
+        </item>
     </style>
 
     <style name="cigna_DialogActivityStyle" parent="@style/rodeo__DialogActivityStyle">
