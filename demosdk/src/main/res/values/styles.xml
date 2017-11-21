@@ -50,7 +50,6 @@
         <item name="fwf__appointment_card_view_style">@style/cigna__AppointmentCardViewStyle</item>
         <!-- See a Family Physician - Search for a Provider Button card views -->
         <item name="fwf__provider_search_button_card_view_style">@style/cigna__ProviderSearchButtonCardViewStyle</item>
-        <item name="fwf__radio_card_view_style">@style/cigna__RadioCardViewStyle</item>
 
         <!-- Payment and CC Subhead -->
         <item name="fwf__subhead_bar_payment_style">@style/cigna__SubheadBarPaymentStyle</item>
@@ -99,6 +98,39 @@
         <!-- Expiration Token Error Message Dialog -->
         <item name="mdl__expired_token_error_title">@string/mdl__expired_token_error_title</item>
         <item name="mdl__expired_token_error_message">@string/mdl__expired_token_error_message
+        </item>
+
+        <!-- Search provider chip filter -->
+        <item name="fwf__chip_item_provider_list_style">@style/cigna_ChipItemProviderListStyle
+        </item>
+        <item name="fwf__chip_item_provider_search_criteria_style">
+            @style/cigna_ChipItemProviderSearchCriteriaStyle
+        </item>
+
+        <!-- Find a provider, Availability and Consultation Type -->
+        <item name="fwf__radio_card_view_background_color">
+            @color/cigna__radio_card_view_background_color_selector
+        </item>
+        <item name="fwf__radio_card_view_text_color">
+            @color/cigna__radio_card_view_text_color_selector
+        </item>
+    </style>
+
+    <style name="cigna_ChipItemProviderListStyle" parent="@style/fwf__ChipItemStyle">
+        <item name="fwf__chip_item_background">@drawable/cigna__chip_white_background</item>
+        <item name="fwf__chip_item_label_text_color">@android:color/white</item>
+        <item name="fwf__chip_item_text_color">@color/cigna_blue_light</item>
+        <item name="fwf__chip_item_remove_icon">
+            @drawable/cigna__white_chip_remove_button_background
+        </item>
+    </style>
+
+    <style name="cigna_ChipItemProviderSearchCriteriaStyle" parent="@style/fwf__ChipItemStyle">
+        <item name="fwf__chip_item_background">@drawable/cigna__chip_blue_background</item>
+        <item name="fwf__chip_item_label_text_color">@color/mdl__gray</item>
+        <item name="fwf__chip_item_text_color">@android:color/white</item>
+        <item name="fwf__chip_item_remove_icon">
+            @drawable/cigna__blue_chip_remove_button_background
         </item>
     </style>
 
@@ -170,16 +202,6 @@
         <item name="fwf__question_card_view_arrow_tint_color">@color/cigna_orange_light</item>
     </style>
     <!-- ##### End of Find a provider, Medical History #### -->
-
-    <!-- ##### Find a provider, Availability and consultation #### -->
-    <style name="cigna__RadioCardViewStyle" parent="@style/fwf__RadioCardViewStyle">
-        <!-- This is just for reference purposes only. Pleas go to parent to see  what attributes can be overridden -->
-        <item name="fwf__radio_card_view_selected_background_color">@color/cigna_blue_light
-        </item>
-        <!-- Ripple effect for radio card view -->
-        <item name="colorControlHighlight">@color/mdl__light_gray</item>
-    </style>
-    <!-- ##### End of Find a provider, Availability and consultation #### -->
 
     <!-- ##### Find a provider, Provider List Card View #### -->
     <style name="cigna__CardViewStyle" parent="@style/fwf__CardViewStyle">

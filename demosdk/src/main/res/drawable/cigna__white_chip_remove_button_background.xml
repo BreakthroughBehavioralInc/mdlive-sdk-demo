@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+
+            <solid android:color="@color/cigna_blue_light" />
+            <size
+                android:width="5dp"
+                android:height="5dp" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/cigna__white_close_icon" />
+</layer-list>
