@@ -15,9 +15,6 @@ import com.mdlive.mdlcore.fwfrodeo.fwf.enumz.FwfState;
 import com.mdlive.mdlcore.model.MdlSSODetail;
 import com.mdlive.mdlcore.model.MdlUserSession;
 
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.functions.Func1;
@@ -42,17 +39,14 @@ public class MainActivity extends AppCompatActivity {
     public void enterSDK(View v) {
         showProgressBar(true);
 
-        Calendar birthdateCalendar = GregorianCalendar.getInstance();
-        birthdateCalendar.set(1985, 3, 10);
-
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
                 .ou("Cigna")
                 .firstName("Bella")
                 .lastName("Fraser")
                 .gender(FwfSSOGender.MALE)
-                .birthdate(birthdateCalendar.getTime())
-                .subscriberId("11627701")
-                .memberId("bellafraser|1511546711.504219|M2FkYzY5ODRkN2EyYWVkYjk0N2YzMTQ1YmFkNDJlMDc2MTE5MTAzMmJlN2Q2NTE4ZTQyZjgyOGJmNzM5NjFhZQ==")
+                .birthdate("10-04-1985")
+                .subscriberId("10067837300")
+                .memberId("bellafraser|1513872066.5573735|NTQxMDkwNjc0YTU1M2U4MjU5MzQ0M2E5MGQyOGVjOTE4YmUwYzk1NzU3YzBlODY3ZjY0NDhhODI4NTYwYTEzMw==")
                 .phone("555-555-5555")
                 .email("ahadida@mdlive.com")
                 .address1("address1")
