@@ -129,6 +129,11 @@
             android:theme="@style/cigna_ActivityStyle"
             tools:replace="android:theme" />
 
+        <activity
+            android:name="com.mdlive.mdlcore.activity.callsupport.MdlCallSupportActivity"
+            android:theme="@style/cigna_DialogActivityStyle"
+            tools:replace="android:theme" />
+
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.mdlive.demosdk.fileprovider"
