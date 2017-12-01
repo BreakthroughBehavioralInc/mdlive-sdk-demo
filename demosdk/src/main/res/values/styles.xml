@@ -114,6 +114,8 @@
         <item name="fwf__radio_card_view_text_color">
             @color/cigna__radio_card_view_text_color_selector
         </item>
+        <item name="fwf__fab_call_widget_style">@style/cigna__FabWidgetStyleCall</item>
+        <item name="rodeo__button_dialog_cancel_style">@style/cigna__ButtonDialogCancelStyle</item>
     </style>
 
     <style name="cigna_ChipItemProviderListStyle" parent="@style/fwf__ChipItemStyle">
@@ -148,6 +150,8 @@
         <!-- Provider Profile background Drawable or Color.-->
         <item name="fwf__provider_profile_default_image">@color/cigna_blue2</item>
         <item name="fwf__phone_number_card_view_style">@style/cigna__PhoneCardViewStyle</item>
+        <item name="fwf__fab_call_widget_style">@style/cigna__FabWidgetStyleCall</item>
+        <item name="rodeo__button_dialog_cancel_style">@style/cigna__ButtonDialogCancelStyle</item>
     </style>
     <!-- ############ End of Custom Base Style ############ -->
 
@@ -255,7 +259,7 @@
         <item name="fillerTextColor">@color/mycigna_blue_logo</item>
         <item name="profilePictureBackgroundColor">@android:color/white</item>
     </style>
-
+    <!-- ##### End of User profile widget style #### -->
     <style name="cigna__DashboardCardViewButtonStyle" parent="@style/fwf__DashboardCardViewButtonStyle">
         <item name="backgroundTint">@color/cigna_orange_light</item>
         <item name="android:textColor">@color/mycigna_blue_logo</item>
@@ -280,8 +284,17 @@
         <item name="android:textColor">@color/cigna_orange_light</item>
         <item name="android:text">@string/mdl__dashboard_find_a_provider</item>
     </style>
-    <!-- ##### End of User profile widget style #### -->
-    <!-- ######################## End of pecific Custom Styles ######################## -->
+    <!-- ##### Dashboard Appointment card Cancel Popup attributes #### -->
+    <style name="cigna__FabWidgetStyleCall" parent="@style/fwf__FabWidgetStyle.Call">
+        <item name="backgroundTint">@color/cigna_blue</item>
+    </style>
+    <style name="cigna__ButtonDialogCancelStyle" parent="@style/fwf__ButtonDialogCancelStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/cigna_blue</item>
+    </style>
+    <!-- ##### End of Dashboard Appointment card Cancel Popup attributes #### -->
+    <!-- ######################## End of specific Custom Styles ######################## -->
 
     <!-- ############ Dashboard ############ -->
     <style name="cigna__SsoDashboardStyle" parent="mdl__SsoDashboardStyle">
