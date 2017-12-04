@@ -370,8 +370,8 @@
     </style>
 
     <style name="cigna__SwitchUserAccountItemStyle" parent="@style/fwf__SwitchUserAccountItemStyle">
-        <item name="fillerTextColor">@android:color/white</item>
-        <item name="profilePictureBackgroundColor">@color/mycigna_blue_logo</item>
+        <item name="fillerTextColor">@color/mycigna_blue_logo</item>
+        <item name="profilePictureBackgroundColor">@android:color/white</item>
         <item name="lineOneTextAppearance">
             @style/cigna__UserProfileWidgetStyleLineOneTextAppearance
         </item>
