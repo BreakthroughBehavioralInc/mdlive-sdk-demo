@@ -116,7 +116,27 @@
         </item>
         <item name="fwf__fab_call_widget_style">@style/cigna__FabWidgetStyleCall</item>
         <item name="rodeo__button_dialog_cancel_style">@style/cigna__ButtonDialogCancelStyle</item>
+
+        <!-- Provider Profile Buttons -->
+        <item name="fwf__provider_profile_primary_button_style">
+            @style/cigna__ProviderProfilePrimaryButtonStyle
+        </item>
+        <item name="fwf__provider_profile_secondary_button_style">
+            @style/cigna__ProviderProfileSecondaryButtonStyle
+        </item>
     </style>
+
+    <!-- Provider Profile Buttons -->
+    <style name="cigna__ProviderProfilePrimaryButtonStyle" parent="@style/fwf__ProviderProfilePrimaryButtonStyle">
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/cigna_blue_light</item>
+    </style>
+
+    <style name="cigna__ProviderProfileSecondaryButtonStyle" parent="@style/fwf__ProviderProfileSecondaryButtonStyle">
+        <item name="backgroundTint">@color/cigna_blue_light</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!-- END Provider Profile Buttons -->
 
     <style name="cigna_ChipItemProviderListStyle" parent="@style/fwf__ChipItemStyle">
         <item name="fwf__chip_item_background">@drawable/cigna__chip_white_background</item>
