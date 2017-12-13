@@ -126,6 +126,7 @@
         <item name="fwf__provider_profile_secondary_button_style">
             @style/cigna__ProviderProfileSecondaryButtonStyle
         </item>
+        <item name="fwf__hyperlink_text_color">@color/cigna_blue</item>
     </style>
 
     <!-- Provider Profile Buttons -->
