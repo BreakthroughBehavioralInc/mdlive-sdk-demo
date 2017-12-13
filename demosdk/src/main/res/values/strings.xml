@@ -26,6 +26,6 @@
     <string name="find_provider_pharmacy_note">Note: Out-of-network pharmacies may not be displayed here. Select an in-network pharmacy to keep out-of-pocket costs lower. </string>
 
     <!-- find provider - request appointment -->
-    <string name="find_provider_request_appointment_instructions">"Please enter the following information so that we can help you request an appointment"</string>
+    <string name="find_provider_request_appointment_instructions">"Please enter the following information so that we can help you setup your appointment"</string>
 
 </resources>
