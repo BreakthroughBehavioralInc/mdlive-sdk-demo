@@ -127,7 +127,18 @@
             @style/cigna__ProviderProfileSecondaryButtonStyle
         </item>
         <item name="fwf__hyperlink_text_color">@color/cigna_blue</item>
+
+        <!-- Provider Visit Buttons -->
+        <item name="mdl__provider_visit_buttons_style">@style/cigna__ProviderVisitButtonsStyle
+        </item>
+        <!-- END Provider Visit Buttons -->
     </style>
+
+    <!-- Provider Visit Buttons -->
+    <style name="cigna__ProviderVisitButtonsStyle" parent="@style/mdl__ProviderVisitButtonsStyle">
+        <item name="mdl__provider_visit_button_background_tint">@color/cigna_blue_light</item>
+    </style>
+    <!-- END Provider Visit Buttons -->
 
     <!-- Provider Profile Buttons -->
     <style name="cigna__ProviderProfilePrimaryButtonStyle" parent="@style/fwf__ProviderProfilePrimaryButtonStyle">
