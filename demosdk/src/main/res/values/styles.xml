@@ -20,7 +20,8 @@
         <item name="rodeo__menu_background">@color/mycigna_blue_logo</item>
         <!-- 'Reason for Visit' Card 1 backgrounf color.-->
         <item name="fwf__card_view_background_color">@android:color/white</item>
-        <item name="fwf__spinner_hint_text_color">@color/mycigna_blue_logo</item>
+        <item name="mdl__preferred_method_of_consultation_label_color">@color/mycigna_blue_logo
+        </item>
         <!-- ActionBar - ProgressBar color -->
         <item name="fwf__wizard_progress_bar_style">@style/cigna__ProgressBar_Horizontal</item>
         <item name="fwf__progress_bar_indeterminate_tint_color">@color/cigna_orange_light</item>
@@ -125,7 +126,19 @@
         <item name="fwf__provider_profile_secondary_button_style">
             @style/cigna__ProviderProfileSecondaryButtonStyle
         </item>
+        <item name="fwf__hyperlink_text_color">@color/cigna_blue</item>
+
+        <!-- Provider Visit Buttons -->
+        <item name="mdl__provider_visit_buttons_style">@style/cigna__ProviderVisitButtonsStyle
+        </item>
+        <!-- END Provider Visit Buttons -->
     </style>
+
+    <!-- Provider Visit Buttons -->
+    <style name="cigna__ProviderVisitButtonsStyle" parent="@style/mdl__ProviderVisitButtonsStyle">
+        <item name="mdl__provider_visit_button_background_tint">@color/cigna_blue_light</item>
+    </style>
+    <!-- END Provider Visit Buttons -->
 
     <!-- Provider Profile Buttons -->
     <style name="cigna__ProviderProfilePrimaryButtonStyle" parent="@style/fwf__ProviderProfilePrimaryButtonStyle">

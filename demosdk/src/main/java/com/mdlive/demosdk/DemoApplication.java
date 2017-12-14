@@ -5,6 +5,7 @@ import android.support.multidex.MultiDexApplication;
 
 import com.mdlive.mdlcore.application.configuration.MdlBootstrap;
 import com.mdlive.mdlcore.application.configuration.MdlConfiguration;
+import com.mdlive.mdlcore.fwfrodeo.fwf.model.FwfMapConfiguration;
 import com.mdlive.mdlcore.fwfrodeo.fwf.widget.FwfPhoneNumberWidget;
 import com.mdlive.mdlcore.tracker.analytics.engines.AnalyticsEngine;
 
@@ -24,6 +25,11 @@ public class DemoApplication extends MultiDexApplication {
                 .isSSOsession(true)
                 .shouldConfirmWizardsExit(false)
                 .phoneNumberFormatter(CignaPhoneNumberFormatter.getInstance())
+                .mapConfiguration(FwfMapConfiguration.builder()
+                        .userLocationMarkerColor(FwfMapConfiguration.MarkerColor.AZURE)
+                        .defaultPharmacyMarkerColor(FwfMapConfiguration.MarkerColor.RED)
+                        .selectedPharmacyMarkerColor(FwfMapConfiguration.MarkerColor.RED)
+                        .build())
                 .defaultFirebaseFilename("mdlive__firebase_defaults.json");
         MdlBootstrap.start(this, configuration);
     }
