@@ -126,7 +126,7 @@
         <item name="fwf__provider_profile_secondary_button_style">
             @style/cigna__ProviderProfileSecondaryButtonStyle
         </item>
-        <item name="fwf__hyperlink_text_color">@color/cigna_blue</item>
+        <item name="fwf__hyperlink_text_color">@color/cigna_blue2</item>
 
         <!-- Provider Visit Buttons -->
         <item name="mdl__provider_visit_buttons_style">@style/cigna__ProviderVisitButtonsStyle
@@ -136,18 +136,19 @@
 
     <!-- Provider Visit Buttons -->
     <style name="cigna__ProviderVisitButtonsStyle" parent="@style/mdl__ProviderVisitButtonsStyle">
-        <item name="mdl__provider_visit_button_background_tint">@color/cigna_blue_light</item>
+        <item name="mdl__provider_visit_button_background_tint">@color/cigna_blue2</item>
     </style>
     <!-- END Provider Visit Buttons -->
 
     <!-- Provider Profile Buttons -->
+    <!-- Request Appointment button -->
     <style name="cigna__ProviderProfilePrimaryButtonStyle" parent="@style/fwf__ProviderProfilePrimaryButtonStyle">
         <item name="backgroundTint">@android:color/white</item>
-        <item name="android:textColor">@color/cigna_blue_light</item>
+        <item name="android:textColor">@color/cigna_blue2</item>
     </style>
 
     <style name="cigna__ProviderProfileSecondaryButtonStyle" parent="@style/fwf__ProviderProfileSecondaryButtonStyle">
-        <item name="backgroundTint">@color/cigna_blue_light</item>
+        <item name="backgroundTint">@color/cigna_blue2</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
     <!-- END Provider Profile Buttons -->
@@ -155,7 +156,7 @@
     <style name="cigna_ChipItemProviderListStyle" parent="@style/fwf__ChipItemStyle">
         <item name="fwf__chip_item_background">@drawable/cigna__chip_white_background</item>
         <item name="fwf__chip_item_label_text_color">@android:color/white</item>
-        <item name="fwf__chip_item_text_color">@color/cigna_blue_light</item>
+        <item name="fwf__chip_item_text_color">@color/cigna_blue2</item>
         <item name="fwf__chip_item_remove_icon">
             @drawable/cigna__white_chip_remove_button_background
         </item>
