@@ -109,6 +109,9 @@
             @style/cigna_ChipItemProviderSearchCriteriaStyle
         </item>
 
+        <!-- TextView text entry cursor color -->
+        <item name="fwf__EditTextStyle">@style/cigna__EditTextStyle</item>
+
         <!-- Find a provider, Availability and Consultation Type -->
         <item name="fwf__radio_card_view_background_color">
             @color/cigna__radio_card_view_background_color_selector
@@ -132,6 +135,8 @@
         <item name="mdl__provider_visit_buttons_style">@style/cigna__ProviderVisitButtonsStyle
         </item>
         <!-- END Provider Visit Buttons -->
+        <!-- Text` entry field under-line -->
+        <item name="fwf__focus_view_color">@color/cigna_blue</item>
     </style>
 
     <!-- Provider Visit Buttons -->
@@ -170,6 +175,13 @@
         </item>
     </style>
 
+    <!-- All Text Entry Cursor Color -->
+    <style name="cigna__EditTextStyle" parent="fwf__DefaultWidgetStyle">
+        <item name="colorControlNormal">@color/cigna_blue</item>
+        <item name="colorControlActivated">@color/cigna_blue</item>
+        <item name="colorControlHighlight">@color/mdl__white</item>
+    </style>
+
     <style name="cigna_DialogActivityStyle" parent="@style/rodeo__DialogActivityStyle">
         <!--General FAB Styles -->
         <item name="fwf__fab_widget_background_tint">@color/mycigna_blue_logo</item>
@@ -187,6 +199,8 @@
         <item name="fwf__phone_number_card_view_style">@style/cigna__PhoneCardViewStyle</item>
         <item name="fwf__fab_call_widget_style">@style/cigna__FabWidgetStyleCall</item>
         <item name="rodeo__button_dialog_cancel_style">@style/cigna__ButtonDialogCancelStyle</item>
+        <!-- Text` entry field under-line -->
+        <item name="fwf__focus_view_color">@color/cigna_blue</item>
     </style>
     <!-- ############ End of Custom Base Style ############ -->
 
