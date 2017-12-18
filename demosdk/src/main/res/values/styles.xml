@@ -456,6 +456,7 @@
 
     <style name="cigna__TextUnderFindProviderTextAppearance" parent="@style/mdl__TextUnderFindProviderTextAppearance">
         <item name="android:textColor">@color/mdl__white</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <!-- ############ End of Dashboard ############ -->
 
