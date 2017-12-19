@@ -136,7 +136,7 @@
         </item>
         <!-- END Provider Visit Buttons -->
         <!-- Text` entry field under-line -->
-        <item name="fwf__focus_view_color">@color/cigna_blue</item>
+        <item name="fwf__focus_view_color">@color/mycigna_blue_logo</item>
     </style>
 
     <!-- Provider Visit Buttons -->
@@ -178,8 +178,8 @@
 
     <!-- All Text Entry Cursor Color -->
     <style name="cigna__EditTextStyle" parent="fwf__DefaultWidgetStyle">
-        <item name="colorControlNormal">@color/cigna_blue</item>
-        <item name="colorControlActivated">@color/cigna_blue</item>
+        <item name="colorControlNormal">@color/mycigna_blue_logo</item>
+        <item name="colorControlActivated">@color/mycigna_blue_logo</item>
         <item name="colorControlHighlight">@color/mdl__white</item>
     </style>
 
