@@ -136,7 +136,7 @@
 
     <!-- Provider Visit Buttons -->
     <style name="cigna__ProviderVisitButtonsStyle" parent="@style/mdl__ProviderVisitButtonsStyle">
-        <item name="mdl__provider_visit_button_background_tint">@color/cigna_blue2</item>
+        <item name="mdl__provider_visit_button_background_tint">@color/mycigna_blue_logo</item>
     </style>
     <!-- END Provider Visit Buttons -->
 
@@ -148,8 +148,8 @@
     </style>
 
     <style name="cigna__ProviderProfileSecondaryButtonStyle" parent="@style/fwf__ProviderProfileSecondaryButtonStyle">
-        <item name="backgroundTint">@color/cigna_blue2</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/cigna_blue2</item>
     </style>
     <!-- END Provider Profile Buttons -->
 
