@@ -201,7 +201,7 @@
         <item name="fwf__fab_call_widget_style">@style/cigna__FabWidgetStyleCall</item>
         <item name="rodeo__button_dialog_cancel_style">@style/cigna__ButtonDialogCancelStyle</item>
         <!-- Text` entry field under-line -->
-        <item name="fwf__focus_view_color">@color/cigna_blue</item>
+        <item name="fwf__focus_view_color">@color/mycigna_blue_logo</item>
     </style>
     <!-- ############ End of Custom Base Style ############ -->
 
