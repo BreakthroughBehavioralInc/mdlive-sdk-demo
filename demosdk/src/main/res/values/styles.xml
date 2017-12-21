@@ -137,6 +137,12 @@
         <!-- END Provider Visit Buttons -->
         <!-- Text` entry field under-line -->
         <item name="fwf__focus_view_color">@color/cigna_blue</item>
+        <item name="fwf__call_number_widget_style">
+            @style/cigna__CallNumberWidgetStyle
+        </item>
+        <item name="fwf__phone_icon_style">
+            @style/cigna__PhoneIconStyle
+        </item>
     </style>
 
     <!-- Provider Visit Buttons -->
@@ -232,6 +238,13 @@
         <item name="android:textSize">14sp</item>
         <item name="android:visibility">visible</item>
     </style>
+    <style name="cigna__CallNumberWidgetStyle" parent="@style/fwf__CallNumberWidgetStyle">
+        <item name="android:textColor">@color/cigna_blue2</item>
+    </style>
+    <style name="cigna__PhoneIconStyle" parent="@style/fwf__PhoneIconStyle">
+        <item name="android:drawableTint">@color/cigna_blue2</item>
+        <item name="android:tint">@color/cigna_blue2</item>
+    </style>
     <!--Configuration for 'Upload a Photo' 2nd card on Reason for Visit screen.-->
     <style name="cigna__UploadPhotoButtonStyle" parent="fwf__UploadPhotoButtonStyle">
         <item name="fwf__upload_photo_button_background_color">@android:color/white</item>
@@ -266,6 +279,7 @@
         <!-- 'Clear' button effect for card view -->
         <item name="fwf__data_reset_image_src">@null</item>
     </style>
+
     <!-- ##### Dashboard Appointment Card View #### -->
     <style name="cigna__AppointmentCardViewStyle" parent="@style/fwf__AppointmentCardViewStyle">
         <item name="fwf__videocam_icon_accent_2">@drawable/fwf__videocam_icon_accent_2</item>
@@ -459,5 +473,7 @@
         <item name="android:textStyle">bold</item>
     </style>
     <!-- ############ End of Dashboard ############ -->
+
+
 
 </resources>
