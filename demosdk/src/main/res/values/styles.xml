@@ -201,6 +201,8 @@
         <item name="rodeo__button_dialog_cancel_style">@style/cigna__ButtonDialogCancelStyle</item>
         <!-- Text` entry field under-line -->
         <item name="fwf__focus_view_color">@color/cigna_blue</item>
+        <!-- TextView text entry cursor color -->
+        <item name="fwf__EditTextStyle">@style/cigna__EditTextStyle</item>
     </style>
     <!-- ############ End of Custom Base Style ############ -->
 
