@@ -137,6 +137,14 @@
         <!-- END Provider Visit Buttons -->
         <!-- Text` entry field under-line -->
         <item name="fwf__focus_view_color">@color/mycigna_blue_logo</item>
+
+        <item name="fwf__call_number_widget_style">
+            @style/cigna__CallNumberWidgetStyle
+        </item>
+        <item name="fwf__phone_icon_style">
+            @style/cigna__PhoneIconStyle
+        </item>
+
     </style>
 
     <!-- Provider Visit Buttons -->
@@ -462,5 +470,13 @@
         <item name="android:textStyle">bold</item>
     </style>
     <!-- ############ End of Dashboard ############ -->
+
+    <style name="cigna__CallNumberWidgetStyle" parent="@style/fwf__CallNumberWidgetStyle">
+        <item name="android:textColor">@color/cigna_orange_light</item>
+    </style>
+    <style name="cigna__PhoneIconStyle" parent="@style/fwf__PhoneIconStyle">
+        <item name="android:drawableTint">@color/cigna_blue2</item>
+        <item name="android:tint">@color/cigna_blue2</item>
+    </style>
 
 </resources>
