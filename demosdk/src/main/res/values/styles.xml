@@ -129,14 +129,14 @@
         <item name="fwf__provider_profile_secondary_button_style">
             @style/cigna__ProviderProfileSecondaryButtonStyle
         </item>
-        <item name="fwf__hyperlink_text_color">@color/cigna_blue</item>
+        <item name="fwf__hyperlink_text_color">@color/cigna_blue2</item>
 
         <!-- Provider Visit Buttons -->
         <item name="mdl__provider_visit_buttons_style">@style/cigna__ProviderVisitButtonsStyle
         </item>
         <!-- END Provider Visit Buttons -->
         <!-- Text` entry field under-line -->
-        <item name="fwf__focus_view_color">@color/cigna_blue</item>
+        <item name="fwf__focus_view_color">@color/mycigna_blue_logo</item>
         <item name="fwf__call_number_widget_style">
             @style/cigna__CallNumberWidgetStyle
         </item>
@@ -147,26 +147,27 @@
 
     <!-- Provider Visit Buttons -->
     <style name="cigna__ProviderVisitButtonsStyle" parent="@style/mdl__ProviderVisitButtonsStyle">
-        <item name="mdl__provider_visit_button_background_tint">@color/cigna_blue_light</item>
+        <item name="mdl__provider_visit_button_background_tint">@color/mycigna_blue_logo</item>
     </style>
     <!-- END Provider Visit Buttons -->
 
     <!-- Provider Profile Buttons -->
+    <!-- Request Appointment button -->
     <style name="cigna__ProviderProfilePrimaryButtonStyle" parent="@style/fwf__ProviderProfilePrimaryButtonStyle">
         <item name="backgroundTint">@android:color/white</item>
-        <item name="android:textColor">@color/cigna_blue_light</item>
+        <item name="android:textColor">@color/cigna_blue2</item>
     </style>
 
     <style name="cigna__ProviderProfileSecondaryButtonStyle" parent="@style/fwf__ProviderProfileSecondaryButtonStyle">
-        <item name="backgroundTint">@color/cigna_blue_light</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/cigna_blue2</item>
     </style>
     <!-- END Provider Profile Buttons -->
 
     <style name="cigna_ChipItemProviderListStyle" parent="@style/fwf__ChipItemStyle">
         <item name="fwf__chip_item_background">@drawable/cigna__chip_white_background</item>
         <item name="fwf__chip_item_label_text_color">@android:color/white</item>
-        <item name="fwf__chip_item_text_color">@color/cigna_blue_light</item>
+        <item name="fwf__chip_item_text_color">@color/cigna_blue2</item>
         <item name="fwf__chip_item_remove_icon">
             @drawable/cigna__white_chip_remove_button_background
         </item>
@@ -183,8 +184,8 @@
 
     <!-- All Text Entry Cursor Color -->
     <style name="cigna__EditTextStyle" parent="fwf__DefaultWidgetStyle">
-        <item name="colorControlNormal">@color/cigna_blue</item>
-        <item name="colorControlActivated">@color/cigna_blue</item>
+        <item name="colorControlNormal">@color/mycigna_blue_logo</item>
+        <item name="colorControlActivated">@color/mycigna_blue_logo</item>
         <item name="colorControlHighlight">@color/mdl__white</item>
     </style>
 
@@ -206,7 +207,9 @@
         <item name="fwf__fab_call_widget_style">@style/cigna__FabWidgetStyleCall</item>
         <item name="rodeo__button_dialog_cancel_style">@style/cigna__ButtonDialogCancelStyle</item>
         <!-- Text` entry field under-line -->
-        <item name="fwf__focus_view_color">@color/cigna_blue</item>
+        <item name="fwf__focus_view_color">@color/mycigna_blue_logo</item>
+        <!-- TextView text entry cursor color -->
+        <item name="fwf__EditTextStyle">@style/cigna__EditTextStyle</item>
     </style>
     <!-- ############ End of Custom Base Style ############ -->
 
@@ -237,13 +240,6 @@
         <item name="android:text">@string/find_provider_pharmacy_note</item>
         <item name="android:textSize">14sp</item>
         <item name="android:visibility">visible</item>
-    </style>
-    <style name="cigna__CallNumberWidgetStyle" parent="@style/fwf__CallNumberWidgetStyle">
-        <item name="android:textColor">@color/cigna_blue2</item>
-    </style>
-    <style name="cigna__PhoneIconStyle" parent="@style/fwf__PhoneIconStyle">
-        <item name="android:drawableTint">@color/cigna_blue2</item>
-        <item name="android:tint">@color/cigna_blue2</item>
     </style>
     <!--Configuration for 'Upload a Photo' 2nd card on Reason for Visit screen.-->
     <style name="cigna__UploadPhotoButtonStyle" parent="fwf__UploadPhotoButtonStyle">
@@ -279,7 +275,6 @@
         <!-- 'Clear' button effect for card view -->
         <item name="fwf__data_reset_image_src">@null</item>
     </style>
-
     <!-- ##### Dashboard Appointment Card View #### -->
     <style name="cigna__AppointmentCardViewStyle" parent="@style/fwf__AppointmentCardViewStyle">
         <item name="fwf__videocam_icon_accent_2">@drawable/fwf__videocam_icon_accent_2</item>
@@ -474,6 +469,12 @@
     </style>
     <!-- ############ End of Dashboard ############ -->
 
-
+    <style name="cigna__CallNumberWidgetStyle" parent="@style/fwf__CallNumberWidgetStyle">
+        <item name="android:textColor">@color/cigna_orange_light</item>
+    </style>
+    <style name="cigna__PhoneIconStyle" parent="@style/fwf__PhoneIconStyle">
+        <item name="android:drawableTint">@color/cigna_blue2</item>
+        <item name="android:tint">@color/cigna_blue2</item>
+    </style>
 
 </resources>
