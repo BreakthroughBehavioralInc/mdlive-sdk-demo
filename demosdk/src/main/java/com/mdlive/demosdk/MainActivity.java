@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 .gender(FwfSSOGender.MALE)
                 .birthdate("10-04-1985")
                 .subscriberId("10067837300")
-                .memberId("bellafraser|1513872066.5573735|NTQxMDkwNjc0YTU1M2U4MjU5MzQ0M2E5MGQyOGVjOTE4YmUwYzk1NzU3YzBlODY3ZjY0NDhhODI4NTYwYTEzMw==")
+                .memberId("bellafraser|1516568155.739879|ODhkZmJiMGNjZTU0ZGE4ODE0YjJhN2ZiMDA4ZmY4NWIzZjVmN2JiMzA2Y2E2NDllODU2ODUzNDM5Y2UxMzk5OA==")
                 .phone("555-555-5555")
                 .email("ahadida@mdlive.com")
                 .address1("address1")
