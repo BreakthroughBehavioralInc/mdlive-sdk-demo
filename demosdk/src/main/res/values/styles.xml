@@ -65,7 +65,7 @@
         <!--Family Memeber's Image default circle place holder.-->
         <item name="fwf__circle_image_default_src">@drawable/fwf__cigna_blue_circle</item>
         <!-- Provider Profile background Drawable or Color.-->
-        <item name="fwf__provider_profile_default_image">@color/cigna_blue2</item>
+        <item name="provider_profile__background">@color/cigna_blue2</item>
 
         <item name="fwf__user_profile_widget_style">@style/cigna__UserProfileWidgetStyle</item>
 
@@ -132,6 +132,12 @@
         <item name="mdl__provider_visit_buttons_style">@style/cigna__ProviderVisitButtonsStyle
         </item>
         <!-- END Provider Visit Buttons -->
+
+        <!-- Default provider profile picture -->
+        <item name="mdl__default_provider_profile_picture">
+            @drawable/cigna__provider_profile_picture
+        </item>
+        <!-- END Default provider profile picture -->
     </style>
 
     <!-- Provider Visit Buttons -->
@@ -183,7 +189,7 @@
         <!--Family Memeber's Image default circle place holder.-->
         <!--<item name="fwf__circle_image_default_src">@drawable/fwf__cigna_blue_circle</item>-->
         <!-- Provider Profile background Drawable or Color.-->
-        <item name="fwf__provider_profile_default_image">@color/cigna_blue2</item>
+        <item name="provider_profile__background">@color/cigna_blue2</item>
         <item name="fwf__phone_number_card_view_style">@style/cigna__PhoneCardViewStyle</item>
         <item name="fwf__fab_call_widget_style">@style/cigna__FabWidgetStyleCall</item>
         <item name="rodeo__button_dialog_cancel_style">@style/cigna__ButtonDialogCancelStyle</item>
