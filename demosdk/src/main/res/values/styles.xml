@@ -189,7 +189,7 @@
     </style>
 
     <!-- All Text Entry Cursor Color -->
-    <style name="cigna__EditTextStyle" parent="fwf__DefaultWidgetStyle">
+,    <style name="cigna__EditTextStyle" parent="fwf__DefaultWidgetStyle">
         <item name="colorControlNormal">@color/mycigna_blue_logo</item>
         <item name="colorControlActivated">@color/mycigna_blue_logo</item>
         <item name="colorControlHighlight">@color/mdl__white</item>
@@ -483,20 +483,20 @@
     <!-- ############ End of Dashboard ############ -->
 
     <style name="cigna__CallNumberWidgetStyle" parent="@style/fwf__CallNumberWidgetStyle">
-        <item name="android:textColor">@color/cigna_blue2</item>
+        <item name="android:textColor">@color/mycigna_blue_logo</item>
     </style>
     <style name="cigna__PhoneIconStyle" parent="@style/fwf__PhoneIconStyle">
-        <item name="android:tint">@color/cigna_blue2</item>
+        <item name="android:tint">@color/mycigna_blue_logo</item>
     </style>
 
     <style name="cigna__MedicalHistoryCancelButtonDialogStyle" parent="@style/fwf__MedicalHistoryCancelDialogButtonStyle">
-        <item name="backgroundTint">@color/cigna_blue2</item>
+        <item name="backgroundTint">@color/mycigna_blue_logo</item>
         <item name="android:textColor">@color/fwf__near_white</item>
     </style>
 
     <style name="cigna__AlertDialogStyle" parent="@style/fwf_AlertDialogStyle">
-        <item name="textColor">@color/cigna_blue2</item>
-        <item name="colorAccent">@color/cigna_blue2</item>
+        <item name="textColor">@color/mycigna_blue_logo</item>
+        <item name="colorAccent">@color/mycigna_blue_logo</item>
     </style>
 
 
