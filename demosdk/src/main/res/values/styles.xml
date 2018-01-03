@@ -92,8 +92,6 @@
             @string/find_provider_check_availability_main_message</item>
         <item name="rodeo__find_provider_check_availability_wait_message">
             @string/find_provider_check_availability_wait_message</item>
-        <!-- 'Clear' button effect for card view -->
-        <item name="fwf__data_reset_image_src">@null</item>
         <!-- Phone Number card views - Treatment for 'Clear' icon. -->
         <item name="fwf__phone_number_card_view_style">@style/cigna__PhoneCardViewStyle</item>
 
