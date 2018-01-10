@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Demo SDK</string>
+    <string name="start_the_sdk">Inicie MDLive SDK</string>
+    <!-- MDLive Strings-->
+    <string name="cigna_welcome">Bienvenido a Cigna MDLive!</string>
+    <string name="dashboard_title">MDLive para Cigna</string>
+    <string name="dashboard_text">Encuentre la mejor atención disponible de un proveedor cerca de usted.</string>
+    <string name="dashboard_footer"></string>
+    <string name="cigna">CIGNA</string>
+    <string name="find_provider_see_a_provider">Escoge un %1$s</string>
+    <string name="activity__frozen_mountain_session">Consulta de video de Cigna</string>
+
+
+    <!--This string replaces the Screen title 'Find a Provider'.-->
+    <string name="page_title__find_provider">Seleccione un Proveedor</string>
+    <!--Small grammer correction.-->
+    <string name="find_provider_instructions">Por favor, revise la siguiente información para que podamos encontrar la mejor atención disponible</string>
+    <!--Replaces original string 'Phone Number'.-->
+    <string name="find_provider_label_phone_number">Preferedo Numero de Contacto</string>
+    <!--Removed "..." at end of sentence.-->
+    <string name="find_provider_watermark_reason">Ingrese sus síntomas aquí</string>
+    <!-- dashboard - Search for Providers button text-->
+    <string name="mdl__dashboard_find_a_provider">Buscar proveedores</string>
+    <string name="find_provider_check_availability_main_message">Mensaje principal de Cigna aquí.</string>
+    <string name="find_provider_check_availability_wait_message">Cigna espera mensaje aquí.</string>
+    <string name="find_provider_pharmacy_note">Nota: es posible que las farmacias fuera de la red no se muestren aquí. Seleccione una farmacia dentro de la red para reducir los costos de su bolsillo. </string>
+
+    <!-- find provider - request appointment -->
+    <string name="find_provider_request_appointment_instructions">"Ingrese la siguiente información para que podamos ayudarlo a configurar su cita"</string>
+
+</resources>
