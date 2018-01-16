@@ -41,6 +41,8 @@ dependencies {
     compile "com.android.support:percent:$supportLibraryVersion"
     compile "com.android.support:exifinterface:$supportLibraryVersion"
     compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.firebase:firebase-core:9.2.1'
+
     testCompile 'junit:junit:4.12'
     compile project(":App_Base-0.13.4")
 //    compile project(":android-core")
