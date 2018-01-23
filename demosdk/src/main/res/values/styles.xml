@@ -94,7 +94,10 @@
             @string/find_provider_check_availability_wait_message</item>
         <!-- Phone Number card views - Treatment for 'Clear' icon. -->
         <item name="fwf__phone_number_card_view_style">@style/cigna__PhoneCardViewStyle</item>
-
+        <!-- Delete Photo Attachment card views - Treatment for 'Clear' icon. -->
+        <item name="fwf__symptom_attachments_card_view_style">
+            @style/cigna__SymptomAttachmentsCardViewStyle
+        </item>
         <!-- Expiration Token Error Message Dialog -->
         <item name="mdl__expired_token_error_title">@string/mdl__expired_token_error_title</item>
         <item name="mdl__expired_token_error_message">@string/mdl__expired_token_error_message
@@ -215,6 +218,9 @@
         <!-- Provider Profile background Drawable or Color.-->
         <item name="provider_profile__background">@color/mycigna_blue_logo</item>
         <item name="fwf__phone_number_card_view_style">@style/cigna__PhoneCardViewStyle</item>
+        <item name="fwf__symptom_attachments_card_view_style">
+            @style/cigna__SymptomAttachmentsCardViewStyle
+        </item>
         <item name="fwf__fab_call_widget_style">@style/cigna__FabWidgetStyleCall</item>
         <item name="rodeo__button_dialog_cancel_style">@style/cigna__ButtonDialogCancelStyle</item>
         <!-- Text` entry field under-line -->
@@ -292,6 +298,11 @@
     <style name="cigna__PhoneCardViewStyle" parent="@style/fwf__PhoneCardViewStyle">
         <!-- 'Clear' button effect for card view -->
         <item name="fwf__data_reset_image_src">@null</item>
+    </style>
+    <!-- ##### Add a Photo - Delete a Photo, Symptoms Attachments Card View #### -->
+    <style name="cigna__SymptomAttachmentsCardViewStyle" parent="@style/fwf__SymptomAttachmentsCardViewStyle">
+        <!-- 'Clear' button effect for card view -->
+        <item name="fwf__data_reset_image_src">@drawable/ic_cigna_clear_field</item>
     </style>
     <!-- ##### Dashboard Appointment Card View #### -->
     <style name="cigna__AppointmentCardViewStyle" parent="@style/fwf__AppointmentCardViewStyle">
