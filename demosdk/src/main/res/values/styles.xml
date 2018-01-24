@@ -322,8 +322,9 @@
 
     <!-- ##### See a Physician - Search for a Provider Button Card View #### -->
     <style name="cigna__ProviderSearchButtonCardViewStyle" parent="@style/fwf__ProviderSearchButtonCardViewStyle">
-        <item name="fwf__provider_search_button_background_color">@android:color/white</item>
-        <item name="fwf__provider_search_button_text_icon_color">@color/mdl__black</item>
+        <item name="fwf__provider_search_bar_background_color">@android:color/white</item>
+        <item name="fwf__provider_search_bar_magnifying_glass_icon_color">@color/mdl__black</item>
+        <item name="fwf__provider_search_bar_text_color">@color/cigna_blue</item>
     </style>
     <!-- ##### End of See a Physician - Search for a Provider Button Card View #### -->
 
