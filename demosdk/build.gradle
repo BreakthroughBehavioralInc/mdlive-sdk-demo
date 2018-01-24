@@ -22,13 +22,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    // https://developer.android.com/studio/build/configure-apk-splits.html
-    splits {
-        abi {
-            enable true
-            universalApk true
-        }
-    }
 }
 
 dependencies {
