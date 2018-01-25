@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.mdlive.mdlcore.application.MdlApplicationSupport;
 import com.mdlive.mdlcore.fwfrodeo.fwf.enumz.FwfSSOGender;
@@ -40,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
         showProgressBar(true);
 
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
-                .ou("Cigna")
-                .firstName("Bella")
-                .lastName("Fraser")
+                .ou("cigna")
+                .firstName("lucas")
+                .lastName("hyatt")
                 .gender(FwfSSOGender.MALE)
-                .birthdate("10-04-1985")
-                .subscriberId("10067837300")
-                .memberId("bellafraser|1579446979.73987|MjQxZDU5MDMxNDVlZjlhN2U4NDY4MjQ2OGZkN2YyNGNiODE1N2ZhM2Y5YWNiYzRiODhiMWVhMTE2ZjM0NjI3NA==")
+                .birthdate("25-02-1972")
+                .subscriberId("U9305272401")
+                .memberId("test5252|1579446979.73987|ZDQwMmE0YzU3ZjEzMjlkMTYwZWMwZWMzZTJjMjgwY2FmOWU4NGRjY2ZmODU3NGFkYmRiZmQ0MzZjZDc5ZDY0YQ==")
                 .phone("555-555-5555")
                 .email("ahadida@mdlive.com")
                 .address1("address1")
@@ -79,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
                             public void call(Throwable throwable) {
                                 Log.e(MainActivity.class.getSimpleName(), throwable.toString());
                                 showProgressBar(false);
+                                Toast.makeText(MainActivity.this, throwable.getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         }
                 );
