@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.mdlive.mdlcore.application.MdlApplicationSupport;
 import com.mdlive.mdlcore.fwfrodeo.fwf.enumz.FwfSSOGender;
@@ -41,13 +40,13 @@ public class MainActivity extends AppCompatActivity {
         showProgressBar(true);
 
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
-                .ou("cigna")
-                .firstName("lucas")
-                .lastName("hyatt")
+                .ou("Cigna")
+                .firstName("Emilio")
+                .lastName("Negron")
                 .gender(FwfSSOGender.MALE)
-                .birthdate("25-02-1972")
-                .subscriberId("U9305272401")
-                .memberId("test5252|1579446979.73987|ZDQwMmE0YzU3ZjEzMjlkMTYwZWMwZWMzZTJjMjgwY2FmOWU4NGRjY2ZmODU3NGFkYmRiZmQ0MzZjZDc5ZDY0YQ==")
+                .birthdate("01-01-1979")
+                .subscriberId("10067837300")
+                .memberId("enegron|1548259115.2447784|YWFlZWViOGZkODVhZDY5YjJiNjA1YTBhYzc0MjI4NjliNTA0YTI3OGZkM2M1OWYyNDg2MjFhMzVkMDNhODA2NQ==")
                 .phone("555-555-5555")
                 .email("ahadida@mdlive.com")
                 .address1("address1")
