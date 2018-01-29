@@ -57,6 +57,24 @@ public class MainActivity extends AppCompatActivity {
                 .relationship(FwfSSORelationship.SELF)
                 .build();
 
+        /*MdlSSODetail ssoDetail = MdlSSODetail.builder()
+                .ou("Cigna")
+                .firstName("Bella")
+                .lastName("Fraser")
+                .gender(FwfSSOGender.MALE)
+                .birthdate("10-04-1985")
+                .subscriberId("10067837300")
+                .memberId("bellafraser|1579446979.73987|MjQxZDU5MDMxNDVlZjlhN2U4NDY4MjQ2OGZkN2YyNGNiODE1N2ZhM2Y5YWNiYzRiODhiMWVhMTE2ZjM0NjI3NA==")
+                .phone("555-555-5555")
+                .email("ahadida@mdlive.com")
+                .address1("address1")
+                .address2("address2")
+                .city("Sunrise")
+                .state(FwfState.FL)
+                .zipCode("33303")
+                .relationship(FwfSSORelationship.SELF)
+                .build();*/
+
         MdlApplicationSupport.getAuthenticationCenter()
                 .singleSignOn(ssoDetail)
                 .map(new Func1<MdlUserSession, Intent>() {
@@ -79,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
                             public void call(Throwable throwable) {
                                 Log.e(MainActivity.class.getSimpleName(), throwable.toString());
                                 showProgressBar(false);
-                                Toast.makeText(MainActivity.this, throwable.getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         }
                 );
