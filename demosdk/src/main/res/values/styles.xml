@@ -20,8 +20,6 @@
         <item name="rodeo__menu_background">@color/mycigna_blue_logo</item>
         <!-- 'Reason for Visit' Card 1 backgrounf color.-->
         <item name="fwf__card_view_background_color">@android:color/white</item>
-        <item name="mdl__preferred_method_of_consultation_label_color">@color/mycigna_blue_logo
-        </item>
         <!-- ActionBar - ProgressBar color -->
         <item name="fwf__wizard_progress_bar_style">@style/cigna__ProgressBar_Horizontal</item>
         <item name="fwf__progress_bar_indeterminate_tint_color">@color/cigna_orange_light</item>
@@ -153,6 +151,8 @@
         <item name="mdl__find_provider_card_view_style">@style/cigna__FindProviderCardViewStyle
         </item>
         <item name="mdl__pharmacy_card_view_style">@style/cigna__PharmacyCardViewStyle</item>
+        <!--Property to handle forms label color -->
+        <item name="fwf__hint_text_color">@color/mdl__gray</item>
     </style>
 
     <style name="cigna__PharmacyWidgetStyle" parent="@style/mdl__PharmacyWidgetStyle">
