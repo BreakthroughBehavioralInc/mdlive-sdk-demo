@@ -153,6 +153,9 @@
         <item name="mdl__pharmacy_card_view_style">@style/cigna__PharmacyCardViewStyle</item>
         <!--Property to handle forms label color -->
         <item name="fwf__hint_text_color">@color/mdl__gray</item>
+        <!--Styles for the number and icon color in the cancel dialog-->
+        <item name="fwf__call_number_style">@style/cigna__CallNumberStyle</item>
+
     </style>
 
     <style name="cigna__PharmacyWidgetStyle" parent="@style/mdl__PharmacyWidgetStyle">
@@ -254,6 +257,8 @@
         <item name="fwf_alert_dialog_style">
             @style/cigna__AlertDialogStyle
         </item>
+        <!--Styles for the number and icon color in the cancel dialog-->
+        <item name="fwf__call_number_style">@style/cigna__CallNumberStyle</item>
     </style>
     <!-- ############ End of Custom Base Style ############ -->
 
@@ -261,6 +266,12 @@
     <!-- ActionBar - ProgressBar color -->
     <style name="cigna__ProgressBar_Horizontal" parent="@style/mdl__ProgressBar_Horizontal">
         <item name="android:progressDrawable">@drawable/cigna_progress_horizontal</item>
+    </style>
+
+    <!-- ActionBar - ProgressBar color -->
+    <style name="cigna__CallNumberStyle" parent="@style/fwf__CallNumberStyle">
+        <item name="fwf__call_number_widget_icon_color">@color/cigna_blue</item>
+        <item name="fwf__call_number_widget_phone_number_color">@color/cigna_blue</item>
     </style>
 
     <!-- ActionBar Title Text Color -->
