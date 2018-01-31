@@ -153,9 +153,13 @@
         <item name="mdl__pharmacy_card_view_style">@style/cigna__PharmacyCardViewStyle</item>
         <!--Property to handle forms label color -->
         <item name="fwf__hint_text_color">@color/mdl__gray</item>
+
+        <!-- Providers List Cell Style-->
+        <item name="mdl__provider_list_cell_style">@style/cigna__ProviderListCellStyle</item>
+        <!-- END Providers List Cell Style-->
+
         <!--Styles for the number and icon color in the cancel dialog-->
         <item name="fwf__call_number_style">@style/cigna__CallNumberStyle</item>
-
     </style>
 
     <style name="cigna__PharmacyWidgetStyle" parent="@style/mdl__PharmacyWidgetStyle">
@@ -337,9 +341,7 @@
     </style>
     <!-- ##### Dashboard Appointment Card View #### -->
     <style name="cigna__AppointmentCardViewStyle" parent="@style/fwf__AppointmentCardViewStyle">
-        <item name="fwf__videocam_icon_accent_2">@drawable/fwf__videocam_icon_accent_2</item>
         <item name="fwf__appointment_videocam_tint">@color/cigna_blue2</item>
-        <item name="fwf__call_icon_accent_2">@drawable/fwf__call_icon_accent_2</item>
         <item name="fwf__appointment_call_icon_tint">@color/cigna_blue2</item>
         <item name="fwf__appointment_card_cancel_text_color">@color/cigna_blue2</item>
         <item name="fwf__card_view_background_color">@color/mdl__white</item>
@@ -349,6 +351,10 @@
         <item name="fwf__provider_specialty_text_color">@color/cigna_blue2</item>
     </style>
     <!-- ##### End of Dashboard Appointment Card View #### -->
+
+    <style name="cigna__ProviderListCellStyle" parent="@style/mdl__ProviderListCellStyle">
+        <item name="mdl__provider_list_cell_phone_video_icon_color">@color/cigna_blue</item>
+    </style>
     <!-- ##### End of Find a provider, Provider List Card View #### -->
 
     <!-- ##### See a Physician - Search for a Provider Button Card View #### -->
