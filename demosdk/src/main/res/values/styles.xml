@@ -48,7 +48,9 @@
         <!-- Dashboard Appointment card views -->
         <item name="fwf__appointment_card_view_style">@style/cigna__AppointmentCardViewStyle</item>
         <!-- See a Family Physician - Search for a Provider Button card views -->
-        <item name="fwf__provider_search_button_card_view_style">@style/cigna__ProviderSearchButtonCardViewStyle</item>
+        <item name="fwf__provider_search_button_card_view_style">
+            @style/cigna__ProviderSearchButtonCardViewStyle
+        </item>
 
         <!-- Payment and CC Subhead -->
         <item name="fwf__subhead_bar_payment_style">@style/cigna__SubheadBarPaymentStyle</item>
@@ -87,9 +89,11 @@
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">@color/mdl__light_gray</item>
         <item name="rodeo__find_provider_check_availability_main_message">
-            @string/find_provider_check_availability_main_message</item>
+            @string/find_provider_check_availability_main_message
+        </item>
         <item name="rodeo__find_provider_check_availability_wait_message">
-            @string/find_provider_check_availability_wait_message</item>
+            @string/find_provider_check_availability_wait_message
+        </item>
         <!-- Phone Number card views - Treatment for 'Clear' icon. -->
         <item name="fwf__phone_number_card_view_style">@style/cigna__PhoneCardViewStyle</item>
         <!-- Delete Photo Attachment card views - Treatment for 'Clear' icon. -->
@@ -284,7 +288,7 @@
     <style name="cigna__PageTitleStyle" parent="rodeo__PageTitleStyle">
         <item name="android:textColor">@android:color/white</item>
     </style>
-   <!-- My Pharmacy Intructions text. -->
+    <!-- My Pharmacy Intructions text. -->
     <style name="cigna__PageSmallerInstructionsStyle" parent="rodeo__PageSmallerInstructionsStyle">
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">18sp</item>
@@ -387,6 +391,9 @@
     <style name="cigna__WaitingRoomAndVideoSessionStyle" parent="@style/mdl__WaitingRoomAndVideoSessionStyle">
         <item name="mdl__waiting_room_text_appearance">@style/cigna__WaitingRoomTextAppearance
         </item>
+        <item name="mdl__waiting_room_instructions_text">
+            @string/consultation_waiting_room_instructions
+        </item>
         <item name="mdl__video_session_background_color">@color/cigna_blue_light</item>
         <item name="mdl__video_session_control_buttons_background_color">@color/cigna_blue
         </item>
@@ -407,6 +414,7 @@
     <style name="cigna__FabWidgetStyleCall" parent="@style/fwf__FabWidgetStyle.Call">
         <item name="backgroundTint">@color/cigna_blue2</item>
     </style>
+
     <style name="cigna__ButtonDialogCancelStyle" parent="@style/fwf__ButtonDialogCancelStyle">
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
@@ -429,7 +437,8 @@
         <!-- Text to use as header, this must be a string resource -->
         <item name="mdl__sso_dashboard_header_text">@string/dashboard_text</item>
         <!-- Text appearance for the header text, this must be a style resource -->
-        <item name="mdl__sso_dashboard_header_text_appearance">@style/cigna__HeaderTextAppearance</item>
+        <item name="mdl__sso_dashboard_header_text_appearance">@style/cigna__HeaderTextAppearance
+        </item>
 
         <item name="mdl__sso_dashboard_sub_header_background_color">
             @color/cigna_blue2
@@ -493,7 +502,8 @@
     </style>
 
     <style name="cigna__FamilyMemberChooserDialogStyle" parent="@style/mdl__FamilyMemberChooserDialogStyle">
-        <item name="mdl__family_member_chooser_dialog_background_color">@color/mycigna_blue_logo</item>
+        <item name="mdl__family_member_chooser_dialog_background_color">@color/mycigna_blue_logo
+        </item>
         <item name="mdl__family_member_chooser_dialog_title_text_appearance">
             @style/cigna__FamilyMemberChooserDialogTitleTextAppearance
         </item>
