@@ -168,6 +168,8 @@
 
     <style name="cigna__PharmacyWidgetStyle" parent="@style/mdl__PharmacyWidgetStyle">
         <item name="mdl__pharmacy_widget_24_hour_text_color">@color/cigna_blue</item>
+        <item name="mdl__pharmacy_widget_distance_icon_color">@color/cigna_blue</item>
+        <item name="mdl__pharmacy_widget_distance_text_color">@color/cigna_blue</item>
     </style>
 
     <style name="cigna__FindProviderCardViewStyle" parent="@style/mdl__FindProviderCardViewStyle">
