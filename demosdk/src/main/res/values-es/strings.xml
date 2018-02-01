@@ -28,4 +28,7 @@
     <!-- find provider - request appointment -->
     <string name="find_provider_request_appointment_instructions">"Ingrese la siguiente información para que podamos ayudarlo a configurar su cita"</string>
 
+    <!-- waiting room instructions -->
+    <string name="consultation_waiting_room_instructions">Mensaje de Cigna para la sala de espera</string>
+
 </resources>
