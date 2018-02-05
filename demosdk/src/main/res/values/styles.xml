@@ -164,12 +164,19 @@
 
         <!--Styles for the number and icon color in the cancel dialog-->
         <item name="fwf__call_number_style">@style/cigna__CallNumberStyle</item>
+
+        <!--style for pharmacy search screen-->
+        <item name="mdl__pharmacy_search_screen_style">@style/cigna__PharmacySearchScreenStyle</item>
     </style>
 
     <style name="cigna__PharmacyWidgetStyle" parent="@style/mdl__PharmacyWidgetStyle">
         <item name="mdl__pharmacy_widget_24_hour_text_color">@color/cigna_blue</item>
         <item name="mdl__pharmacy_widget_distance_icon_color">@color/cigna_blue</item>
         <item name="mdl__pharmacy_widget_distance_text_color">@color/cigna_blue</item>
+    </style>
+
+    <style name="cigna__PharmacySearchScreenStyle" parent="@style/mdl__PharmacySearchScreenStyle">
+        <item name="mdl__informative_text_color">@color/w3c__white</item>
     </style>
 
     <style name="cigna__FindProviderCardViewStyle" parent="@style/mdl__FindProviderCardViewStyle">
