@@ -569,9 +569,8 @@
     </style>
 
     <style name="cigna__AlertDialogStyle" parent="@style/fwf_AlertDialogStyle">
-        <item name="textColor">@color/mycigna_blue_logo</item>
         <item name="colorAccent">@color/mycigna_blue_logo</item>
+        <item name="android:textColor">@color/mycigna_blue_logo</item>
     </style>
-
 
 </resources>
