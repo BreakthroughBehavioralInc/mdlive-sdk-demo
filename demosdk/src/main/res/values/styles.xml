@@ -167,6 +167,11 @@
 
         <!--style for pharmacy search screen-->
         <item name="mdl__pharmacy_search_screen_style">@style/cigna__PharmacySearchScreenStyle</item>
+
+        <!--style for message screens-->
+        <item name="mdl__message_center_style">@style/cigna__MessageCenterStyle</item>
+        <!--style for visit history screen-->
+        <item name="mdl__visit_history_style">@style/cigna__VisitHistoryStyle</item>
     </style>
 
     <style name="cigna__PharmacyWidgetStyle" parent="@style/mdl__PharmacyWidgetStyle">
@@ -177,6 +182,30 @@
 
     <style name="cigna__PharmacySearchScreenStyle" parent="@style/mdl__PharmacySearchScreenStyle">
         <item name="mdl__informative_text_color">@color/w3c__white</item>
+    </style>
+
+    <style name="cigna__MessageCenterStyle" parent="@style/mdl__MessageCenterStyle">
+        <item name="mdl__message_center_unread_message_background_color">@color/cigna_blue2</item>
+        <item name="mdl__message_center_unread_message_text_color">@color/w3c__white</item>
+        <item name="fwf__horizontal_divider_background">@color/w3c__white</item>
+        <item name="mdl__message_center_text_on_background_color">@color/w3c__white</item>
+
+        <item name="mdl__message_center_you_have_no_messages">
+            @string/message_center_no_message
+        </item>
+        <item name="mdl__message_center_providers_no_previous_visits">
+            @string/message_center_no_previous_provider_visits
+        </item>
+        <item name="mdl__message_center_unread_message_divider">
+            @string/message_center_unread_message_divider
+        </item>
+    </style>
+
+    <style name="cigna__VisitHistoryStyle" parent="@style/mdl__VisitHistoryStyle">
+        <item name="mdl__visit_history_text_on_background_color">@color/w3c__white</item>
+
+        <item name="mdl__visit_history_no_previous_visits">@string/visit_history_no_previous_provider_visits
+        </item>
     </style>
 
     <style name="cigna__FindProviderCardViewStyle" parent="@style/mdl__FindProviderCardViewStyle">

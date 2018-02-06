@@ -31,4 +31,11 @@
     <!-- waiting room instructions -->
     <string name="consultation_waiting_room_instructions">Mensaje de Cigna para la sala de espera</string>
 
+    <!-- message center -->
+    <string name="message_center_no_message">Mensaje de Cigna para No tiene mensajes</string>
+    <string name="message_center_no_previous_provider_visits">Mensaje de Cigna para No tiene proveedores que haya consultado anteriormente</string>
+    <string name="message_center_unread_message_divider">Mensaje de Cigna para Los mensajes que figuran debajo de esta línea no están leídos</string>
+
+    <!-- visit history -->
+    <string name="visit_history_no_previous_provider_visits">Mensaje de Cigna para Sin consultas previas</string>
 </resources>

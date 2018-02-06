@@ -31,4 +31,11 @@
     <!-- waiting room instructions -->
     <string name="consultation_waiting_room_instructions">Cigna message for waiting room</string>
 
+    <!-- message center -->
+    <string name="message_center_no_message">Cigna message for You have no messages</string>
+    <string name="message_center_no_previous_provider_visits">Cigna message for You have no previously visited providers</string>
+    <string name="message_center_unread_message_divider">Cigna message for Messages below this line are unread</string>
+
+    <!-- visit history -->
+    <string name="visit_history_no_previous_provider_visits">Cigna message for No Previous Visits</string>
 </resources>
