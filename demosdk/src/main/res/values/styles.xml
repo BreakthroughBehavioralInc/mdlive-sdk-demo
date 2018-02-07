@@ -178,6 +178,9 @@
         <item name="mdl__pharmacy_widget_24_hour_text_color">@color/cigna_blue</item>
         <item name="mdl__pharmacy_widget_distance_icon_color">@color/cigna_blue</item>
         <item name="mdl__pharmacy_widget_distance_text_color">@color/cigna_blue</item>
+        <item name="mdl__pharmacy_widget_change_pharmacy_button_text_color">@color/w3c__white</item>
+        <item name="mdl__pharmacy_widget_change_pharmacy_button_background_color">@color/cigna_blue2</item>
+        <item name="mdl__pharmacy_widget_change_pharmacy_button_text">@string/pharmacy_advanced_search_text_change_pharmacy</item>
     </style>
 
     <style name="cigna__PharmacySearchScreenStyle" parent="@style/mdl__PharmacySearchScreenStyle">
@@ -296,7 +299,7 @@
         <item name="fwf__focus_view_color">@color/mycigna_blue_logo</item>
         <!-- TextView text entry cursor color -->
         <item name="fwf__EditTextStyle">@style/cigna__EditTextStyle</item>
-
+        <!-- Style for the cancel button in medical history dialogs-->
         <item name="fwf__medical_history_cancel_button_dialog_style">
             @style/cigna__MedicalHistoryCancelButtonDialogStyle
         </item>
@@ -593,7 +596,7 @@
     </style>
 
     <style name="cigna__MedicalHistoryCancelButtonDialogStyle" parent="@style/fwf__MedicalHistoryCancelDialogButtonStyle">
-        <item name="backgroundTint">@color/mycigna_blue_logo</item>
+        <item name="backgroundTint">@color/cigna_blue2</item>
         <item name="android:textColor">@color/fwf__near_white</item>
     </style>
 
