@@ -11,6 +11,7 @@
     <!--MDLive Styles -->
     <!-- ############ Custom Base Style ############ -->
     <style name="cigna_ActivityStyle" parent="rodeo__ActivityStyle">
+        <item name="colorAccent">@color/mycigna_blue_logo</item>
         <!--ActionBar - customize back/home button. -->
         <item name="homeAsUpIndicator">@drawable/rodeo__activity_cancel_icon</item>
         <item name="windowActionBarOverlay">false</item>
@@ -267,12 +268,9 @@
     </style>
 
     <!-- All Text Entry Cursor Color -->
-    ,
-
-    <style name="cigna__EditTextStyle" parent="fwf__DefaultWidgetStyle">
+    <style name="cigna__EditTextStyle" parent="@style/fwf__EditTextStyle">
         <item name="colorControlNormal">@color/mycigna_blue_logo</item>
         <item name="colorControlActivated">@color/mycigna_blue_logo</item>
-        <item name="colorControlHighlight">@color/mdl__white</item>
     </style>
 
     <style name="cigna_DialogActivityStyle" parent="@style/rodeo__DialogActivityStyle">
