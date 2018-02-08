@@ -41,4 +41,7 @@
 
     <!-- pharmacy-->
     <string name="pharmacy_advanced_search_text_change_pharmacy">CHANGE PHARMACY</string>
+
+    <!-- Family Members-->
+    <string name="family_members__message_no_members">No family members\nhave been added to your account.</string>
 </resources>

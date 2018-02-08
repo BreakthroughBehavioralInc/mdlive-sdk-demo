@@ -171,8 +171,18 @@
 
         <!--style for message screens-->
         <item name="mdl__message_center_style">@style/cigna__MessageCenterStyle</item>
+
         <!--style for visit history screen-->
         <item name="mdl__visit_history_style">@style/cigna__VisitHistoryStyle</item>
+
+        <!--style for family member list screen-->
+        <item name="mdl__family_member_list_style">@style/cigna__FamilyMemberListStyle</item>
+    </style>
+
+    <style name="cigna__FamilyMemberListStyle" parent="@style/mdl__FamilyMemberListStyle">
+        <item name="mdl__family_member_list_no_family_member_added_text_color">@color/w3c__white</item>
+        <item name="mdl__family_member_list_no_family_member_added_text">@string/family_members__message_no_members
+        </item>
     </style>
 
     <style name="cigna__PharmacyWidgetStyle" parent="@style/mdl__PharmacyWidgetStyle">
