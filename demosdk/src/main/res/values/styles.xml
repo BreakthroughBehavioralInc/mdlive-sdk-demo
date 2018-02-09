@@ -177,11 +177,19 @@
 
         <!--style for family member list screen-->
         <item name="mdl__family_member_list_style">@style/cigna__FamilyMemberListStyle</item>
+
+        <!--style for provider list screen-->
+        <item name="mdl__provider_list_style">@style/cigna__ProviderListStyle</item>
     </style>
 
     <style name="cigna__FamilyMemberListStyle" parent="@style/mdl__FamilyMemberListStyle">
         <item name="mdl__family_member_list_no_family_member_added_text_color">@color/w3c__white</item>
         <item name="mdl__family_member_list_no_family_member_added_text">@string/family_members__message_no_members
+        </item>
+    </style>
+
+    <style name="cigna__ProviderListStyle" parent="@style/mdl__ProviderListStyle">
+        <item name="mdl__provider_list_no_found_text_color">@color/w3c__white
         </item>
     </style>
 
