@@ -180,6 +180,9 @@
 
         <!--style for provider list screen-->
         <item name="mdl__provider_list_style">@style/cigna__ProviderListStyle</item>
+
+        <!--style for the provider profile screen-->
+        <item name="mdl__provider_profile_style">@style/cigna__ProviderProfileStyle</item>
     </style>
 
     <style name="cigna__FamilyMemberListStyle" parent="@style/mdl__FamilyMemberListStyle">
@@ -191,6 +194,10 @@
     <style name="cigna__ProviderListStyle" parent="@style/mdl__ProviderListStyle">
         <item name="mdl__provider_list_no_found_text_color">@color/w3c__white
         </item>
+    </style>
+
+    <style name="cigna__ProviderProfileStyle" parent="@style/mdl__ProviderProfileStyle">
+        <item name="mdl__currently_with_patient_background_color">@color/transparent</item>
     </style>
 
     <style name="cigna__PharmacyWidgetStyle" parent="@style/mdl__PharmacyWidgetStyle">
