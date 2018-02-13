@@ -184,7 +184,7 @@
         <!--style for the provider profile screen-->
         <item name="mdl__provider_profile_style">@style/cigna__ProviderProfileStyle</item>
 
-        <!--Style for link checkboxes (the checkboxes in confirm appointment)-->
+        <!--Style for all the checkboxes in the app-->
         <item name="fwf__checkbox_style">@style/cigna__CheckboxStyle</item>
 
         <!--Style for colors in confirm appointment's icons-->
@@ -349,7 +349,7 @@
         <item name="fwf__call_number_style">@style/cigna__CallNumberStyle</item>
 
         <!--Style for all the checkboxes in the app-->
-        <item name="fwf__checkbox_style">@style/fwf__CheckboxStyle</item>
+        <item name="fwf__checkbox_style">@style/cigna__CheckboxStyle</item>
     </style>
     <!-- ############ End of Custom Base Style ############ -->
 
