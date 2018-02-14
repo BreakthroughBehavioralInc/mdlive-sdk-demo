@@ -85,7 +85,8 @@
         <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
         <item name="fwf__fab_widget_icon_tint">@color/mycigna_blue_logo</item>
         <item name="fwf__fab_widget_invalid_icon_tint">@android:color/white</item>
-        <item name="fwf__fab_widget_alternative_tint">@color/cigna_orange_light</item>
+        <!-- Color for the fail background FAB -->
+        <item name="fwf__fab_widget_alternative_tint">@color/cigna_quality_alert_orange</item>
         <item name="fwf__fab_widget_ripple_color">@color/mdl__light_gray</item>
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">@color/mdl__light_gray</item>
@@ -189,6 +190,9 @@
 
         <!--Style for colors in confirm appointment's icons-->
         <item name="fwf__confirm_appointment_style">@style/cigna__ConfirmAppointmentStyle</item>
+
+        <!--Color for the quality icon in the widgets-->
+        <item name="fwf__warning_quality_icon_fill_color">@color/cigna_quality_alert_orange</item>
 
     </style>
 
@@ -320,7 +324,8 @@
         <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
         <item name="fwf__fab_widget_icon_tint">@android:color/white</item>
         <item name="fwf__fab_widget_invalid_icon_tint">@color/mycigna_blue_logo</item>
-        <item name="fwf__fab_widget_alternative_tint">@android:color/white</item>
+        <!-- Color for the fail background FAB -->
+        <item name="fwf__fab_widget_alternative_tint">@color/cigna_quality_alert_orange</item>
         <item name="fwf__fab_widget_ripple_color">@color/mdl__light_gray</item>
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">@color/mdl__light_gray</item>
@@ -350,6 +355,10 @@
 
         <!--Style for all the checkboxes in the app-->
         <item name="fwf__checkbox_style">@style/cigna__CheckboxStyle</item>
+
+        <!--Color for the quality icon in the widgets-->
+        <item name="fwf__warning_quality_icon_fill_color">@color/cigna_quality_alert_orange</item>
+
     </style>
     <!-- ############ End of Custom Base Style ############ -->
 
