@@ -319,8 +319,8 @@
     </style>
 
     <style name="cigna_DialogActivityStyle" parent="@style/rodeo__DialogActivityStyle">
-        <!--General FAB Styles -->
-        <item name="fwf__fab_widget_background_tint">@color/mycigna_blue_logo</item>
+        <!--General Save/FAB Styles -->
+        <item name="fwf__fab_widget_background_tint">@color/cigna_blue2</item>
         <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
         <item name="fwf__fab_widget_icon_tint">@android:color/white</item>
         <item name="fwf__fab_widget_invalid_icon_tint">@color/mycigna_blue_logo</item>
