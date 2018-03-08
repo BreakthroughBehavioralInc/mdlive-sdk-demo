@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:name,android:theme,android:allowBackup,android:label">
+        tools:replace="android:allowBackup,android:label">
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -138,8 +138,7 @@
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.mdlive.demosdk.fileprovider"
             android:exported="false"
-            android:grantUriPermissions="true"
-            tools:replace="android:authorities">
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
