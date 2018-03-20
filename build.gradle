@@ -51,7 +51,7 @@ allprojects {
     }
     project.ext {
         // MDLive SDK library AAR
-        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.12-CIGNA-1.0.2@aar"
+        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.12-CIGNA-1.0.5@aar"
     }
 }
 
