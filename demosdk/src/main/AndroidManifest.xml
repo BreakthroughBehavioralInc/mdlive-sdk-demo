@@ -23,115 +23,115 @@
         <!-- MDLive Activity Configuration-->
         <activity
             android:name="com.mdlive.mdlcore.activity.ssodashboard.MdlSSODashboardActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.findprovider.MdlFindProviderActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.pageactivity.MdlPageActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.addmedication.MdlAddMedicationActivity"
-            android:theme="@style/cigna_DialogActivityStyle"
+            android:theme="@style/client_defined_DialogActivityStyle"
             tools:replace="android:theme" />
         <activity
             android:name="com.mdlive.mdlcore.activity.addallergy.MdlAddAllergyActivity"
-            android:theme="@style/cigna_DialogActivityStyle"
+            android:theme="@style/client_defined_DialogActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.addmedicalcondition.MdlAddMedicalConditionActivity"
-            android:theme="@style/cigna_DialogActivityStyle"
+            android:theme="@style/client_defined_DialogActivityStyle"
             tools:replace="android:theme" />
         <activity
             android:name="com.mdlive.mdlcore.activity.addprocedure.MdlAddProcedureActivity"
-            android:theme="@style/cigna_DialogActivityStyle"
+            android:theme="@style/client_defined_DialogActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.pharmacychange.MdlPharmacyChangeActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.providerprofile.MdlProviderProfileActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.providerlist.MdlProviderListActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.providersearchcriteria.MdlProviderSearchCriteriaActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.scheduleappointment.MdlScheduleAppointmentActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.sendmessage.MdlSendMessageActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.messages.MdlMessagesActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.addfamilymember.MdlAddFamilyMemberActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.checkeligibilitycost.MdlCheckEligibilityCostActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.confirmappointment.MdlConfirmAppointmentActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.editcreditcardwebview.MdlEditCreditCardWebViewActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.editprimarycarephysician.MdlEditPrimaryCarePhysicianActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.requestappointment.MdlRequestAppointmentActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.videosession.vendor.frozenmountain.FrozenMountainSessionActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.rating.MdlRatingActivity"
-            android:theme="@style/cigna_ActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.callsupport.MdlCallSupportActivity"
-            android:theme="@style/cigna_DialogActivityStyle"
+            android:theme="@style/client_defined_DialogActivityStyle"
             tools:replace="android:theme" />
 
         <provider
