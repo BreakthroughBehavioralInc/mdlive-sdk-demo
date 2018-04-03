@@ -41,7 +41,9 @@ allprojects {
             url "https://maven.google.com"
         }
         //MDLive
-        mavenLocal()
+        maven {
+            url 'https://breakthroughbehavioralinc.bintray.com/maven/'
+        }
         //AppBoy
         maven {
             url "http://appboy.github.io/appboy-android-sdk/sdk"
