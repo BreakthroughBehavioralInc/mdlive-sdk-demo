@@ -2,13 +2,13 @@
     <string name="app_name">Demo SDK</string>
     <string name="start_the_sdk">Inicie MDLive SDK</string>
     <!-- MDLive Strings-->
-    <string name="cigna_welcome">Bienvenido a Cigna MDLive!</string>
-    <string name="dashboard_title">MDLive para Cigna</string>
+    <string name="client_defined_welcome">Bienvenido a Nombre_del_Cleinte MDLive!</string>
+    <string name="dashboard_title">MDLive para Nombre_del_Cleinte</string>
     <string name="dashboard_text">Encuentre la mejor atención disponible de un proveedor cerca de usted.</string>
     <string name="dashboard_footer"></string>
-    <string name="cigna">CIGNA</string>
+    <string name="client_name">Nombre del cliente</string>
     <string name="find_provider_see_a_provider">Escoge un %1$s</string>
-    <string name="activity__frozen_mountain_session">Consulta de video de Cigna</string>
+    <string name="activity__frozen_mountain_session">Consulta de video de Nombre_del_Cleinte</string>
 
 
     <!--This string replaces the Screen title 'Find a Provider'.-->
@@ -21,15 +21,15 @@
     <string name="find_provider_watermark_reason">Ingrese sus síntomas aquí</string>
     <!-- dashboard - Search for Providers button text-->
     <string name="mdl__dashboard_find_a_provider">Buscar proveedores</string>
-    <string name="find_provider_check_availability_main_message">Mensaje principal de Cigna aquí.</string>
-    <string name="find_provider_check_availability_wait_message">Cigna espera mensaje aquí.</string>
+    <string name="find_provider_check_availability_main_message">Mensaje principal de Nombre_del_Cleinte aquí.</string>
+    <string name="find_provider_check_availability_wait_message">Nombre_del_Cleinte espera mensaje aquí.</string>
     <string name="find_provider_pharmacy_note">Nota: es posible que las farmacias fuera de la red no se muestren aquí. Seleccione una farmacia dentro de la red para reducir los costos de su bolsillo. </string>
 
     <!-- find provider - request appointment -->
     <string name="find_provider_request_appointment_instructions">"Ingrese la siguiente información para que podamos ayudarlo a configurar su cita"</string>
 
     <!-- waiting room instructions -->
-    <string name="consultation_waiting_room_instructions">Mensaje de Cigna para la sala de espera</string>
+    <string name="consultation_waiting_room_instructions">Mensaje de Nombre_del_Cleinte para la sala de espera</string>
 
     <!-- message center -->
     <string name="message_center_no_message">No tiene mensajes</string>
