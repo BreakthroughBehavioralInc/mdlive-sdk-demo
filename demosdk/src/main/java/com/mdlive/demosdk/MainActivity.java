@@ -13,7 +13,6 @@ import com.mdlive.mdlcore.fwfrodeo.fwf.enumz.FwfSSOGender;
 import com.mdlive.mdlcore.fwfrodeo.fwf.enumz.FwfSSORelationship;
 import com.mdlive.mdlcore.fwfrodeo.fwf.enumz.FwfState;
 import com.mdlive.mdlcore.model.MdlSSODetail;
-import com.mdlive.mdlcore.model.MdlSignInAttempt;
 import com.mdlive.mdlcore.model.MdlUserSession;
 
 import rx.android.schedulers.AndroidSchedulers;
@@ -57,24 +56,6 @@ public class MainActivity extends AppCompatActivity {
                 .zipCode("33325")
                 .relationship(FwfSSORelationship.SELF)
                 .build();
-
-        /*MdlSSODetail ssoDetail = MdlSSODetail.builder()
-                .ou("Cigna")
-                .firstName("Bella")
-                .lastName("Fraser")
-                .gender(FwfSSOGender.MALE)
-                .birthdate("10-04-1985")
-                .subscriberId("10067837300")
-                .memberId("bellafraser|1579446979.73987|MjQxZDU5MDMxNDVlZjlhN2U4NDY4MjQ2OGZkN2YyNGNiODE1N2ZhM2Y5YWNiYzRiODhiMWVhMTE2ZjM0NjI3NA==")
-                .phone("555-555-5555")
-                .email("ahadida@mdlive.com")
-                .address1("address1")
-                .address2("address2")
-                .city("Sunrise")
-                .state(FwfState.FL)
-                .zipCode("33303")
-                .relationship(FwfSSORelationship.SELF)
-                .build();*/
 
         MdlApplicationSupport.getAuthenticationCenter()
                 .singleSignOn(ssoDetail)
