@@ -159,11 +159,28 @@
         <!--Color for the quality icon in the widgets-->
         <item name="fwf__warning_quality_icon_fill_color">@color/client_defined_quality_alert_orange</item>
 
+        <!--Style for assessment Section-->
+        <item name="mdl__assessment_style">@style/client_defined_assessment_style</item>
+
     </style>
 
-    <style name="client_defined__CheckboxStyle" parent="fwf__CheckboxStyle">
+    <style name="client_defined__CheckboxStyle" parent="mdl__AssessmentScreenStyle">
         <item name="colorControlNormal">@color/client_defined_blue2</item>
         <item name="colorControlActivated">@color/client_defined_blue2</item>
+    </style>
+
+    <style name="client_defined_assessment_style" parent="fwf__CheckboxStyle">
+
+        <item name="mdl__assessment_main_button_background_color">@color/w3c__white</item>
+        <item name="mdl__assessment_button_text_color">@color/w3c__black</item>
+        <item name="mdl__assessment_specific_question_color">@color/w3c__white</item>
+        <item name="mdl__assessment_specific_question_option_color">@color/w3c__white</item>
+        <item name="mdl__assessment_result_text_color">@color/w3c__white</item>
+        <item name="mdl__assessment_result_button_text_color">@color/client_defined_blue2</item>
+        <item name="radioCardWidgetBackgroundColor">
+            @color/client_defined__radio_card_view_background_color_selector
+        </item>
+
     </style>
 
     <style name="client_defined__ConfirmAppointmentStyle" parent="fwf__ConfirmAppointmentStyle">

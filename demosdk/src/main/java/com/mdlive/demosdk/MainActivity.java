@@ -13,6 +13,7 @@ import com.mdlive.mdlcore.fwfrodeo.fwf.enumz.FwfSSOGender;
 import com.mdlive.mdlcore.fwfrodeo.fwf.enumz.FwfSSORelationship;
 import com.mdlive.mdlcore.fwfrodeo.fwf.enumz.FwfState;
 import com.mdlive.mdlcore.model.MdlSSODetail;
+import com.mdlive.mdlcore.model.MdlSignInAttempt;
 import com.mdlive.mdlcore.model.MdlUserSession;
 
 import rx.android.schedulers.AndroidSchedulers;
@@ -40,20 +41,20 @@ public class MainActivity extends AppCompatActivity {
         showProgressBar(true);
 
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
-                .ou("Cigna")
-                .firstName("Emilio")
-                .lastName("Negron")
+                .ou("HCSC-000088_IL")
+                .firstName("HCSC")
+                .lastName("SDKTest")
                 .gender(FwfSSOGender.MALE)
-                .birthdate("01-01-1979")
-                .subscriberId("10067837300")
-                .memberId("enegron|1548259115.2447784|YWFlZWViOGZkODVhZDY5YjJiNjA1YTBhYzc0MjI4NjliNTA0YTI3OGZkM2M1OWYyNDg2MjFhMzVkMDNhODA2NQ==")
+                .birthdate("08-08-1988")
+                .subscriberId("hcscsdktest001")
+                .memberId("")
                 .phone("555-555-5555")
-                .email("ahadida@mdlive.com")
-                .address1("address1")
-                .address2("address2")
+                .email("test@test.com")
+                .address1("123 Test SDK")
+                .address2("")
                 .city("Sunrise")
                 .state(FwfState.FL)
-                .zipCode("33303")
+                .zipCode("33325")
                 .relationship(FwfSSORelationship.SELF)
                 .build();
 

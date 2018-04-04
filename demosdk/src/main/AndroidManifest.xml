@@ -40,6 +40,7 @@
             android:name="com.mdlive.mdlcore.activity.addmedication.MdlAddMedicationActivity"
             android:theme="@style/client_defined_DialogActivityStyle"
             tools:replace="android:theme" />
+
         <activity
             android:name="com.mdlive.mdlcore.activity.addallergy.MdlAddAllergyActivity"
             android:theme="@style/client_defined_DialogActivityStyle"
@@ -132,6 +133,11 @@
         <activity
             android:name="com.mdlive.mdlcore.activity.callsupport.MdlCallSupportActivity"
             android:theme="@style/client_defined_DialogActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.behavioralhealthassessment.MdlBehavioralHealthAssessmentActivity"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <provider
