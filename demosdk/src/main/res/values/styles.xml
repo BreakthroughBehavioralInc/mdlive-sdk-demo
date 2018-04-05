@@ -164,12 +164,12 @@
 
     </style>
 
-    <style name="client_defined__CheckboxStyle" parent="mdl__AssessmentScreenStyle">
+    <style name="client_defined__CheckboxStyle" parent="fwf__CheckboxStyle">
         <item name="colorControlNormal">@color/client_defined_blue2</item>
         <item name="colorControlActivated">@color/client_defined_blue2</item>
     </style>
 
-    <style name="client_defined_assessment_style" parent="fwf__CheckboxStyle">
+    <style name="client_defined_assessment_style" parent="mdl__AssessmentScreenStyle">
 
         <item name="mdl__assessment_main_button_background_color">@color/w3c__white</item>
         <item name="mdl__assessment_button_text_color">@color/w3c__black</item>
