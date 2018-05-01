@@ -51,7 +51,7 @@ allprojects {
     }
     project.ext {
         // MDLive SDK library AAR
-        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.0-MC@aar"
+        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.0-SNAPSHOT@aar"
     }
 }
 
