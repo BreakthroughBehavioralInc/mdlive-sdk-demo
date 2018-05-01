@@ -15,9 +15,11 @@ import com.mdlive.mdlcore.fwfrodeo.fwf.enumz.FwfState;
 import com.mdlive.mdlcore.model.MdlSSODetail;
 import com.mdlive.mdlcore.model.MdlUserSession;
 
-import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action1;
-import rx.functions.Func1;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
+import io.reactivex.functions.Function;
 
 /*
  * Copyright MDLive.  All rights reserved.
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button mSeeProviderButton;
     private ProgressBar mProgressBar;
+    private Disposable mDisposable = new CompositeDisposable();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,26 +60,26 @@ public class MainActivity extends AppCompatActivity {
                 .relationship(FwfSSORelationship.SELF)
                 .build();
 
-        MdlApplicationSupport.getAuthenticationCenter()
+        mDisposable = MdlApplicationSupport.getAuthenticationCenter()
                 .singleSignOn(ssoDetail)
-                .map(new Func1<MdlUserSession, Intent>() {
+                .map(new Function<MdlUserSession, Intent>() {
                     @Override
-                    public Intent call(MdlUserSession mdlUserSession) {
+                    public Intent apply(MdlUserSession mdlUserSession) {
                         return MdlApplicationSupport.getIntentFactory().ssoDashboard(MainActivity.this);
                     }
                 })
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(
-                        new Action1<Intent>() {
+                        new Consumer<Intent>() {
                             @Override
-                            public void call(Intent intent) {
+                            public void accept(Intent intent) {
                                 startActivity(intent);
                                 showProgressBar(false);
                             }
                         },
-                        new Action1<Throwable>() {
+                        new Consumer<Throwable>() {
                             @Override
-                            public void call(Throwable throwable) {
+                            public void accept(Throwable throwable) {
                                 Log.e(MainActivity.class.getSimpleName(), throwable.toString());
                                 showProgressBar(false);
                             }
@@ -89,4 +92,9 @@ public class MainActivity extends AppCompatActivity {
         mProgressBar.setVisibility(showProgressBar ? View.VISIBLE : View.GONE);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mDisposable.dispose();
+    }
 }
