@@ -1,4 +1,47 @@
 <resources>
     <string name="app_name">Demo SDK</string>
     <string name="start_the_sdk">Start MDLive SDK</string>
+    <!-- MDLive Strings-->
+    <string name="client_defined_welcome">Welcome to Client_Name MDLive!</string>
+    <string name="dashboard_title">MDLive for Client_Name</string>
+    <string name="dashboard_text">Find the best care available from a provider near you.</string>
+    <string name="dashboard_footer"></string>
+    <string name="client_name">Client_Name</string>
+    <string name="find_provider_see_a_provider">Choose a %1$s</string>
+    <string name="activity__frozen_mountain_session">Client_Name Video Consultation</string>
+
+
+    <!--This string replaces the Screen title 'Find a Provider'.-->
+    <string name="page_title__find_provider">Select a Provider</string>
+    <!--Small grammer correction.-->
+    <string name="find_provider_instructions">Please review the following information so that we can find the best care available</string>
+    <!--Replaces original string 'Phone Number'.-->
+    <string name="find_provider_label_phone_number">Preferred Contact Number</string>
+    <!--Removed "..." at end of sentence.-->
+    <string name="find_provider_watermark_reason">Enter your symptoms here</string>
+    <!-- dashboard - Search for Providers button text-->
+    <string name="mdl__dashboard_find_a_provider">Search for Providers</string>
+    <string name="find_provider_check_availability_main_message">Client_Name main message here.</string>
+    <string name="find_provider_check_availability_wait_message">Client_Name wait message here.</string>
+    <string name="find_provider_pharmacy_note">Note: Out-of-network pharmacies may not be displayed here. Select an in-network pharmacy to keep out-of-pocket costs lower. </string>
+
+    <!-- find provider - request appointment -->
+    <string name="find_provider_request_appointment_instructions">"Please enter the following information so that we can help you setup your appointment"</string>
+
+    <!-- waiting room instructions -->
+    <string name="consultation_waiting_room_instructions">Client_Name message for waiting room</string>
+
+    <!-- message center -->
+    <string name="message_center_no_message">You have no messages</string>
+    <string name="message_center_no_previous_provider_visits">You have no previously visited providers</string>
+    <string name="message_center_unread_message_divider">Messages below this line are unread</string>
+
+    <!-- visit history -->
+    <string name="visit_history_no_previous_provider_visits">No Previous Visits</string>
+
+    <!-- pharmacy-->
+    <string name="pharmacy_advanced_search_text_change_pharmacy">CHANGE PHARMACY</string>
+
+    <!-- Family Members-->
+    <string name="family_members__message_no_members">No family members\nhave been added to your account.</string>
 </resources>

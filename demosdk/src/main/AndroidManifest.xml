@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:name,android:theme,android:allowBackup,android:label">
+        tools:replace="android:allowBackup,android:label">
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -20,23 +20,140 @@
             </intent-filter>
         </activity>
 
+        <!-- MDLive Activity Configuration-->
         <activity
             android:name="com.mdlive.mdlcore.activity.ssodashboard.MdlSSODashboardActivity"
-            android:theme="@style/demo__SSODashboardActivityStyle"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.findprovider.MdlFindProviderActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.pageactivity.MdlPageActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.addmedication.MdlAddMedicationActivity"
+            android:theme="@style/client_defined_DialogActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.addallergy.MdlAddAllergyActivity"
+            android:theme="@style/client_defined_DialogActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.addmedicalcondition.MdlAddMedicalConditionActivity"
+            android:theme="@style/client_defined_DialogActivityStyle"
+            tools:replace="android:theme" />
+        <activity
+            android:name="com.mdlive.mdlcore.activity.addprocedure.MdlAddProcedureActivity"
+            android:theme="@style/client_defined_DialogActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.pharmacychange.MdlPharmacyChangeActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.providerprofile.MdlProviderProfileActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.providerlist.MdlProviderListActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.providersearchcriteria.MdlProviderSearchCriteriaActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.scheduleappointment.MdlScheduleAppointmentActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.sendmessage.MdlSendMessageActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.messages.MdlMessagesActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.addfamilymember.MdlAddFamilyMemberActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.checkeligibilitycost.MdlCheckEligibilityCostActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.confirmappointment.MdlConfirmAppointmentActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.editcreditcardwebview.MdlEditCreditCardWebViewActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.editprimarycarephysician.MdlEditPrimaryCarePhysicianActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.requestappointment.MdlRequestAppointmentActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.videosession.vendor.frozenmountain.FrozenMountainSessionActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.rating.MdlRatingActivity"
+            android:theme="@style/client_defined_ActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.callsupport.MdlCallSupportActivity"
+            android:theme="@style/client_defined_DialogActivityStyle"
+            tools:replace="android:theme" />
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.behavioralhealthassessment.MdlBehavioralHealthAssessmentActivity"
+            android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.mdlive.demosdk.fileprovider"
             android:exported="false"
-            android:grantUriPermissions="true"
-            tools:replace="android:authorities">
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyB6MKwmM_id_c73a8U7Jqfoa1RjWdttO0I"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBDsbj4tSNRpU3X6opkVj1nXXD1u_Nw_0c" />
+
     </application>
 
 </manifest>

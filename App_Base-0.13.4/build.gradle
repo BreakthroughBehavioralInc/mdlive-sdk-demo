@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('App_Base-0.13.4.aar'))
