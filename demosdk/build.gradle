@@ -36,7 +36,7 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
 
     testImplementation 'junit:junit:4.12'
-    implementation project(":App_Base-0.13.4")
+ //   implementation project(":App_Base-0.13.4")
 //    compile project(":android-core")
 
 /*

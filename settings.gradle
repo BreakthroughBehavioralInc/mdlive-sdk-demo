@@ -1,1 +1,2 @@
-include ':demosdk', ':App_Base-0.13.4'
+//include ':demosdk', ':App_Base-0.13.4'
+include ':demosdk'
