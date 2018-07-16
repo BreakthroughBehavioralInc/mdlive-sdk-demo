@@ -36,16 +36,6 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
 
     testImplementation 'junit:junit:4.12'
- //   implementation project(":App_Base-0.13.4")
-//    compile project(":android-core")
-
-/*
-    compile ('com.cigna.mobile.base:App_Base:0.13.4'){
-        exclude group: 'net.hockeyapp.android'
-    }
-    compile 'com.cigna.mobile.service:Core_Services:0.9.1'
-    compile 'com.cigna.mobile.ui:Cigna_CommonUI:0.13'
-*/
 
 
     androidTestImplementation('com.android.support.test:runner:1.0.1') {

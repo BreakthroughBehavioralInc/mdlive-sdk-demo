@@ -5,18 +5,11 @@ buildscript {
     repositories {
         jcenter()
         google()
-        /*mavenLocal()
-        maven {
-            credentials {
-                username repoUser
-                password repoPassword
-            }
-            url nexusDependencies
-        }*/
+        mavenLocal()
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.1'
+        classpath 'com.android.tools.build:gradle:3.1.3'
         classpath 'com.google.gms:google-services:3.2.0'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -26,14 +19,8 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-/*        mavenLocal()
-        maven {
-            credentials {
-                username repoUser
-                password repoPassword
-            }
-            url nexusDependencies
-        }*/
+        mavenLocal()
+        google()
 
         //Google
         maven {
@@ -50,7 +37,8 @@ allprojects {
     }
     project.ext {
         // MDLive SDK library AAR
-        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.0-SNAPSHOT@aar"
+        //MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.0-SNAPSHOT@aar"
+        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.20-SNAPSHOT@aar"
     }
 }
 
