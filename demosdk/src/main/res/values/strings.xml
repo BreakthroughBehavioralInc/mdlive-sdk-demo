@@ -2,13 +2,13 @@
     <string name="app_name">Demo SDK</string>
     <string name="start_the_sdk">Start MDLive SDK</string>
     <!-- MDLive Strings-->
-    <string name="cigna_welcome">Welcome to Cigna MDLive!</string>
-    <string name="dashboard_title">MDLive for Cigna</string>
+    <string name="client_defined_welcome">Welcome to Client_Name MDLive!</string>
+    <string name="dashboard_title">MDLive for Client_Name</string>
     <string name="dashboard_text">Find the best care available from a provider near you.</string>
     <string name="dashboard_footer"></string>
-    <string name="cigna">CIGNA</string>
+    <string name="client_name">Client_Name</string>
     <string name="find_provider_see_a_provider">Choose a %1$s</string>
-    <string name="activity__frozen_mountain_session">Cigna Video Consultation</string>
+    <string name="activity__frozen_mountain_session">Client_Name Video Consultation</string>
 
 
     <!--This string replaces the Screen title 'Find a Provider'.-->
@@ -21,15 +21,15 @@
     <string name="find_provider_watermark_reason">Enter your symptoms here</string>
     <!-- dashboard - Search for Providers button text-->
     <string name="mdl__dashboard_find_a_provider">Search for Providers</string>
-    <string name="find_provider_check_availability_main_message">Cigna main message here.</string>
-    <string name="find_provider_check_availability_wait_message">Cigna wait message here.</string>
+    <string name="find_provider_check_availability_main_message">Client_Name main message here.</string>
+    <string name="find_provider_check_availability_wait_message">Client_Name wait message here.</string>
     <string name="find_provider_pharmacy_note">Note: Out-of-network pharmacies may not be displayed here. Select an in-network pharmacy to keep out-of-pocket costs lower. </string>
 
     <!-- find provider - request appointment -->
     <string name="find_provider_request_appointment_instructions">"Please enter the following information so that we can help you setup your appointment"</string>
 
     <!-- waiting room instructions -->
-    <string name="consultation_waiting_room_instructions">Cigna message for waiting room</string>
+    <string name="consultation_waiting_room_instructions">Client_Name message for waiting room</string>
 
     <!-- message center -->
     <string name="message_center_no_message">You have no messages</string>

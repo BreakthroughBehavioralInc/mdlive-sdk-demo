@@ -24,7 +24,7 @@ public class DemoApplication extends MultiDexApplication {
                 .isSessionTimeoutEnabled(false)
                 .isSSOsession(true)
                 .shouldConfirmWizardsExit(false)
-                .phoneNumberFormatter(CignaPhoneNumberFormatter.getInstance())
+                .phoneNumberFormatter(ClientDefinedPhoneNumberFormatter.getInstance())
                 .mapConfiguration(FwfMapConfiguration.builder()
                         .userLocationMarkerColor(FwfMapConfiguration.MarkerColor.AZURE)
                         .defaultPharmacyMarkerColor(FwfMapConfiguration.MarkerColor.RED)
@@ -54,16 +54,16 @@ public class DemoApplication extends MultiDexApplication {
 
     }
 
-    private static final class CignaPhoneNumberFormatter implements FwfPhoneNumberWidget.FwfPhoneNumberFormatter {
+    private static final class ClientDefinedPhoneNumberFormatter implements FwfPhoneNumberWidget.FwfPhoneNumberFormatter {
 
         private static FwfPhoneNumberWidget.FwfPhoneNumberFormatter sPhoneNumberFormatter;
 
-        private CignaPhoneNumberFormatter() {
+        private ClientDefinedPhoneNumberFormatter() {
         }
 
         static FwfPhoneNumberWidget.FwfPhoneNumberFormatter getInstance() {
             if (sPhoneNumberFormatter == null) {
-                sPhoneNumberFormatter = new CignaPhoneNumberFormatter();
+                sPhoneNumberFormatter = new ClientDefinedPhoneNumberFormatter();
             }
             return sPhoneNumberFormatter;
         }

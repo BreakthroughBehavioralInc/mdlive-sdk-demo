@@ -4,14 +4,14 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="cigna_blue_light">#00A9E0</color>
-    <color name="cigna_orange_light">#F1B434</color>
-    <color name="cigna_orange_dark">#E35205</color>
-    <color name="cigna_blue">#0069AA</color>
-    <color name="mycigna_blue_logo">#188CCC</color>
-    <color name="cigna_blue2">#2999CB</color>
+    <color name="client_defined__blue_light">#00A9E0</color>
+    <color name="client_defined_orange_light">#F1B434</color>
+    <color name="client_defined_orange_dark">#E35205</color>
+    <color name="client_defined_blue">#0069AA</color>
+    <color name="client_defined_blue_logo">#188CCC</color>
+    <color name="client_defined_blue2">#2999CB</color>
     <color name="black_transparent">#11000000</color>
-    <color name="cigna_quality_alert_orange">#F68621</color>
+    <color name="client_defined_quality_alert_orange">#F68621</color>
 
 <!--    <color name="fwf__green_aqua">@color/cigna_blue_light</color>
     <color name="mdl__blue_button_2">@color/cigna_blue_light</color>

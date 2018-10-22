@@ -10,5 +10,5 @@
                 android:height="5dp" />
         </shape>
     </item>
-    <item android:drawable="@drawable/cigna__blue_close_icon" />
+    <item android:drawable="@drawable/client_defined__blue_close_icon" />
 </layer-list>
