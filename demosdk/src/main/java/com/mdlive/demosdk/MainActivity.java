@@ -41,6 +41,24 @@ public class MainActivity extends AppCompatActivity {
 
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
                 .ou("Cigna")
+                .firstName("Tucker")
+                .lastName("Fitzgerald")
+                .gender(FwfSSOGender.MALE)
+                .birthdate("18-04-1973")
+                .subscriberId("U9305273601")
+                .memberId("oneguidetestuser1|1561063397.4181788|MGFkYzJjNzFhNTZiYjgxZmEyMTA0NTU3OWVkNGQzMzQ5NDJjZDU1ZmEwODY3ZjEyNGUyZDRiYjhjMTY3Mzg0NQ==")
+                .phone("555-555-5555")
+                .email("some@email.com")
+                .address1("PO BOX 949")
+                .address2("address2")
+                .city("BLOOMFIELD")
+                .state(FwfState.CT)
+                .zipCode("06002")
+                .relationship(FwfSSORelationship.SELF)
+                .build();
+
+        /*MdlSSODetail ssoDetail = MdlSSODetail.builder()
+                .ou("Cigna")
                 .firstName("Emilio")
                 .lastName("Negron")
                 .gender(FwfSSOGender.MALE)
@@ -55,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 .state(FwfState.FL)
                 .zipCode("33303")
                 .relationship(FwfSSORelationship.SELF)
-                .build();
+                .build();*/
 
         /*MdlSSODetail ssoDetail = MdlSSODetail.builder()
                 .ou("Cigna")
