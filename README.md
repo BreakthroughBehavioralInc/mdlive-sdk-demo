@@ -10,13 +10,82 @@ MDLIVE will be the world's highest quality, largest provider of virtual health m
 </font>
 </p>
 
-MDLIVE Android SAV SDK Demo
+1- MDLIVE Android SAV SDK Demo
 ----------------------------
 Our MDLIVE Android SAV SDK Demo is a fully integrated application. 
 It is shared as a reference to show case the MDLIVE SDK features, capabilities and integration.
 
-Integration
------------
+
+2- Run This Android SAV SDK Demo
+-----------------------------
+
+1. Fork this repo: https://github.com/BreakthroughBehavioralInc/mdlive-sdk-demo.
+2. Clone your own fork repo to your local environment.
+3. Import the code with Android Studio.
+4. Build and run the Demo application with Android Studio.
+
+
+3- SAV SDK Styling
+-----------------
+After running the Demo application, you will see a similar dashboard like the following, which displays a default header and text:
+
+<img src="/images/sdk_dashboard.png?raw=true" width="320">
+
+You can make changes to specific Dashboard attributes by overriding the corresponding style attributes, with your own customized theme, extending from `rodeo__SSODashboardActivityStyle`. You will be able to update:
+
+- Dashboard action bar icon or title text. (Icon has priority over text)
+- Update the text, text color, text appearance, background color of the header.
+- Define a header layout to be used as header.
+- Update the text, text color, text appearance, background color of the footer.
+- Define a footer layout to be used as footer.
+
+```xml
+<style name="demo__SSODashboardActivityStyle" parent="rodeo__SSODashboardActivityStyle">
+    <!-- mdl__sso_dashboard_title_icon has higher priority than mdl__sso_dashboard_title_text, this must be a drawable resource -->
+    <item name="mdl__sso_dashboard_title_icon">@drawable/mdlive_logo_small</item>
+    <!-- Text to use as title, this must be a string resource -->
+    <item name="mdl__sso_dashboard_title_text">@string/mdl__app_name</item>
+
+    <!-- Layout to be used as header, if we change this layout the next header styles will be ignored -->
+    <item name="mdl__sso_dashboard_header_layout">@layout/mdl__sso_dashboard_header</item>
+    <!-- Color to use as header background -->
+    <item name="mdl__sso_dashboard_header_background_color">@color/fwf__near_white</item>
+    <!-- Text to use as header, this must be a string resource -->
+    <item name="mdl__sso_dashboard_header_text">@string/mdl__sso_dashboard_subtitle_text</item>
+    <!-- Text appearance for the header text, this must be a style resource -->
+    <item name="mdl__sso_dashboard_header_text_appearance">
+        @style/Base.TextAppearance.AppCompat.Title
+    </item>
+
+    <!-- Layout to be used as footer, if we change this layout the next footer styles will be ignored -->
+    <item name="mdl__sso_dashboard_footer_layout">@layout/mdl__sso_dashboard_footer</item>
+    <!-- Color to use as footer background -->
+    <item name="mdl__sso_dashboard_footer_background_color">@color/fwf__near_white</item>
+    <!-- Text to use as footer, this must be a string resource -->
+    <item name="mdl__sso_dashboard_footer_text">@string/mdl__sso_dashboard_footer_text</item>
+    <!-- Text appearance for the footer text, this must be a style resource -->
+    <item name="mdl__sso_dashboard_footer_text_appearance">
+        @style/Base.TextAppearance.AppCompat.Medium
+    </item>
+</style>
+```
+
+And finally overriding/applying this new theme to `MdlSSODashboardActivity` in your `AndroidManifest.xml` file.
+```xml
+<activity
+    android:name="com.mdlive.mdlcore.activity.ssodashboard.MdlSSODashboardActivity"
+    android:theme="@style/demo__SSODashboardActivityStyle"
+    tools:replace="android:theme" />
+```
+
+If successfully configured, your changes in `demo__SSODashboardActivityStyle` will be reflected in the dashboard.
+
+
+4- Integrate MDLIVE SAV SDK with Your Own App
+----------------------------------------------
+
+## Gradle Build File Update
+
 This section describes the required `*.gradle` files configurations for obtaining the MDLive SDK. 
 
 Open your root project `build.gradle` file, and update it with MDLive and AppBoy bintray dependencies.  
@@ -26,14 +95,20 @@ buildscript {
     ...
     dependencies {
         ...
-        classpath 'com.google.gms:google-services:3.1.0'
+        classpath 'com.google.gms:google-services:x.x.x'
         ...
     }
 }
 ...
 allprojects {
     repositories {
-        ...
+        google()
+        jcenter()
+
+        //Google
+        maven {
+            url "https://maven.google.com"
+        }
         //MDLive
         maven {
             url 'https://breakthroughbehavioralinc.bintray.com/maven/'
@@ -43,14 +118,16 @@ allprojects {
             url "http://appboy.github.io/appboy-android-sdk/sdk"
         }
     }
+    
     project.ext {
         // MDLive SDK library AAR
-        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.4"
+        MDL_android_sdk = "com.mdlive.mdla:android-sdk:xxx_xxx_x.x.x@aar"
+
     }
 }
 ```
 
-**Note:** `MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.4"` is used to define the version of the SDK to use. As of the release of this readme, we are using `4.0.4`. You will need to update this attribute to pick up features or bug fixes, as suggested or broadcasted with future versions.
+**Note:** `MDL_android_sdk = "com.mdlive.mdla:android-sdk:xxx_xxx_x.x.x@aar"` is used to define the version of the SDK to use. 
 
 Once your root `build.gradle` file has been successfully configured, you will need to configure your application `build.gradle` adding the respective dependencies:
 
@@ -60,22 +137,14 @@ Once your root `build.gradle` file has been successfully configured, you will ne
      defaultConfig {
          ...
          multiDexEnabled true
+         ...
      }
      ...
-     // https://developer.android.com/studio/build/configure-apk-splits.html
-     splits {
-         abi {
-             enable true
-             universalApk true
-         }
-     }
  }
  ```
  
- **Note:** `splits.abi.*` allows you to run your app on alternative mobile hardware architectures, and Android Studio Emulators.  ( e.g. `x86` vs. `arm`). You can remove this block, but you will need to test your app on real devices using `arm` architectures.
- 
-Configuration
--------------
+## AndroidManifest Update
+
 This section describes the required code configuration before using the MDLive SDK.
 
 In your `AndroidManifest.xml` file add this code by replacing `[PUT CIGNA PACKAGE ID HERE]` with your package/application id.
@@ -136,9 +205,12 @@ public void onCreate() {
 ```
 **Note:** You must request `mdlive__firebase_defaults.json` file to MDLive SDK team by sending an email asking for this configuration file, otherwise you won't be able to use the SDK.
 
-MDLive Sign In usage
---------------------
+## User Authentication
+
 In order to access the MDLive dashboard, you must to create a `MdlSSODetail` object with the required MDLive user information.
+In this demo app, we have preconfigured one test account.
+However, when you integrate our MDLIVE SAV SDK with your own app, you will need to pull the member information from your app to authenticate the user.
+
 ```java
 Calendar birthdateCalendar = GregorianCalendar.getInstance();
 birthdateCalendar.set(1917, 0, 1);
@@ -191,66 +263,5 @@ MdlApplicationSupport.getAuthenticationCenter()
         );
 ```
 
-Run This Demo SDK
------------------
-You can just clone this repo with:
-```bash
-git clone https://github.com/BreakthroughBehavioralInc/mdlive-sdk-demo.git
-```
-import it with Android Studio once cloned and just run the demosdk application.
-
-Styling
--------
-After running the DemoSDK application, you will see a similar dashboard like the following, which displays a default header and text:
-
-<img src="/images/sdk_dashboard.png?raw=true" width="320">
-
-You can make changes to specific Dashboard attributes by overriding the corresponding style attributes, with your own customized theme, extending from `rodeo__SSODashboardActivityStyle`. You will be able to update:
-
-- Dashboard action bar icon or title text. (Icon has priority over text)
-- Update the text, text color, text appearance, background color of the header.
-- Define a header layout to be used as header.
-- Update the text, text color, text appearance, background color of the footer.
-- Define a footer layout to be used as footer.
 
 
-```xml
-<style name="demo__SSODashboardActivityStyle" parent="rodeo__SSODashboardActivityStyle">
-    <!-- mdl__sso_dashboard_title_icon has higher priority than mdl__sso_dashboard_title_text, this must be a drawable resource -->
-    <item name="mdl__sso_dashboard_title_icon">@drawable/mdlive_logo_small</item>
-    <!-- Text to use as title, this must be a string resource -->
-    <item name="mdl__sso_dashboard_title_text">@string/mdl__app_name</item>
-
-    <!-- Layout to be used as header, if we change this layout the next header styles will be ignored -->
-    <item name="mdl__sso_dashboard_header_layout">@layout/mdl__sso_dashboard_header</item>
-    <!-- Color to use as header background -->
-    <item name="mdl__sso_dashboard_header_background_color">@color/fwf__near_white</item>
-    <!-- Text to use as header, this must be a string resource -->
-    <item name="mdl__sso_dashboard_header_text">@string/mdl__sso_dashboard_subtitle_text</item>
-    <!-- Text appearance for the header text, this must be a style resource -->
-    <item name="mdl__sso_dashboard_header_text_appearance">
-        @style/Base.TextAppearance.AppCompat.Title
-    </item>
-
-    <!-- Layout to be used as footer, if we change this layout the next footer styles will be ignored -->
-    <item name="mdl__sso_dashboard_footer_layout">@layout/mdl__sso_dashboard_footer</item>
-    <!-- Color to use as footer background -->
-    <item name="mdl__sso_dashboard_footer_background_color">@color/fwf__near_white</item>
-    <!-- Text to use as footer, this must be a string resource -->
-    <item name="mdl__sso_dashboard_footer_text">@string/mdl__sso_dashboard_footer_text</item>
-    <!-- Text appearance for the footer text, this must be a style resource -->
-    <item name="mdl__sso_dashboard_footer_text_appearance">
-        @style/Base.TextAppearance.AppCompat.Medium
-    </item>
-</style>
-```
-
-And finally overriding/applying this new theme to `MdlSSODashboardActivity` in your `AndroidManifest.xml` file.
-```xml
-<activity
-    android:name="com.mdlive.mdlcore.activity.ssodashboard.MdlSSODashboardActivity"
-    android:theme="@style/demo__SSODashboardActivityStyle"
-    tools:replace="android:theme" />
-```
-
-If successfully configured, your changes in `demo__SSODashboardActivityStyle` will be reflected in the dashboard.
