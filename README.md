@@ -1,7 +1,22 @@
-# MDLive SDK
-Our MDLIVE SDK Demo is a fully integrated application. It is shared as a reference to show case the MDLIVE SDK features, capabilities and integration.
+<p align="center">
+  <img src="/images/mdlive_always_there.jpg?raw=true" width="226">
+  <br>
+  <a href="https://www.mdlive.com/"><img src="https://travis-ci.org/lord/slate.svg?branch=master" alt="Build Status"></a>
+</p>
 
-## Integration
+<p align="center">
+<font color=#158AE0 size='5'>
+MDLIVE will be the world's highest quality, largest provider of virtual health management and care, recognized for world class consumer and clinician experience.
+</font>
+</p>
+
+MDLIVE Android SAV SDK Demo
+----------------------------
+Our MDLIVE Android SAV SDK Demo is a fully integrated application. 
+It is shared as a reference to show case the MDLIVE SDK features, capabilities and integration.
+
+Integration
+-----------
 This section describes the required `*.gradle` files configurations for obtaining the MDLive SDK. 
 
 Open your root project `build.gradle` file, and update it with MDLive and AppBoy bintray dependencies.  
@@ -59,7 +74,8 @@ Once your root `build.gradle` file has been successfully configured, you will ne
  
  **Note:** `splits.abi.*` allows you to run your app on alternative mobile hardware architectures, and Android Studio Emulators.  ( e.g. `x86` vs. `arm`). You can remove this block, but you will need to test your app on real devices using `arm` architectures.
  
-## Configuration
+Configuration
+-------------
 This section describes the required code configuration before using the MDLive SDK.
 
 In your `AndroidManifest.xml` file add this code by replacing `[PUT CIGNA PACKAGE ID HERE]` with your package/application id.
@@ -120,7 +136,8 @@ public void onCreate() {
 ```
 **Note:** You must request `mdlive__firebase_defaults.json` file to MDLive SDK team by sending an email asking for this configuration file, otherwise you won't be able to use the SDK.
 
-## MDLive Sign In usage
+MDLive Sign In usage
+--------------------
 In order to access the MDLive dashboard, you must to create a `MdlSSODetail` object with the required MDLive user information.
 ```java
 Calendar birthdateCalendar = GregorianCalendar.getInstance();
@@ -174,14 +191,16 @@ MdlApplicationSupport.getAuthenticationCenter()
         );
 ```
 
-## Run This Demo SDK
+Run This Demo SDK
+-----------------
 You can just clone this repo with:
 ```bash
 git clone https://github.com/BreakthroughBehavioralInc/mdlive-sdk-demo.git
 ```
 import it with Android Studio once cloned and just run the demosdk application.
 
-## Styling
+Styling
+-------
 After running the DemoSDK application, you will see a similar dashboard like the following, which displays a default header and text:
 
 <img src="/images/sdk_dashboard.png?raw=true" width="320">
