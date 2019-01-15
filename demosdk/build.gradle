@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    buildToolsVersion "28.0.3"
 
 
     defaultConfig {
@@ -18,7 +18,7 @@ android {
     }
     buildTypes {
         release {
-            //minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -37,7 +37,6 @@ dependencies {
 
     testImplementation 'junit:junit:4.12'
 
-
     androidTestImplementation('com.android.support.test:runner:1.0.1') {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
@@ -45,12 +44,15 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
 
+
     // Module libraries
     implementation(MDL_android_sdk) {
         transitive = true
         exclude group: 'com.android.support'
     }
 }
+
+apply plugin: 'com.google.gms.google-services'
 
 repositories {
     google()
@@ -60,5 +62,3 @@ buildscript {
         google()
     }
 }
-
-apply plugin: 'com.google.gms.google-services'

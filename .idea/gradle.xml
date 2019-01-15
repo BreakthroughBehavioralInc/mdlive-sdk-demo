@@ -8,7 +8,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/App_Base-0.13.4" />
             <option value="$PROJECT_DIR$/demosdk" />
           </set>
         </option>

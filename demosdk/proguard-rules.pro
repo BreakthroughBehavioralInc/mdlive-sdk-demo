@@ -23,15 +23,3 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
-#-dontwarn com.github.sarxos.**
-#-dontwarn com.google.**
-#-dontwarn org.bouncycastle.**
-#-dontwarn afu.org.checkerframework.**
-#-dontwarn com.mdlive.mdlcore.**
-#-dontwarn com.squareup.picasso.**
-#-dontwarn fm.AdobeExtension.**
-#-dontwarn org.bridj.**
-#-dontwarn fm.AdobeExtension
-#-dontwarn fm.icelink.java.**
-#-dontwarn okhttp3.internal.platform.**
-#-dontwarn org.checkerframework.**
