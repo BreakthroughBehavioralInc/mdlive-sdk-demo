@@ -120,13 +120,6 @@ public void onCreate() {
 ```
 **Note:** You must request `mdlive__firebase_defaults.json` file to MDLive SDK team by sending an email asking for this configuration file, otherwise you won't be able to use the SDK.
 
-| Name  | Email | Rol |
-| ------------- | ------------- | ------------- |
-| Blake Schwendiman  | bschwendiman@mdlive.com  | Director of MDLIVE Mobile  |
-| Emilio Negron  | enegron@mdlive.com  | Senior Android Developer  |
-| Terry Turner  | tturner@mdlive.com  | Senior Android Developer  |
-| Eduardo Pool  | epool@nearsoft.com  | Senior Android Developer  |
-
 ## MDLive Sign In usage
 In order to access the MDLive dashboard, you must to create a `MdlSSODetail` object with the required MDLive user information.
 ```java
@@ -134,20 +127,20 @@ Calendar birthdateCalendar = GregorianCalendar.getInstance();
 birthdateCalendar.set(1917, 0, 1);
 
 MdlSSODetail ssoDetail = MdlSSODetail.builder()
-        .ou("BCBSTEST")
-        .firstName("Test")
-        .lastName("Patient")
+        .ou("cspire")
+        .firstName("Cspire")
+        .lastName("Demo")
         .gender(FwfSSOGender.MALE)
-        .birthdate(birthdateCalendar.getTime())
-        .subscriberId("TEST12345")
+        .birthdate("18-08-1968")
+        .subscriberId("")
         .memberId("")
-        .phone("555-555-5555")
-        .email("ahadida@mdlive.com")
-        .address1("address1")
-        .address2("address2")
+        .phone("8888888888")
+        .email("test@mdlive.com")
+        .address1("1234 Test Address")
+        .address2("")
         .city("Sunrise")
         .state(FwfState.FL)
-        .zipCode("33303")
+        .zipCode("33325")
         .relationship(FwfSSORelationship.SELF)
         .build();
 ```
@@ -191,7 +184,7 @@ import it with Android Studio once cloned and just run the demosdk application.
 ## Styling
 After running the DemoSDK application, you will see a similar dashboard like the following, which displays a default header and text:
 
-<img src="/images/Screenshot_1504298299.png?raw=true" width="320">
+<img src="/images/sdk_dashboard.png?raw=true" width="320">
 
 You can make changes to specific Dashboard attributes by overriding the corresponding style attributes, with your own customized theme, extending from `rodeo__SSODashboardActivityStyle`. You will be able to update:
 
