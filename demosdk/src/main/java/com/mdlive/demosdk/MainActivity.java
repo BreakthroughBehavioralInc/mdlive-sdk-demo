@@ -15,20 +15,18 @@ import com.mdlive.mdlcore.fwfrodeo.fwf.enumz.FwfState;
 import com.mdlive.mdlcore.model.MdlSSODetail;
 import com.mdlive.mdlcore.model.MdlUserSession;
 
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Consumer;
-import io.reactivex.functions.Function;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
+import rx.functions.Func1;
 
 /*
  * Copyright MDLive.  All rights reserved.
  */
+
 public class MainActivity extends AppCompatActivity {
 
     private Button mSeeProviderButton;
     private ProgressBar mProgressBar;
-    private Disposable mDisposable = new CompositeDisposable();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,43 +41,43 @@ public class MainActivity extends AppCompatActivity {
         showProgressBar(true);
 
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
-                .ou("Cigna")
-                .firstName("Emilio")
-                .lastName("Negron")
+                .ou("cspire")
+                .firstName("Cspire")
+                .lastName("Demo")
                 .gender(FwfSSOGender.MALE)
-                .birthdate("01-01-1979")
-                .subscriberId("10067837300")
-                .memberId("enegron|1548259115.2447784|YWFlZWViOGZkODVhZDY5YjJiNjA1YTBhYzc0MjI4NjliNTA0YTI3OGZkM2M1OWYyNDg2MjFhMzVkMDNhODA2NQ==")
-                .phone("555-555-5555")
-                .email("ahadida@mdlive.com")
-                .address1("address1")
-                .address2("address2")
+                .birthdate("18-08-1968")
+                .subscriberId("")
+                .memberId("")
+                .phone("8888888888")
+                .email("test@mdlive.com")
+                .address1("1234 Test Address")
+                .address2("")
                 .city("Sunrise")
                 .state(FwfState.FL)
-                .zipCode("33303")
+                .zipCode("33325")
                 .relationship(FwfSSORelationship.SELF)
                 .build();
 
-        mDisposable = MdlApplicationSupport.getAuthenticationCenter()
+        MdlApplicationSupport.getAuthenticationCenter()
                 .singleSignOn(ssoDetail)
-                .map(new Function<MdlUserSession, Intent>() {
+                .map(new Func1<MdlUserSession, Intent>() {
                     @Override
-                    public Intent apply(MdlUserSession mdlUserSession) {
+                    public Intent call(MdlUserSession mdlUserSession) {
                         return MdlApplicationSupport.getIntentFactory().ssoDashboard(MainActivity.this);
                     }
                 })
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(
-                        new Consumer<Intent>() {
+                        new Action1<Intent>() {
                             @Override
-                            public void accept(Intent intent) {
+                            public void call(Intent intent) {
                                 startActivity(intent);
                                 showProgressBar(false);
                             }
                         },
-                        new Consumer<Throwable>() {
+                        new Action1<Throwable>() {
                             @Override
-                            public void accept(Throwable throwable) {
+                            public void call(Throwable throwable) {
                                 Log.e(MainActivity.class.getSimpleName(), throwable.toString());
                                 showProgressBar(false);
                             }
@@ -92,9 +90,4 @@ public class MainActivity extends AppCompatActivity {
         mProgressBar.setVisibility(showProgressBar ? View.VISIBLE : View.GONE);
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        mDisposable.dispose();
-    }
 }

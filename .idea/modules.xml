@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/App_Base-0.13.4/App_Base-0.13.4.iml" filepath="$PROJECT_DIR$/App_Base-0.13.4/App_Base-0.13.4.iml" />
       <module fileurl="file://$PROJECT_DIR$/demosdk/demosdk.iml" filepath="$PROJECT_DIR$/demosdk/demosdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/mdlive-sdk-demo.iml" filepath="$PROJECT_DIR$/mdlive-sdk-demo.iml" />
     </modules>
