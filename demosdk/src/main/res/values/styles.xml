@@ -82,7 +82,7 @@
 
         <!--General FAB Styles -->
         <item name="fwf__fab_widget_background_tint">@android:color/white</item>
-        <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
+        <!--<item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>-->
         <item name="fwf__fab_widget_icon_tint">@color/sdk_client_blue_logo</item>
         <item name="fwf__fab_widget_invalid_icon_tint">@android:color/white</item>
         <!-- Color for the fail background FAB -->
@@ -137,12 +137,8 @@
         <!-- Text entry field under-line -->
         <item name="fwf__focus_view_color">@color/sdk_client_blue_logo</item>
 
-        <item name="fwf__call_number_widget_style">
-            @style/sdk_client__CallNumberWidgetStyle
-        </item>
-        <item name="fwf__phone_icon_style">
-            @style/sdk_client__PhoneIconStyle
-        </item>
+        <!--<item name="fwf__call_number_widget_style">@style/sdk_client__CallNumberWidgetStyle</item>-->
+        <!--<item name="fwf__phone_icon_style">@style/sdk_client__PhoneIconStyle</item>-->
 
         <item name="fwf_alert_dialog_style">
             @style/sdk_client__AlertDialogStyle
@@ -177,7 +173,7 @@
         <item name="mdl__visit_history_style">@style/sdk_client__VisitHistoryStyle</item>
 
         <!--style for family member list screen-->
-        <item name="mdl__family_member_list_style">@style/sdk_client__FamilyMemberListStyle</item>
+        <!--<item name="mdl__family_member_list_style">@style/sdk_client__FamilyMemberListStyle</item>-->
 
         <!--style for provider list screen-->
         <item name="mdl__provider_list_style">@style/sdk_client__ProviderListStyle</item>
@@ -205,11 +201,11 @@
         <item name="fwf__confirm_appointment_icon_color">@color/sdk_client_blue2</item>
     </style>
 
-    <style name="sdk_client__FamilyMemberListStyle" parent="@style/mdl__FamilyMemberListStyle">
+    <!--<style name="sdk_client__FamilyMemberListStyle" parent="@style/mdl__FamilyMemberListStyle">
         <item name="mdl__family_member_list_no_family_member_added_text_color">@color/w3c__white</item>
         <item name="mdl__family_member_list_no_family_member_added_text">@string/family_members__message_no_members
         </item>
-    </style>
+    </style>-->
 
     <style name="sdk_client__ProviderListStyle" parent="@style/mdl__ProviderListStyle">
         <item name="mdl__provider_list_no_found_text_color">@color/w3c__white
@@ -321,7 +317,7 @@
     <style name="sdk_client_DialogActivityStyle" parent="@style/rodeo__DialogActivityStyle">
         <!--General Save/FAB Styles -->
         <item name="fwf__fab_widget_background_tint">@color/sdk_client_blue2</item>
-        <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>
+        <!--<item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>-->
         <item name="fwf__fab_widget_icon_tint">@android:color/white</item>
         <item name="fwf__fab_widget_invalid_icon_tint">@color/sdk_client_blue_logo</item>
         <!-- Color for the fail background FAB -->
@@ -398,7 +394,7 @@
     </style>
     <!--Configuration for 'Upload a Photo' 2nd card on Reason for Visit screen.-->
     <style name="sdk_client__UploadPhotoButtonStyle" parent="fwf__UploadPhotoButtonStyle">
-        <item name="fwf__upload_photo_button_background_color">@android:color/white</item>
+        <!--<item name="fwf__upload_photo_button_background_color">@android:color/white</item>-->
         <item name="fwf__upload_photo_button_icon_tint_color">@color/sdk_client_blue_logo</item>
         <item name="fwf__text_view_alternate_text_color">@color/sdk_client_blue_logo</item>
         <item name="fwf__upload_photo_nav_arrow_icon_tint_color">@color/sdk_client_blue_logo</item>

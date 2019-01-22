@@ -19,7 +19,6 @@ allprojects {
     repositories {
         google()
         jcenter()
-
         //Google
         maven {
             url "https://maven.google.com"
@@ -32,10 +31,11 @@ allprojects {
         maven {
             url "http://appboy.github.io/appboy-android-sdk/sdk"
         }
+        maven { url 'https://jitpack.io' }
     }
     project.ext {
         // MDLive SDK library AAR
-        MDL_android_sdk = "com.mdlive.mdla:android-sdk:sav_cspire_1.0.0@aar"
+        MDL_android_sdk = "com.mdlive.mdla:android-sdk:WHITELABEL_SDK_SNAPSHOT@aar"
 
     }
 }

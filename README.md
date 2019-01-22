@@ -156,7 +156,7 @@ In your `AndroidManifest.xml` file add this code by replacing `[PUT CIGNA PACKAG
         android:name=".DemoApplication">
     ...
         <provider
-            android:name="android.support.v4.content.FileProvider"
+            android:name="androidx.core.content.FileProvider"
             android:authorities="[PUT CIGNA PACKAGE ID HERE].fileprovider"
             android:exported="false"
             android:grantUriPermissions="true"
