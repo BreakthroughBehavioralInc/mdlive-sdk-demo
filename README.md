@@ -27,58 +27,70 @@ It is shared as a reference to show case the MDLIVE SDK features, capabilities a
 
 3- SAV SDK Styling
 -----------------
-After running the Demo application, you will see a similar dashboard like the following, which displays a default header and text:
+After running the Demo application, you will see a similar dashboard like the following.
 
-<img src="/images/sdk_dashboard.png?raw=true" width="320">
+<img src="/images/sav_sdk_styling1.png?raw=true" width="280">
+<br>
 
-You can make changes to specific Dashboard attributes by overriding the corresponding style attributes, with your own customized theme, extending from `rodeo__SSODashboardActivityStyle`. You will be able to update:
+In the <a href='https://github.com/BreakthroughBehavioralInc/mdlive-sdk-demo/blob/master/demosdk/src/main/res/values/colors.xml' target="_blank">colors.xml file</a>, 
+you can make changes to specific SDK colors with your own customized theme color.
 
-- Dashboard action bar icon or title text. (Icon has priority over text)
-- Update the text, text color, text appearance, background color of the header.
-- Define a header layout to be used as header.
-- Update the text, text color, text appearance, background color of the footer.
-- Define a footer layout to be used as footer.
+<br>
+<img src="/images/colors_xml.png?raw=true" width="450">
+<br>
 
 ```xml
-<style name="demo__SSODashboardActivityStyle" parent="rodeo__SSODashboardActivityStyle">
-    <!-- mdl__sso_dashboard_title_icon has higher priority than mdl__sso_dashboard_title_text, this must be a drawable resource -->
-    <item name="mdl__sso_dashboard_title_icon">@drawable/mdlive_logo_small</item>
-    <!-- Text to use as title, this must be a string resource -->
-    <item name="mdl__sso_dashboard_title_text">@string/mdl__app_name</item>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="demo_app_color">#000000</color>
 
-    <!-- Layout to be used as header, if we change this layout the next header styles will be ignored -->
-    <item name="mdl__sso_dashboard_header_layout">@layout/mdl__sso_dashboard_header</item>
-    <!-- Color to use as header background -->
-    <item name="mdl__sso_dashboard_header_background_color">@color/fwf__near_white</item>
-    <!-- Text to use as header, this must be a string resource -->
-    <item name="mdl__sso_dashboard_header_text">@string/mdl__sso_dashboard_subtitle_text</item>
-    <!-- Text appearance for the header text, this must be a style resource -->
-    <item name="mdl__sso_dashboard_header_text_appearance">
-        @style/Base.TextAppearance.AppCompat.Title
-    </item>
+    <color name="sdk_sdk_primary">#EC7063</color>
+    <color name="sav_sdk_secondary">#582A72</color>
+    <color name="sdk_alert">#A8383B</color>
+    <color name="sav_sdk_icon_and_number">#2D882D</color>
+    <color name="video_session_background">#82E0AA</color>
 
-    <!-- Layout to be used as footer, if we change this layout the next footer styles will be ignored -->
-    <item name="mdl__sso_dashboard_footer_layout">@layout/mdl__sso_dashboard_footer</item>
-    <!-- Color to use as footer background -->
-    <item name="mdl__sso_dashboard_footer_background_color">@color/fwf__near_white</item>
-    <!-- Text to use as footer, this must be a string resource -->
-    <item name="mdl__sso_dashboard_footer_text">@string/mdl__sso_dashboard_footer_text</item>
-    <!-- Text appearance for the footer text, this must be a style resource -->
-    <item name="mdl__sso_dashboard_footer_text_appearance">
-        @style/Base.TextAppearance.AppCompat.Medium
-    </item>
-</style>
+    <color name="black_transparent">#11000000</color>
+
+</resources>
 ```
 
-And finally overriding/applying this new theme to `MdlSSODashboardActivity` in your `AndroidManifest.xml` file.
-```xml
-<activity
-    android:name="com.mdlive.mdlcore.activity.ssodashboard.MdlSSODashboardActivity"
-    android:theme="@style/demo__SSODashboardActivityStyle"
-    tools:replace="android:theme" />
-```
-
-If successfully configured, your changes in `demo__SSODashboardActivityStyle` will be reflected in the dashboard.
+<img src="/images/sav_sdk_styling1.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling2.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling3.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling4.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling5.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling6.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling7.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling8.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling9.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling10.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling11.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling21.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling22.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling31.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling32.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling33.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling41.png?raw=true" width="280">
+<br>
+<img src="/images/sav_sdk_styling42.png?raw=true" width="280">
+<br>
 
 
 4- Integrate MDLIVE SAV SDK with Your Own App
