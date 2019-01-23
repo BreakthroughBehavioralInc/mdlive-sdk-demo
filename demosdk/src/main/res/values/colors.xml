@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="demo_app_color">#000000</color>
 
-    <color name="sdk_client_blue_light">#00A9E0</color>
-    <color name="sdk_client_orange_light">#F1B434</color>
-    <color name="sdk_client_orange_dark">#E35205</color>
-    <color name="sdk_client_blue">#0069AA</color>
-    <color name="sdk_client_blue_logo">#188CCC</color>
-    <color name="sdk_client_blue2">#2999CB</color>
+    <color name="sdk_sdk_primary">#EC7063</color>
+    <color name="sav_sdk_secondary">#582A72</color>
+    <color name="sdk_alert">#A8383B</color>
+    <color name="sav_sdk_icon_and_number">#2D882D</color>
+    <color name="video_session_background">#82E0AA</color>
+
     <color name="black_transparent">#11000000</color>
-    <color name="sdk_client_quality_alert_orange">#F68621</color>
-
-<!--    <color name="fwf__green_aqua">@color/sdk_client_blue_light</color>
-    <color name="mdl__blue_button_2">@color/sdk_client_blue_light</color>
-    <color name="fwf__selectedCardColor">@color/sdk_client_orange_light</color>
-    <color name="mdl__caribbean_shoreline_green">@color/sdk_client_blue</color>
-
-    &lt;!&ndash; Lets get started page text color&ndash;&gt;
-    <color name="rodeo__page_title_text_color">@android:color/white</color>
-    <color name="fwf__menu_button_text">@android:color/white</color>
--->
 
 </resources>
