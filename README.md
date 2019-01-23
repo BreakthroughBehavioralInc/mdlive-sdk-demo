@@ -30,15 +30,12 @@ It is shared as a reference to show case the MDLIVE SDK features, capabilities a
 After running the Demo application, you will see a similar dashboard like the following.
 
 <img src="/images/sav_sdk_styling1.png?raw=true" width="280">
-<br>
 
-In the <a href='https://github.com/BreakthroughBehavioralInc/mdlive-sdk-demo/blob/master/demosdk/src/main/res/values/colors.xml' target="_blank">colors.xml file</a>, 
-you can make changes to specific SDK colors with your own customized theme color.
+In the colors.xml file from your application, you can make changes to specific SDK colors with your own customized theme color.
 
-<br>
+Example:
+<a href='https://github.com/BreakthroughBehavioralInc/mdlive-sdk-demo/blob/master/demosdk/src/main/res/values/colors.xml' target="_blank">colors.xml</a>
 <img src="/images/colors_xml.png?raw=true" width="450">
-<br>
-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
@@ -54,43 +51,24 @@ you can make changes to specific SDK colors with your own customized theme color
 
 </resources>
 ```
-
 <img src="/images/sav_sdk_styling1.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling2.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling3.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling4.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling5.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling6.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling7.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling8.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling9.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling10.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling11.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling21.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling22.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling31.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling32.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling33.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling41.png?raw=true" width="280">
-<br>
 <img src="/images/sav_sdk_styling42.png?raw=true" width="280">
-<br>
 
 
 4- Integrate MDLIVE SAV SDK with Your Own App
