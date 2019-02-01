@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     public void enterSDK(View v) {
         showProgressBar(true);
 
-        MdlSSODetail ssoDetail = MdlSSODetail.builder()
+   /*     MdlSSODetail ssoDetail = MdlSSODetail.builder()
                 .ou("cspire")
                 .firstName("Cspire")
                 .lastName("Demo")
@@ -56,7 +56,44 @@ public class MainActivity extends AppCompatActivity {
                 .state(FwfState.FL)
                 .zipCode("33325")
                 .relationship(FwfSSORelationship.SELF)
+                .build();*/
+
+   /*     MdlSSODetail ssoDetail = MdlSSODetail.builder()
+                .ou("cspire")
+                .firstName("freevisit")
+                .lastName("noaddfamily")
+                .gender(FwfSSOGender.MALE)
+                .birthdate("08-08-1988")
+                .subscriberId("")
+                .memberId("")
+                .phone("9178602754")
+                .email("spradeep@mdlive.com")
+                .address1("1234 Test Address")
+                .address2("")
+                .city("Sunrise")
+                .state(FwfState.FL)
+                .zipCode("33325")
+                .relationship(FwfSSORelationship.SELF)
                 .build();
+*/
+        MdlSSODetail ssoDetail = MdlSSODetail.builder()
+                .ou("cspire")
+                .firstName("dtcvisit")
+                .lastName("yesaddfamily")
+                .gender(FwfSSOGender.MALE)
+                .birthdate("09-09-1990")
+                .subscriberId("")
+                .memberId("")
+                .phone("9178602754")
+                .email("spradeep@mdlive.com")
+                .address1("1234 Test Address")
+                .address2("")
+                .city("Sunrise")
+                .state(FwfState.FL)
+                .zipCode("33325")
+                .relationship(FwfSSORelationship.SELF)
+                .build();
+
 
         MdlApplicationSupport.getAuthenticationCenter()
                 .singleSignOn(ssoDetail)

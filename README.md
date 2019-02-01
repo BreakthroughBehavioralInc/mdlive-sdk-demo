@@ -41,8 +41,8 @@ Example:
 <resources>
     <color name="demo_app_color">#000000</color>
 
-    <color name="sdk_sdk_primary">#EC7063</color>
-    <color name="sav_sdk_secondary">#582A72</color>
+    <color name="primary">#EC7063</color>
+    <color name="secondary">#582A72</color>
     <color name="sdk_alert">#A8383B</color>
     <color name="sav_sdk_icon_and_number">#2D882D</color>
     <color name="video_session_background">#82E0AA</color>

@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="demo_app_color">#000000</color>
 
-    <color name="sdk_sdk_primary">#EC7063</color>
-    <color name="sav_sdk_secondary">#582A72</color>
-    <color name="sdk_alert">#A8383B</color>
-    <color name="sav_sdk_icon_and_number">#2D882D</color>
-    <color name="video_session_background">#82E0AA</color>
+    <!-- Updated color scheme 6/29/2018 -->
+    <item name="primary_light" type="color">#5ad0ff</item>
+    <item name="primary" type="color">#28c2fe</item>
+    <item name="accent" type="color">#00aeef</item>
+    <item name="secondary" type="color">#0072c7</item>
+    <item name="dark" type="color">#002146</item>
+    <item name="light" type="color">#DFF4FC</item>
+    <item name="lightest_grey" type="color">#fafafa</item>
+    <item name="lighter_grey" type="color">#f5f5f5</item>
+    <item name="light_grey" type="color">#9B9B9B</item>
+    <item name="medium_grey" type="color">#666666</item>
+    <item name="dark_grey" type="color">#4A4A4A</item>
+    <item name="black" type="color">#000000</item>
+    <item name="white" type="color">#ffffff</item>
+    <item name="error_bg" type="color">#ffdfdf</item>
+    <item name="error_text" type="color">#ff5a5f</item>
+    <item name="success_bg" type="color">#e8f5e9</item>
+    <item name="success_text" type="color">#50ae55</item>
+    <item name="grey_divider" type="color">#d4dade</item>
+    <item name="sav_sdk_icon_and_number" type="color">#2D882D</item>
+    <item name="fwf__near_black" type="color">#333333</item>
 
-    <color name="black_transparent">#11000000</color>
+    <!-- Transparency -->
+    <item name="frost" type="color">#90ffffff</item>
+    <item name="frost0" type="color">#aaffffff</item>
+    <item name="frost1" type="color">#70ffffff</item>
+    <item name="frost2" type="color">#55ffffff</item>
+    <item name="frost3" type="color">#40ffffff</item>
+    <item name="transparent" type="color">#00ffffff</item>
 
 </resources>
+
 
 
