@@ -22,6 +22,10 @@
         <!--MDLive Styles -->
         <!-- ############ Custom Base Style ############ -->
         <style name="client_defined_ActivityStyle" parent="rodeo__ActivityStyle">
+
+            <!-- Provider Profile background Drawable or Color. -->
+            <item name="provider_profile__background">@color/white</item>
+
             <item name="rodeo__title_bar_text_color">@color/black</item>
             <item name="colorPrimary">@color/primary</item>
             <item name="colorPrimaryDark">@color/primary</item>
@@ -114,7 +118,7 @@
 
             <!-- Provider Profile Buttons -->
             <item name="fwf__provider_profile_primary_button_style">@style/client_defined__ProviderProfilePrimaryButtonStyle</item>   
-            <!--<item name="fwf__provider_profile_secondary_button_style">@style/client_defined__ProviderProfileSecondaryButtonStyle</item>-->
+            <item name="fwf__provider_profile_secondary_button_style">@style/client_defined__ProviderProfileSecondaryButtonStyle</item>
             <!--<item name="fwf__hyperlink_text_color">@color/primary</item>-->
 
             <!-- Provider Visit Buttons -->
@@ -344,7 +348,7 @@
             <!--Family Memeber's Image default circle place holder.-->
             <item name="fwf__circle_image_default_src">@drawable/fwf__sdk_client_blue_circle</item>
             <!-- Provider Profile background Drawable or Color. -->
-            <item name="provider_profile__background">@color/white</item>
+            <!--<item name="provider_profile__background">@color/white</item>-->
 
             <!--<item name="fwf__phone_number_card_view_style">@style/client_defined__PhoneCardViewStyle</item>-->
             <!--<item name="fwf__symptom_attachments_card_view_style">@style/client_defined__SymptomAttachmentsCardViewStyle</item>-->
@@ -465,7 +469,7 @@
         <style name="client_defined__ProviderListCellStyle" parent="@style/mdl__ProviderListCellStyle">
         <item name="mdl__provider_list_cell_phone_video_icon_color">@color/primary</item>
         </style>
-        <!--&lt;!&ndash; ##### End of Find a provider, Provider List Card View #### &ndash;&gt;-->
+        <!-- ##### End of Find a provider, Provider List Card View #### -->
 
         <!-- ##### See a Physician - Search for a Provider Button Card View #### -->
         <style name="client_defined__ProviderSearchButtonCardViewStyle" parent="@style/fwf__ProviderSearchButtonCardViewStyle">
