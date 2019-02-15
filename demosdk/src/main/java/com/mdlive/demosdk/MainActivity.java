@@ -58,24 +58,28 @@ public class MainActivity extends AppCompatActivity {
                 .relationship(FwfSSORelationship.SELF)
                 .build();*/
 
-   /*     MdlSSODetail ssoDetail = MdlSSODetail.builder()
-                .ou("cspire")
-                .firstName("freevisit")
-                .lastName("noaddfamily")
-                .gender(FwfSSOGender.MALE)
-                .birthdate("08-08-1988")
-                .subscriberId("")
-                .memberId("")
-                .phone("9178602754")
-                .email("spradeep@mdlive.com")
-                .address1("1234 Test Address")
-                .address2("")
-                .city("Sunrise")
-                .state(FwfState.FL)
-                .zipCode("33325")
-                .relationship(FwfSSORelationship.SELF)
-                .build();
-*/
+//        /******     Staging Accounts       ******/
+//
+//        /******     Subcriber Plan            ******/
+//        MdlSSODetail ssoDetail = MdlSSODetail.builder()
+//                .ou("cspire")
+//                .firstName("freevisit")
+//                .lastName("noaddfamily")
+//                .gender(FwfSSOGender.MALE)
+//                .birthdate("08-08-1988")
+//                .subscriberId("")
+//                .memberId("")
+//                .phone("9178602754")
+//                .email("spradeep@mdlive.com")
+//                .address1("1234 Test Address")
+//                .address2("")
+//                .city("Sunrise")
+//                .state(FwfState.FL)
+//                .zipCode("33325")
+//                .relationship(FwfSSORelationship.SELF)
+//                .build();
+
+        /******     DTC Plan                    ******/
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
                 .ou("cspire")
                 .firstName("dtcvisit")
@@ -94,6 +98,46 @@ public class MainActivity extends AppCompatActivity {
                 .relationship(FwfSSORelationship.SELF)
                 .build();
 
+
+//            /******     Production Accounts       ******/
+//
+//            /******     Subcriber Plan            ******/
+//            MdlSSODetail ssoDetail = MdlSSODetail.builder()
+//                    .ou("cspire")
+//                    .firstName("android")
+//                    .lastName("freevisit")
+//                    .gender(FwfSSOGender.MALE)
+//                    .birthdate("08-08-1988")
+//                    .subscriberId("")
+//                    .memberId("")
+//                    .phone("9178602754")
+//                    .email("spradeep@mdlive.com")
+//                    .address1("1234 Test Address")
+//                    .address2("")
+//                    .city("Sunrise")
+//                    .state(FwfState.FL)
+//                    .zipCode("33325")
+//                    .relationship(FwfSSORelationship.SELF)
+//                    .build();
+
+//            /******     DTC Plan                    ******/
+//            MdlSSODetail ssoDetail = MdlSSODetail.builder()
+//                    .ou("cspire")
+//                    .firstName("android")
+//                    .lastName("59visit")
+//                    .gender(FwfSSOGender.MALE)
+//                    .birthdate("08-08-1988")
+//                    .subscriberId("")
+//                    .memberId("")
+//                    .phone("9178602754")
+//                    .email("spradeep@mdlive.com")
+//                    .address1("1234 Test Address")
+//                    .address2("")
+//                    .city("Sunrise")
+//                    .state(FwfState.FL)
+//                    .zipCode("33325")
+//                    .relationship(FwfSSORelationship.SELF)
+//                    .build();
 
         MdlApplicationSupport.getAuthenticationCenter()
                 .singleSignOn(ssoDetail)
