@@ -12,13 +12,26 @@
     <color name="sdk_client_blue2">#2999CB</color>
     <color name="black_transparent">#11000000</color>
     <color name="sdk_client_quality_alert_orange">#F68621</color>
+    <color name="sdk_client_white">#FFFFFF</color>
+    <color name="sdk_client_weak_gray">#999999</color>
 
-<!--    <color name="fwf__green_aqua">@color/sdk_client_blue_light</color>
-    <color name="mdl__blue_button_2">@color/sdk_client_blue_light</color>
+    <!--** FAB tint Color - controlled by core methods 'enable()' & 'disable()' ** -->
+    <color name="fwf__green_aqua">@color/sdk_client_blue</color>
+    <color name="deep_aquamarine">@color/sdk_client_blue</color>
+    <color name="fwf__weak_gray">@color/sdk_client_weak_gray</color>
+
+    <!--** Auto-complete Text Widgit Focus color ** -->
+    <color name="fwf__focus_view_color">@color/sdk_client_blue_logo</color>
+
+    <color name="colorControlActivated">@color/sdk_client_blue_logo</color>
+    <color name="fwf__schedule_appointment_color">@color/sdk_client_blue_logo</color>
+
+
+   <!-- <color name="mdl__blue_button_2">@color/sdk_client_blue_light</color>
     <color name="fwf__selectedCardColor">@color/sdk_client_orange_light</color>
     <color name="mdl__caribbean_shoreline_green">@color/sdk_client_blue</color>
 
-    &lt;!&ndash; Lets get started page text color&ndash;&gt;
+    //&lt;!&ndash; Lets get started page text color &ndash;&gt;
     <color name="rodeo__page_title_text_color">@android:color/white</color>
     <color name="fwf__menu_button_text">@android:color/white</color>
 -->

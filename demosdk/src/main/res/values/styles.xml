@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <!-- Base application theme. -->
@@ -20,7 +21,7 @@
         <!-- Select a Provider Lets get started screen background color. -->
         <item name="rodeo__menu_background">@color/sdk_client_blue_logo</item>
         <!-- 'Reason for Visit' Card 1 backgrounf color.-->
-        <item name="fwf__card_view_background_color">@android:color/white</item>
+        <item name="fwf__card_view_background_color">@color/sdk_client_white</item>
         <!-- ActionBar - ProgressBar color -->
         <item name="fwf__wizard_progress_bar_style">@style/sdk_client__ProgressBar_Horizontal</item>
         <item name="fwf__progress_bar_indeterminate_tint_color">@color/sdk_client_orange_light</item>
@@ -81,13 +82,14 @@
         <item name="mdl__find_provider_button_style">@style/sdk_client__FindProviderButtonStyle</item>
 
         <!--General FAB Styles -->
-        <item name="fwf__fab_widget_background_tint">@android:color/white</item>
+        <item name="fwf__fab_widget_background_tint">@color/sdk_client_blue</item>
         <!--<item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>-->
-        <item name="fwf__fab_widget_icon_tint">@color/sdk_client_blue_logo</item>
-        <item name="fwf__fab_widget_invalid_icon_tint">@android:color/white</item>
+        <item name="fwf__fab_widget_icon_tint">@color/sdk_client_white</item>
+        <item name="fwf__fab_widget_invalid_icon_tint">@color/sdk_client_white</item>
         <!-- Color for the fail background FAB -->
         <item name="fwf__fab_widget_alternative_tint">@color/sdk_client_quality_alert_orange</item>
         <item name="fwf__fab_widget_ripple_color">@color/mdl__light_gray</item>
+
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">@color/mdl__light_gray</item>
         <item name="rodeo__find_provider_check_availability_main_message">
@@ -118,6 +120,7 @@
         <item name="fwf__EditTextStyle">@style/sdk_client__EditTextStyle</item>
 
         <!-- Find a provider, Availability and Consultation Type -->
+        <item name="fwf__fab_next_widget_style">@style/sdk_client__FabWidgetStyleNext</item>
         <item name="fwf__fab_call_widget_style">@style/sdk_client__FabWidgetStyleCall</item>
         <item name="rodeo__button_dialog_cancel_style">@style/sdk_client__ButtonDialogCancelStyle</item>
 
@@ -142,6 +145,10 @@
 
         <item name="fwf_alert_dialog_style">
             @style/sdk_client__AlertDialogStyle
+        </item>
+
+        <item name="fwf__form_button_widget_style">
+            @style/sdk_client__FormButtonWidgetStyle
         </item>
 
         <!-- Default provider profile picture -->
@@ -189,7 +196,9 @@
 
         <!--Color for the quality icon in the widgets-->
         <item name="fwf__warning_quality_icon_fill_color">@color/sdk_client_quality_alert_orange</item>
-
+        <!--<item name="fwf__medical_history_cancel_button_dialog_style">-->
+            <!--@style/sdk_client__MedicalHistoryCancelButtonDialogStyle-->
+        <!--</item>-->
     </style>
 
     <style name="sdk_client__CheckboxStyle" parent="fwf__CheckboxStyle">
@@ -280,19 +289,19 @@
     <!-- Provider Profile Buttons -->
     <!-- Request Appointment button -->
     <style name="sdk_client__ProviderProfilePrimaryButtonStyle" parent="@style/fwf__ProviderProfilePrimaryButtonStyle">
-        <item name="backgroundTint">@android:color/white</item>
+        <item name="backgroundTint">@color/sdk_client_white</item>
         <item name="android:textColor">@color/sdk_client_blue2</item>
     </style>
 
     <style name="sdk_client__ProviderProfileSecondaryButtonStyle" parent="@style/fwf__ProviderProfileSecondaryButtonStyle">
-        <item name="backgroundTint">@android:color/white</item>
+        <item name="backgroundTint">@color/sdk_client_white</item>
         <item name="android:textColor">@color/sdk_client_blue2</item>
     </style>
     <!-- END Provider Profile Buttons -->
 
     <style name="sdk_client_ChipItemProviderListStyle" parent="@style/fwf__ChipItemStyle">
         <item name="fwf__chip_item_background">@drawable/sdk_client__chip_white_background</item>
-        <item name="fwf__chip_item_label_text_color">@android:color/white</item>
+        <item name="fwf__chip_item_label_text_color">@color/sdk_client_white</item>
         <item name="fwf__chip_item_text_color">@color/sdk_client_blue2</item>
         <item name="fwf__chip_item_remove_icon">
             @drawable/sdk_client__white_chip_remove_button_background
@@ -302,7 +311,7 @@
     <style name="sdk_client_ChipItemProviderSearchCriteriaStyle" parent="@style/fwf__ChipItemStyle">
         <item name="fwf__chip_item_background">@drawable/sdk_client__chip_blue_background</item>
         <item name="fwf__chip_item_label_text_color">@color/mdl__gray</item>
-        <item name="fwf__chip_item_text_color">@android:color/white</item>
+        <item name="fwf__chip_item_text_color">@color/sdk_client_white</item>
         <item name="fwf__chip_item_remove_icon">
             @drawable/sdk_client__blue_chip_remove_button_background
         </item>
@@ -316,13 +325,15 @@
 
     <style name="sdk_client_DialogActivityStyle" parent="@style/rodeo__DialogActivityStyle">
         <!--General Save/FAB Styles -->
-        <item name="fwf__fab_widget_background_tint">@color/sdk_client_blue2</item>
+        <item name="fwf__fab_widget_background_tint">@color/sdk_client_blue</item>
         <!--<item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>-->
-        <item name="fwf__fab_widget_icon_tint">@android:color/white</item>
-        <item name="fwf__fab_widget_invalid_icon_tint">@color/sdk_client_blue_logo</item>
+        <item name="fwf__fab_widget_icon_tint">@color/sdk_client_white</item>
+        <item name="fwf__fab_widget_invalid_icon_tint">@color/sdk_client_white</item>
+
         <!-- Color for the fail background FAB -->
         <item name="fwf__fab_widget_alternative_tint">@color/sdk_client_quality_alert_orange</item>
         <item name="fwf__fab_widget_ripple_color">@color/mdl__light_gray</item>
+
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">@color/mdl__light_gray</item>
         <!--Family Memeber's Image default circle place holder.-->
@@ -333,6 +344,7 @@
         <item name="fwf__symptom_attachments_card_view_style">
             @style/sdk_client__SymptomAttachmentsCardViewStyle
         </item>
+        <item name="fwf__fab_next_widget_style">@style/sdk_client__FabWidgetStyleNext</item>
         <item name="fwf__fab_call_widget_style">@style/sdk_client__FabWidgetStyleCall</item>
         <item name="rodeo__button_dialog_cancel_style">@style/sdk_client__ButtonDialogCancelStyle</item>
         <!-- Text` entry field under-line -->
@@ -340,12 +352,17 @@
         <!-- TextView text entry cursor color -->
         <item name="fwf__EditTextStyle">@style/sdk_client__EditTextStyle</item>
         <!-- Style for the cancel button in medical history dialogs-->
-        <item name="fwf__medical_history_cancel_button_dialog_style">
-            @style/sdk_client__MedicalHistoryCancelButtonDialogStyle
-        </item>
+        <!--<item name="fwf__medical_history_cancel_button_dialog_style">-->
+            <!--@style/sdk_client__MedicalHistoryCancelButtonDialogStyle-->
+        <!--</item>-->
         <item name="fwf_alert_dialog_style">
             @style/sdk_client__AlertDialogStyle
         </item>
+
+        <item name="fwf__form_button_widget_style">
+            @style/sdk_client__FormButtonWidgetStyle
+        </item>
+
         <!--Styles for the number and icon color in the cancel dialog-->
         <item name="fwf__call_number_style">@style/sdk_client__CallNumberStyle</item>
 
@@ -378,26 +395,26 @@
     <!-- ##### Find a provider, Reason For Visit- #### -->
     <!--Find a Provider inner Title Text Color, plus-->
     <style name="sdk_client__PageTitleStyle" parent="rodeo__PageTitleStyle">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/sdk_client_white</item>
     </style>
     <!-- My Pharmacy Intructions text. -->
     <style name="sdk_client__PageSmallerInstructionsStyle" parent="rodeo__PageSmallerInstructionsStyle">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/sdk_client_white</item>
         <item name="android:textSize">18sp</item>
     </style>
     <!-- My Pharmacy NOTE: text. -->
     <style name="sdk_client__PageSmallerNotesStyle" parent="rodeo__PageSmallerNotesStyle">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/sdk_client_white</item>
         <item name="android:text">@string/find_provider_pharmacy_note</item>
         <item name="android:textSize">14sp</item>
         <item name="android:visibility">visible</item>
     </style>
     <!--Configuration for 'Upload a Photo' 2nd card on Reason for Visit screen.-->
     <style name="sdk_client__UploadPhotoButtonStyle" parent="fwf__UploadPhotoButtonStyle">
-        <!--<item name="fwf__upload_photo_button_background_color">@android:color/white</item>-->
+        <!--<item name="fwf__upload_photo_button_background_color">@color/sdk_client_white</item>-->
         <item name="fwf__upload_photo_button_icon_tint_color">@color/sdk_client_blue_logo</item>
         <item name="fwf__text_view_alternate_text_color">@color/sdk_client_blue_logo</item>
-        <item name="fwf__upload_photo_nav_arrow_icon_tint_color">@color/sdk_client_blue_logo</item>
+        <item name="fwf__upload_photo_nav_arrow_icon_tint_color">@color/sdk_client_white</item>
     </style>
     <!-- ##### End of Find a provider, Reason For Visit- #### -->
 
@@ -436,7 +453,7 @@
         <item name="fwf__appointment_videocam_tint">@color/sdk_client_blue2</item>
         <item name="fwf__appointment_call_icon_tint">@color/sdk_client_blue2</item>
         <item name="fwf__appointment_card_cancel_text_color">@color/sdk_client_blue2</item>
-        <item name="fwf__card_view_background_color">@color/mdl__white</item>
+        <item name="fwf__card_view_background_color">@color/sdk_client_white</item>
         <item name="fwf__appointment_label_text_color">@android:color/black</item>
         <item name="fwf__appointment_time_date_text_color">@color/sdk_client_blue2</item>
         <item name="fwf__appointment_provider_text_color">@color/sdk_client_blue2</item>
@@ -451,7 +468,7 @@
 
     <!-- ##### See a Physician - Search for a Provider Button Card View #### -->
     <style name="sdk_client__ProviderSearchButtonCardViewStyle" parent="@style/fwf__ProviderSearchButtonCardViewStyle">
-        <item name="fwf__provider_search_bar_background_color">@android:color/white</item>
+        <item name="fwf__provider_search_bar_background_color">@color/sdk_client_white</item>
         <item name="fwf__provider_search_bar_magnifying_glass_icon_color">@color/mdl__black</item>
         <item name="fwf__provider_search_bar_text_color">@color/fwf__gray</item>
     </style>
@@ -466,7 +483,7 @@
 
     <!-- ##### My Providers, Add Primary Care Physician Button #### -->
     <style name="sdk_client__AddPrimaryCarePhysicianButtonStyle" parent="@style/mdl__AddPrimaryCarePhysicianButtonStyle">
-        <item name="backgroundTint">@android:color/white</item>
+        <item name="backgroundTint">@color/sdk_client_white</item>
         <item name="android:textColor">@color/sdk_client_blue_logo</item>
     </style>
     <!-- ##### End of My Providers, Add Primary Care Physician Button #### -->
@@ -474,7 +491,7 @@
     <!-- ##### User profile widget style #### -->
     <style name="sdk_client__UserProfileWidgetStyle" parent="@style/fwf__UserProfileWidgetStyle">
         <item name="fillerTextColor">@color/sdk_client_blue_logo</item>
-        <item name="profilePictureBackgroundColor">@android:color/white</item>
+        <item name="profilePictureBackgroundColor">@color/sdk_client_white</item>
     </style>
     <!-- ##### End of User profile widget style #### -->
     <style name="sdk_client__DashboardCardViewButtonStyle" parent="@style/fwf__DashboardCardViewButtonStyle">
@@ -492,21 +509,28 @@
         <item name="mdl__video_session_control_buttons_background_color">@color/sdk_client_blue
         </item>
         <item name="mdl__video_session_primary_button_tint_color">@color/sdk_client_orange_dark</item>
-        <item name="mdl__video_session_secondary_buttons_tint_color">@android:color/white</item>
+        <item name="mdl__video_session_secondary_buttons_tint_color">@color/sdk_client_white</item>
     </style>
 
     <style name="sdk_client__WaitingRoomTextAppearance" parent="@style/mdl__WaitingRoomTextAppearance">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/sdk_client_white</item>
     </style>
 
     <style name="sdk_client__FindProviderButtonStyle" parent="@style/mdl__FindProviderButtonStyle">
-        <item name="backgroundTint">@android:color/white</item>
+        <item name="backgroundTint">@color/sdk_client_white</item>
         <item name="android:textColor">@color/sdk_client_orange_light</item>
         <item name="android:text">@string/mdl__dashboard_find_a_provider</item>
     </style>
     <!-- ##### Dashboard Appointment card Cancel Popup attributes #### -->
     <style name="sdk_client__FabWidgetStyleCall" parent="@style/fwf__FabWidgetStyle.Call">
         <item name="backgroundTint">@color/sdk_client_blue2</item>
+    </style>
+
+    <!-- ##### FAB style attributes - Next #### -->
+    <style name="sdk_client__FabWidgetStyleNext" parent="@style/fwf__FabWidgetStyle.Next">
+        <item name="fwf__fab_widget_icon_tint">@color/sdk_client_white</item>
+        <item name="fwf__fab_widget_invalid_icon_tint">@color/sdk_client_white</item>
+        <item name="backgroundTint">@color/sdk_client_blue</item>
     </style>
 
     <style name="sdk_client__ButtonDialogCancelStyle" parent="@style/fwf__ButtonDialogCancelStyle">
@@ -527,7 +551,7 @@
         <!-- Layout to be used as header, if we change this layout the next header styles will be ignored -->
         <!--<item name="mdl__sso_dashboard_header_layout">@layout/mdl__sso_dashboard_header</item>-->
         <!-- Color to use as header background -->
-        <item name="mdl__sso_dashboard_header_background_color">@color/mdl__white</item>
+        <item name="mdl__sso_dashboard_header_background_color">@color/sdk_client_white</item>
         <!-- Text to use as header, this must be a string resource -->
         <item name="mdl__sso_dashboard_header_text">@string/dashboard_text</item>
         <!-- Text appearance for the header text, this must be a style resource -->
@@ -538,7 +562,7 @@
             @color/sdk_client_blue2
         </item>
 
-        <item name="mdl__switch_user_arrow_tint_color">@color/mdl__white</item>
+        <item name="mdl__switch_user_arrow_tint_color">@color/sdk_client_white</item>
 
         <item name="mdl__text_under_find_provider_text_appearance">
             @style/sdk_client__TextUnderFindProviderTextAppearance
@@ -592,7 +616,7 @@
     </style>
 
     <style name="sdk_client__sso_dashboard_terms_and_conditions_text_appearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/sdk_client_white</item>
     </style>
 
     <style name="sdk_client__FamilyMemberChooserDialogStyle" parent="@style/mdl__FamilyMemberChooserDialogStyle">
@@ -607,7 +631,7 @@
 
     <style name="sdk_client__SwitchUserAccountItemStyle" parent="@style/fwf__SwitchUserAccountItemStyle">
         <item name="fillerTextColor">@color/sdk_client_blue_logo</item>
-        <item name="profilePictureBackgroundColor">@android:color/white</item>
+        <item name="profilePictureBackgroundColor">@color/sdk_client_white</item>
         <item name="lineOneTextAppearance">
             @style/sdk_client__UserProfileWidgetStyleLineOneTextAppearance
         </item>
@@ -617,19 +641,19 @@
     </style>
 
     <style name="sdk_client__UserProfileWidgetStyleLineOneTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Body1">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/sdk_client_white</item>
     </style>
 
     <style name="sdk_client__UserProfileWidgetStyleLineTwoTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Caption">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/sdk_client_white</item>
     </style>
 
     <style name="sdk_client__FamilyMemberChooserDialogTitleTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Title">
-        <item name="android:textColor">@color/mdl__white</item>
+        <item name="android:textColor">@color/sdk_client_white</item>
     </style>
 
     <style name="sdk_client__TextUnderFindProviderTextAppearance" parent="@style/mdl__TextUnderFindProviderTextAppearance">
-        <item name="android:textColor">@color/mdl__white</item>
+        <item name="android:textColor">@color/sdk_client_white</item>
         <item name="android:textStyle">bold</item>
     </style>
     <!-- ############ End of Dashboard ############ -->
@@ -642,14 +666,26 @@
         <item name="android:tint">@color/sdk_client_blue_logo</item>
     </style>
 
-    <style name="sdk_client__MedicalHistoryCancelButtonDialogStyle" parent="@style/fwf__MedicalHistoryCancelDialogButtonStyle">
-        <item name="backgroundTint">@color/sdk_client_blue2</item>
-        <item name="android:textColor">@color/fwf__near_white</item>
-    </style>
+    <!--<style name="sdk_client__MedicalHistoryCancelButtonDialogStyle" parent="@style/fwf__MedicalHistoryCancelDialogButtonStyle">-->
+        <!--&lt;!&ndash; This is to support pre-lollipop devices &ndash;&gt;-->
+        <!--<item name="backgroundTint">@color/sdk_client_blue2</item>-->
+        <!--<item name="android:textColor">@color/sdk_client_white</item>-->
+
+        <!--<item name="android:textColorHint">@color/sdk_client_blue2</item>-->
+        <!--<item name="colorControlNormal">@color/sdk_client_blue2</item>-->
+        <!--<item name="colorControlActivated">@color/sdk_client_blue2</item>-->
+        <!--<item name="colorError">@color/sdk_client_quality_alert_orange</item>-->
+    <!--</style>-->
 
     <style name="sdk_client__AlertDialogStyle" parent="@style/fwf_AlertDialogStyle">
         <item name="colorAccent">@color/sdk_client_blue_logo</item>
         <item name="android:textColor">@color/sdk_client_blue_logo</item>
     </style>
 
+    <style name="sdk_client__FormButtonWidgetStyle" parent="@style/fwf__FormButtonWidgetStyle">
+        <item name="backgroundTint">@color/sdk_client_blue</item>
+        <item name="android:textColor">@color/sdk_client_white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
 </resources>
