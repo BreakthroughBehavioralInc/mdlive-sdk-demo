@@ -65,23 +65,23 @@ public class MainActivity extends AppCompatActivity {
         /******     Staging Accounts       ******/
 
         /******     Subcriber Plan            ******/
-        MdlSSODetail ssoDetail = MdlSSODetail.builder()
-                .ou("cspire")
-                .firstName("freevisit")
-                .lastName("noaddfamily")
-                .gender(FwfSSOGender.MALE)
-                .birthdate("08-08-1988")
-                .subscriberId("")
-                .memberId("")
-                .phone("9178602754")
-                .email("spradeep@mdlive.com")
-                .address1("1234 Test Address")
-                .address2("")
-                .city("Sunrise")
-                .state(FwfState.FL)
-                .zipCode("33325")
-                .relationship(FwfSSORelationship.SELF)
-                .build();
+//        MdlSSODetail ssoDetail = MdlSSODetail.builder()
+//                .ou("cspire")
+//                .firstName("freevisit")
+//                .lastName("noaddfamily")
+//                .gender(FwfSSOGender.MALE)
+//                .birthdate("08-08-1988")
+//                .subscriberId("")
+//                .memberId("")
+//                .phone("9178602754")
+//                .email("spradeep@mdlive.com")
+//                .address1("1234 Test Address")
+//                .address2("")
+//                .city("Sunrise")
+//                .state(FwfState.FL)
+//                .zipCode("33325")
+//                .relationship(FwfSSORelationship.SELF)
+//                .build();
 
 //        /******     DTC Plan                    ******/
 //        MdlSSODetail ssoDetail = MdlSSODetail.builder()
@@ -101,6 +101,25 @@ public class MainActivity extends AppCompatActivity {
 //                .zipCode("33325")
 //                .relationship(FwfSSORelationship.SELF)
 //                .build();
+
+        /******     CIGNA Test account                    ******/
+        MdlSSODetail ssoDetail = MdlSSODetail.builder()
+                .ou("cigna")
+                .firstName("cigna")
+                .lastName("sdkdemo")
+                .gender(FwfSSOGender.MALE)
+                .birthdate("01-01-1980")
+                .subscriberId("cignasdk2019")
+                .memberId("cignasdk2019|1656205449.2447784|YjM2YTY1YWNiYjk1MjM5MmU2YTg1NjQ2MTAzYzQ1NGU4YTc3OGNmZWEwMDZmM2E3M2JhZjE5ZTc5NWE1MDBmNQ==")
+                .phone("8888888888")
+                .email("test@mdlive.com")
+                .address1("1234 Test Address")
+                .address2("")
+                .city("Sunrise")
+                .state(FwfState.FL)
+                .zipCode("33325")
+                .relationship(FwfSSORelationship.SELF)
+                .build();
 
 
         /******     Production Accounts       ******/
@@ -142,7 +161,6 @@ public class MainActivity extends AppCompatActivity {
 //                    .zipCode("33325")
 //                    .relationship(FwfSSORelationship.SELF)
 //                    .build();
-
 
         final Disposable disposable = (Disposable) MdlApplicationSupport.getAuthenticationCenter()
                 .singleSignOn(ssoDetail)
