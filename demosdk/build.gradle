@@ -41,14 +41,12 @@ dependencies {
 
     // androidx Support
     implementation "androidx.appcompat:appcompat:1.0.2"
-    implementation "androidx.biometric:biometric:1.0.0-alpha04"
     implementation "androidx.legacy:legacy-support-core-ui:1.0.0"
     implementation "androidx.fragment:fragment:1.0.0"
     implementation "com.google.android.material:material:1.0.0"
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
     implementation "androidx.cardview:cardview:1.0.0"
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
-    implementation "androidx.constraintlayout:constraintlayout:2.0.0-alpha4"
 
     testImplementation 'junit:junit:4.12'
 
@@ -64,6 +62,7 @@ dependencies {
     implementation(MDL_android_sdk) {
         transitive = true
         exclude group: 'com.android.support'
+        exclude group: 'androidx.biometric'
     }
 }
 
