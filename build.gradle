@@ -7,8 +7,8 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
-        classpath 'com.google.gms:google-services:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.google.gms:google-services:4.2.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -36,7 +36,8 @@ allprojects {
     project.ext {
         // MDLive SDK library AAR
         //MDL_android_sdk = "com.mdlive.mdla:android-sdk:WHITELABEL_SDK_SNAPSHOT@aar"
-        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.32.0-CIGNA-2.0.0@aar"
+        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.32.0-CIGNA-2.0.1@aar"
+        //MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.32.0-CIGNA-SNAPSHOT@aar"
 
     }
 }

@@ -1,7 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <!-- Base application theme. -->
+    <!--
+        <style name="AppTheme" parent="Theme.AppCompat.Light">
+            &lt;!&ndash; Customize your theme here. &ndash;&gt;
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+        </style>
+    -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -9,87 +16,171 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="thml_icon_text" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textColor">@color/th_orange_logo</item>
+    </style>
+
+    <style name="thml_normal_text" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="android:textColor">@color/th_gray_dark</item>
+    </style>
+
+    <style name="thml_medium_text" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="android:textColor">@color/th_gray_dark</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="thml_icon_text.medium">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="thml_icon_text.small">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="thml_icon_text.large">
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <style name="thml_headline_text" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+        <item name="android:textColor">@color/th_gray_dark</item>
+    </style>
+
+    <style name="thml_headline_text.bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="thml_caption_text" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Caption</item>
+        <item name="android:textColor">@color/th_gray_dark</item>
+    </style>
+
+    <style name="thml_wizard_text" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/palette_digital_blue</item>
+    </style>
+
+    <!-- dark buttons styles for light background -->
+    <style name="thml_primary_button">
+        <item name="android:background">@drawable/common_google_signin_btn_icon_dark_normal</item>
+        <item name="android:textColor">@drawable/common_google_signin_btn_text_dark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Text Input layout hints color -->
+    <style name="fwf__FloatingHintTextTheme" parent="Theme.Design.Light">
+        <item name="android:textColorHint">?attr/fwf__hint_text_color</item>
+        <item name="colorControlActivated">?attr/fwf__hint_text_color</item>
+    </style>
+
+    <!-- Spinner hint text color -->
+    <style name="fwf__SpinnerStyle" parent="fwf__DefaultWidgetStyle">
+        <item name="colorControlNormal">@color/palette_digital_blue</item>
+        <item name="android:textSize">15sp</item>
+        <item name="fwf__spinner_item_height_one_line">@dimen/fwf__spinner_item_height_one_line
+        </item>
+        <item name="fwf__text_view_text_color">@color/mdl__red</item>
+    </style>
     <!--MDLive Styles -->
     <!-- ############ Custom Base Style ############ -->
-    <style name="sdk_client_ActivityStyle" parent="rodeo__ActivityStyle">
-        <item name="colorAccent">@color/sdk_client_blue_logo</item>
+    <style name="cigna_ActivityStyle" parent="rodeo__ActivityStyle">
+        <item name="fwf__spinner_indicator_image_src">@drawable/fwf__spinner_indicator_drawable
+        </item>
+        <item name="colorAccent">@color/th_blue_logo</item>
         <!--ActionBar - customize back/home button. -->
-        <item name="homeAsUpIndicator">@drawable/rodeo__activity_cancel_icon</item>
+        <item name="homeAsUpIndicator">@drawable/ic_close</item>
         <item name="windowActionBarOverlay">false</item>
         <!-- Support library compatibility -->
-        <item name="rodeo__app_name">@string/sdk_client</item>
+        <item name="rodeo__app_name">@string/app_name</item>
         <!-- Select a Provider Lets get started screen background color. -->
-        <item name="rodeo__menu_background">@color/sdk_client_blue_logo</item>
+        <item name="rodeo__menu_background">@color/th_blue_logo</item>
         <!-- 'Reason for Visit' Card 1 backgrounf color.-->
-        <item name="fwf__card_view_background_color">@color/sdk_client_white</item>
+        <item name="fwf__card_view_background_color">@android:color/white</item>
         <!-- ActionBar - ProgressBar color -->
-        <item name="fwf__wizard_progress_bar_style">@style/sdk_client__ProgressBar_Horizontal</item>
-        <item name="fwf__progress_bar_indeterminate_tint_color">@color/sdk_client_orange_light</item>
+        <item name="fwf__wizard_progress_bar_style">@style/cigna__ProgressBar_Horizontal</item>
+        <item name="fwf__progress_bar_indeterminate_tint_color">@color/th_orange_logo</item>
         <!-- ActionBar Title Text Style -->
-        <item name="rodeo__action_bar_title_text_style">@style/sdk_client__ActionBarTitleTextAppearance
+        <item name="rodeo__action_bar_title_text_style">@style/cigna__ActionBarTitleTextAppearance
         </item>
         <!-- File chooser background color -->
-        <item name="fwf__file_chooser_dialog_background">@color/sdk_client_blue_logo</item>
+        <item name="fwf__file_chooser_dialog_background">@color/th_blue_logo</item>
         <!--Find a Provider inner Title Text Color, and for Medication, Allergies, -->
         <!--Pre-Conditions, and Procedures default background Text color.-->
-        <item name="rodeo__page_title_style">@style/sdk_client__PageTitleStyle</item>
+        <item name="rodeo__page_title_style">@style/cigna__PageTitleStyle</item>
         <item name="rodeo__page_smaller_instructions_style">
-            @style/sdk_client__PageSmallerInstructionsStyle
+            @style/cigna__PageSmallerInstructionsStyle
         </item>
         <item name="rodeo__page_smaller_notes_style">
-            @style/sdk_client__PageSmallerNotesStyle
+            @style/cigna__PageSmallerNotesStyle
         </item>
         <!-- Reason for Visit - Upload Button Style -->
-        <item name="fwf__upload_photo_button_style">@style/sdk_client__UploadPhotoButtonStyle</item>
+        <item name="fwf__upload_photo_button_style">@style/cigna__UploadPhotoButtonStyle</item>
         <!-- Medical History - Card View -->
-        <item name="mdl__medical_history_style">@style/sdk_client__MedicalHistoryStyle</item>
-        <item name="fwf__question_card_view_style">@style/sdk_client__QuestionCardViewStyle</item>
+        <item name="mdl__medical_history_style">@style/cigna__MedicalHistoryStyle</item>
+        <item name="fwf__question_card_view_style">@style/cigna__QuestionCardViewStyle</item>
 
         <!-- Availability and consultation radio card views -->
-        <item name="fwf__card_view_style">@style/sdk_client__CardViewStyle</item>
+        <item name="fwf__card_view_style">@style/cigna__CardViewStyle</item>
         <!-- Dashboard Appointment card views -->
-        <item name="fwf__appointment_card_view_style">@style/sdk_client__AppointmentCardViewStyle</item>
+        <item name="fwf__appointment_card_view_style">@style/cigna__AppointmentCardViewStyle</item>
         <!-- See a Family Physician - Search for a Provider Button card views -->
         <item name="fwf__provider_search_button_card_view_style">
-            @style/sdk_client__ProviderSearchButtonCardViewStyle
+            @style/cigna__ProviderSearchButtonCardViewStyle
         </item>
 
         <!-- Payment and CC Subhead -->
-        <item name="fwf__subhead_bar_payment_style">@style/sdk_client__SubheadBarPaymentStyle</item>
+        <item name="fwf__subhead_bar_payment_style">@style/cigna__SubheadBarPaymentStyle</item>
 
         <!-- Add Primary Care Physician Button -->
         <item name="mdl__add_primary_care_physician_button_style">
-            @style/sdk_client__AddPrimaryCarePhysicianButtonStyle
+            @style/cigna__AddPrimaryCarePhysicianButtonStyle
         </item>
 
-        <item name="mdl__sso_dashboard_style">@style/sdk_client__SsoDashboardStyle</item>
+        <item name="mdl__sso_dashboard_style">@style/cigna__SsoDashboardStyle</item>
 
         <!--Family Memeber's Image default circle place holder.-->
-        <item name="fwf__circle_image_default_src">@drawable/fwf__sdk_client_blue_circle</item>
+        <item name="fwf__circle_image_default_src">@drawable/fwf__green_circle</item>
         <!-- Provider Profile background Drawable or Color.-->
-        <item name="provider_profile__background">@color/sdk_client_blue_logo</item>
+        <item name="provider_profile__background">@color/th_blue_logo</item>
 
-        <item name="fwf__user_profile_widget_style">@style/sdk_client__UserProfileWidgetStyle</item>
+        <item name="fwf__user_profile_widget_style">@style/cigna__UserProfileWidgetStyle</item>
 
         <item name="fwf__dashboard_card_view_button_style">
-            @style/sdk_client__DashboardCardViewButtonStyle
+            @style/cigna__DashboardCardViewButtonStyle
         </item>
 
         <item name="mdl__waiting_room_and_video_session_style">
-            @style/sdk_client__WaitingRoomAndVideoSessionStyle
+            @style/cigna__WaitingRoomAndVideoSessionStyle
         </item>
 
-        <item name="mdl__find_provider_button_style">@style/sdk_client__FindProviderButtonStyle</item>
+        <item name="mdl__find_provider_button_style">@style/cigna__FindProviderButtonStyle</item>
 
         <!--General FAB Styles -->
-        <item name="fwf__fab_widget_background_tint">@color/sdk_client_blue</item>
-        <!--<item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>-->
-        <item name="fwf__fab_widget_icon_tint">@color/sdk_client_white</item>
-        <item name="fwf__fab_widget_invalid_icon_tint">@color/sdk_client_white</item>
+        <item name="fwf__fab_widget_background_tint">@color/th_orange_dark</item>
+        <!-- TODO deprecated <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>-->
+        <item name="fwf__fab_widget_icon_tint">@color/palette_digital_blue</item>
+        <item name="fwf__fab_widget_invalid_icon_tint">@color/palette_digital_blue</item>
         <!-- Color for the fail background FAB -->
-        <item name="fwf__fab_widget_alternative_tint">@color/sdk_client_quality_alert_orange</item>
+        <item name="fwf__fab_widget_alternative_tint">@color/th_quality_alert_orange</item>
         <item name="fwf__fab_widget_ripple_color">@color/mdl__light_gray</item>
-
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">@color/mdl__light_gray</item>
         <item name="rodeo__find_provider_check_availability_main_message">
@@ -99,10 +190,10 @@
             @string/find_provider_check_availability_wait_message
         </item>
         <!-- Phone Number card views - Treatment for 'Clear' icon. -->
-        <item name="fwf__phone_number_card_view_style">@style/sdk_client__PhoneCardViewStyle</item>
+        <item name="fwf__phone_number_card_view_style">@style/cigna__PhoneCardViewStyle</item>
         <!-- Delete Photo Attachment card views - Treatment for 'Clear' icon. -->
         <item name="fwf__symptom_attachments_card_view_style">
-            @style/sdk_client__SymptomAttachmentsCardViewStyle
+            @style/cigna__SymptomAttachmentsCardViewStyle
         </item>
         <!-- Expiration Token Error Message Dialog -->
         <item name="mdl__expired_token_error_title">@string/mdl__expired_token_error_title</item>
@@ -110,45 +201,45 @@
         </item>
 
         <!-- Search provider chip filter -->
-        <item name="fwf__chip_item_provider_list_style">@style/sdk_client_ChipItemProviderListStyle
+        <item name="fwf__chip_item_provider_list_style">@style/cigna_ChipItemProviderListStyle
         </item>
         <item name="fwf__chip_item_provider_search_criteria_style">
-            @style/sdk_client_ChipItemProviderSearchCriteriaStyle
+            @style/cigna_ChipItemProviderSearchCriteriaStyle
         </item>
 
         <!-- TextView text entry cursor color -->
-        <item name="fwf__EditTextStyle">@style/sdk_client__EditTextStyle</item>
+        <item name="fwf__EditTextStyle">@style/cigna__EditTextStyle</item>
 
         <!-- Find a provider, Availability and Consultation Type -->
-        <item name="fwf__fab_next_widget_style">@style/sdk_client__FabWidgetStyleNext</item>
-        <item name="fwf__fab_call_widget_style">@style/sdk_client__FabWidgetStyleCall</item>
-        <item name="rodeo__button_dialog_cancel_style">@style/sdk_client__ButtonDialogCancelStyle</item>
+        <item name="fwf__fab_call_widget_style">@style/cigna__FabWidgetStyleCall</item>
+        <item name="rodeo__button_dialog_cancel_style">@style/cigna__ButtonDialogCancelStyle</item>
 
         <!-- Provider Profile Buttons -->
         <item name="fwf__provider_profile_primary_button_style">
-            @style/sdk_client__ProviderProfilePrimaryButtonStyle
+            @style/cigna__ProviderProfilePrimaryButtonStyle
         </item>
         <item name="fwf__provider_profile_secondary_button_style">
-            @style/sdk_client__ProviderProfileSecondaryButtonStyle
+            @style/cigna__ProviderProfileSecondaryButtonStyle
         </item>
-        <item name="fwf__hyperlink_text_color">@color/sdk_client_blue2</item>
+        <item name="fwf__hyperlink_text_color">@color/th_blue_logo</item>
 
         <!-- Provider Visit Buttons -->
-        <item name="mdl__provider_visit_buttons_style">@style/sdk_client__ProviderVisitButtonsStyle
+        <item name="mdl__provider_visit_buttons_style">@style/cigna__ProviderVisitButtonsStyle
         </item>
         <!-- END Provider Visit Buttons -->
         <!-- Text entry field under-line -->
-        <item name="fwf__focus_view_color">@color/sdk_client_blue_logo</item>
+        <item name="fwf__focus_view_color">@color/th_blue_logo</item>
 
-        <!--<item name="fwf__call_number_widget_style">@style/sdk_client__CallNumberWidgetStyle</item>-->
-        <!--<item name="fwf__phone_icon_style">@style/sdk_client__PhoneIconStyle</item>-->
+        <!--TODO deprecated-->
+        <!--<item name="fwf__call_number_widget_style">-->
+            <!--@style/cigna__CallNumberWidgetStyle-->
+        <!--</item>-->
+        <!--<item name="fwf__phone_icon_style">-->
+            <!--@style/cigna__PhoneIconStyle-->
+        <!--</item>-->
 
         <item name="fwf_alert_dialog_style">
-            @style/sdk_client__AlertDialogStyle
-        </item>
-
-        <item name="fwf__form_button_widget_style">
-            @style/sdk_client__FormButtonWidgetStyle
+            @style/cigna__AlertDialogStyle
         </item>
 
         <!-- Default provider profile picture -->
@@ -156,90 +247,118 @@
             @drawable/sdk_client__provider_profile_picture
         </item>
         <!-- END Default provider profile picture -->
-        <item name="mdl__pharmacy_widget_style">@style/sdk_client__PharmacyWidgetStyle</item>
-        <item name="mdl__find_provider_card_view_style">@style/sdk_client__FindProviderCardViewStyle
+        <item name="mdl__pharmacy_widget_style">@style/cigna__PharmacyWidgetStyle</item>
+        <item name="mdl__find_provider_card_view_style">@style/cigna__FindProviderCardViewStyle
         </item>
-        <item name="mdl__pharmacy_card_view_style">@style/sdk_client__PharmacyCardViewStyle</item>
+        <item name="mdl__pharmacy_card_view_style">@style/cigna__PharmacyCardViewStyle</item>
         <!--Property to handle forms label color -->
-        <item name="fwf__hint_text_color">@color/mdl__gray</item>
+        <item name="fwf__hint_text_color">@color/palette_digital_blue</item>
 
         <!-- Providers List Cell Style-->
-        <item name="mdl__provider_list_cell_style">@style/sdk_client__ProviderListCellStyle</item>
+        <item name="mdl__provider_list_cell_style">@style/cigna__ProviderListCellStyle</item>
         <!-- END Providers List Cell Style-->
 
         <!--Styles for the number and icon color in the cancel dialog-->
-        <item name="fwf__call_number_style">@style/sdk_client__CallNumberStyle</item>
+        <item name="fwf__call_number_style">@style/cigna__CallNumberStyle</item>
 
         <!--style for pharmacy search screen-->
-        <item name="mdl__pharmacy_search_screen_style">@style/sdk_client__PharmacySearchScreenStyle</item>
+        <item name="mdl__pharmacy_search_screen_style">@style/cigna__PharmacySearchScreenStyle
+        </item>
 
         <!--style for message screens-->
-        <item name="mdl__message_center_style">@style/sdk_client__MessageCenterStyle</item>
+        <item name="mdl__message_center_style">@style/cigna__MessageCenterStyle</item>
 
         <!--style for visit history screen-->
-        <item name="mdl__visit_history_style">@style/sdk_client__VisitHistoryStyle</item>
+        <item name="mdl__visit_history_style">@style/cigna__VisitHistoryStyle</item>
 
         <!--style for family member list screen-->
-        <!--<item name="mdl__family_member_list_style">@style/sdk_client__FamilyMemberListStyle</item>-->
+        <!-- TODO deprecated <item name="mdl__family_member_list_style">@style/cigna__FamilyMemberListStyle</item>-->
 
         <!--style for provider list screen-->
-        <item name="mdl__provider_list_style">@style/sdk_client__ProviderListStyle</item>
+        <item name="mdl__provider_list_style">@style/cigna__ProviderListStyle</item>
 
         <!--style for the provider profile screen-->
-        <item name="mdl__provider_profile_style">@style/sdk_client__ProviderProfileStyle</item>
+        <item name="mdl__provider_profile_style">@style/cigna__ProviderProfileStyle</item>
 
         <!--Style for all the checkboxes in the app-->
-        <item name="fwf__checkbox_style">@style/sdk_client__CheckboxStyle</item>
+        <item name="fwf__checkbox_style">@style/cigna__CheckboxStyle</item>
 
         <!--Style for colors in confirm appointment's icons-->
-        <item name="fwf__confirm_appointment_style">@style/sdk_client__ConfirmAppointmentStyle</item>
+        <item name="fwf__confirm_appointment_style">@style/cigna__ConfirmAppointmentStyle</item>
 
         <!--Color for the quality icon in the widgets-->
-        <item name="fwf__warning_quality_icon_fill_color">@color/sdk_client_quality_alert_orange</item>
-        <!--<item name="fwf__medical_history_cancel_button_dialog_style">-->
-            <!--@style/sdk_client__MedicalHistoryCancelButtonDialogStyle-->
-        <!--</item>-->
+        <item name="fwf__warning_quality_icon_fill_color">@color/th_quality_alert_orange</item>
+
+        <item name="fwf__form_button_widget_style">@style/cigna__FormButtonWidgetStyle</item>
+
+        <item name="mdl__my_health_lifestyle_bmi_text_color">@color/mdl__my_health_lifestyle_bmi_text_color</item>
     </style>
 
-    <style name="sdk_client__CheckboxStyle" parent="fwf__CheckboxStyle">
-        <item name="colorControlNormal">@color/sdk_client_blue2</item>
-        <item name="colorControlActivated">@color/sdk_client_blue2</item>
-    </style>
-
-    <style name="sdk_client__ConfirmAppointmentStyle" parent="fwf__ConfirmAppointmentStyle">
-        <item name="fwf__confirm_appointment_icon_color">@color/sdk_client_blue2</item>
-    </style>
-
-    <!--<style name="sdk_client__FamilyMemberListStyle" parent="@style/mdl__FamilyMemberListStyle">
-        <item name="mdl__family_member_list_no_family_member_added_text_color">@color/w3c__white</item>
-        <item name="mdl__family_member_list_no_family_member_added_text">@string/family_members__message_no_members
+    <style name="fwf__DataQualityTextInputLayoutStyle" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">@color/palette_digital_blue
         </item>
-    </style>-->
+        <item name="colorControlNormal">@color/palette_digital_blue
+        </item>
+        <item name="colorControlActivated">
+            @color/palette_digital_blue
+        </item>
 
-    <style name="sdk_client__ProviderListStyle" parent="@style/mdl__ProviderListStyle">
+        <item name="backgroundTint">
+            @color/fwf__data_quality_text_input_layout_underline_color
+        </item>
+        <!-- TODO deprecated <item name="textColorError">@color/fwf__material_error_color</item>-->
+    </style>
+
+    <style name="fwf__DataQualityTextInputLayoutStyle.Hint" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/palette_digital_blue</item>
+    </style>
+
+    <style name="cigna__CheckboxStyle" parent="fwf__CheckboxStyle">
+        <item name="colorControlNormal">@color/th_blue_logo</item>
+        <item name="colorControlActivated">@color/th_blue_logo</item>
+    </style>
+
+    <style name="cigna__ConfirmAppointmentStyle" parent="fwf__ConfirmAppointmentStyle">
+        <item name="fwf__confirm_appointment_icon_color">@color/th_blue_logo</item>
+    </style>
+
+    <!--TODO deprecated-->
+    <!--<style name="cigna__FamilyMemberListStyle" parent="@style/mdl__FamilyMemberListStyle">-->
+        <!--<item name="mdl__family_member_list_no_family_member_added_text_color">@color/w3c__white-->
+        <!--</item>-->
+        <!--<item name="mdl__family_member_list_no_family_member_added_text">-->
+            <!--@string/family_members__message_no_members-->
+        <!--</item>-->
+    <!--</style>-->
+
+    <style name="cigna__ProviderListStyle" parent="@style/mdl__ProviderListStyle">
         <item name="mdl__provider_list_no_found_text_color">@color/w3c__white
         </item>
     </style>
 
-    <style name="sdk_client__ProviderProfileStyle" parent="@style/mdl__ProviderProfileStyle">
+    <style name="cigna__ProviderProfileStyle" parent="@style/mdl__ProviderProfileStyle">
         <item name="mdl__currently_with_patient_background_color">@color/transparent</item>
     </style>
 
-    <style name="sdk_client__PharmacyWidgetStyle" parent="@style/mdl__PharmacyWidgetStyle">
-        <item name="mdl__pharmacy_widget_24_hour_text_color">@color/sdk_client_blue</item>
-        <item name="mdl__pharmacy_widget_distance_icon_color">@color/sdk_client_blue</item>
-        <item name="mdl__pharmacy_widget_distance_text_color">@color/sdk_client_blue</item>
+    <style name="cigna__PharmacyWidgetStyle" parent="@style/mdl__PharmacyWidgetStyle">
+        <item name="mdl__pharmacy_widget_24_hour_text_color">@color/th_blue_logo</item>
+        <item name="mdl__pharmacy_widget_distance_icon_color">@color/th_blue_logo</item>
+        <item name="mdl__pharmacy_widget_distance_text_color">@color/th_blue_logo</item>
         <item name="mdl__pharmacy_widget_change_pharmacy_button_text_color">@color/w3c__white</item>
-        <item name="mdl__pharmacy_widget_change_pharmacy_button_background_color">@color/sdk_client_blue2</item>
-        <item name="mdl__pharmacy_widget_change_pharmacy_button_text">@string/pharmacy_advanced_search_text_change_pharmacy</item>
+        <item name="mdl__pharmacy_widget_change_pharmacy_button_background_color">
+            @color/th_blue_logo
+        </item>
+        <item name="mdl__pharmacy_widget_change_pharmacy_button_text">
+            @string/pharmacy_advanced_search_text_change_pharmacy
+        </item>
     </style>
 
-    <style name="sdk_client__PharmacySearchScreenStyle" parent="@style/mdl__PharmacySearchScreenStyle">
+    <style name="cigna__PharmacySearchScreenStyle" parent="@style/mdl__PharmacySearchScreenStyle">
         <item name="mdl__informative_text_color">@color/w3c__white</item>
     </style>
 
-    <style name="sdk_client__MessageCenterStyle" parent="@style/mdl__MessageCenterStyle">
-        <item name="mdl__message_center_unread_message_background_color">@color/sdk_client_blue2</item>
+    <style name="cigna__MessageCenterStyle" parent="@style/mdl__MessageCenterStyle">
+        <item name="mdl__message_center_unread_message_background_color">@color/th_blue_logo</item>
         <item name="mdl__message_center_unread_message_text_color">@color/w3c__white</item>
         <item name="fwf__horizontal_divider_background">@color/w3c__white</item>
         <item name="mdl__message_center_text_on_background_color">@color/w3c__white</item>
@@ -255,294 +374,282 @@
         </item>
     </style>
 
-    <style name="sdk_client__VisitHistoryStyle" parent="@style/mdl__VisitHistoryStyle">
+    <style name="cigna__VisitHistoryStyle" parent="@style/mdl__VisitHistoryStyle">
         <item name="mdl__visit_history_text_on_background_color">@color/w3c__white</item>
 
-        <item name="mdl__visit_history_no_previous_visits">@string/visit_history_no_previous_provider_visits
+        <item name="mdl__visit_history_no_previous_visits">
+            @string/visit_history_no_previous_provider_visits
         </item>
     </style>
 
-    <style name="sdk_client__FindProviderCardViewStyle" parent="@style/mdl__FindProviderCardViewStyle">
+    <style name="cigna__FindProviderCardViewStyle" parent="@style/mdl__FindProviderCardViewStyle">
         <item name="radioCardWidgetBackgroundColor">
-            @color/sdk_client__radio_card_view_background_color_selector
+            @color/mdl__radio_card_view_background_color_selector
         </item>
         <item name="radioCardWidgetTextColor">
-            @color/sdk_client__radio_card_view_text_color_selector
+            @color/mdl__radio_card_view_text_color_selector
         </item>
     </style>
 
-    <style name="sdk_client__PharmacyCardViewStyle" parent="@style/mdl__PharmacyCardViewStyle">
+    <style name="cigna__PharmacyCardViewStyle" parent="@style/mdl__PharmacyCardViewStyle">
         <item name="radioCardWidgetBackgroundColor">
-            @color/sdk_client__pharmacy_radio_card_view_background_color_selector
+            @color/mdl__pharmacy_radio_card_view_background_color_selector
         </item>
         <item name="radioCardWidgetTextColor">
-            @color/sdk_client__pharmacy_radio_card_view_text_color_selector
+            @color/mdl__pharmacy_radio_card_view_text_color_selector
         </item>
     </style>
 
     <!-- Provider Visit Buttons -->
-    <style name="sdk_client__ProviderVisitButtonsStyle" parent="@style/mdl__ProviderVisitButtonsStyle">
-        <item name="mdl__provider_visit_button_background_tint">@color/sdk_client_blue_logo</item>
+    <style name="cigna__ProviderVisitButtonsStyle" parent="@style/mdl__ProviderVisitButtonsStyle">
+        <item name="mdl__provider_visit_button_background_tint">@color/th_blue_logo</item>
     </style>
     <!-- END Provider Visit Buttons -->
 
     <!-- Provider Profile Buttons -->
     <!-- Request Appointment button -->
-    <style name="sdk_client__ProviderProfilePrimaryButtonStyle" parent="@style/fwf__ProviderProfilePrimaryButtonStyle">
-        <item name="backgroundTint">@color/sdk_client_white</item>
-        <item name="android:textColor">@color/sdk_client_blue2</item>
+    <style name="cigna__ProviderProfilePrimaryButtonStyle" parent="@style/fwf__ProviderProfilePrimaryButtonStyle">
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/th_blue_logo</item>
     </style>
 
-    <style name="sdk_client__ProviderProfileSecondaryButtonStyle" parent="@style/fwf__ProviderProfileSecondaryButtonStyle">
-        <item name="backgroundTint">@color/sdk_client_white</item>
-        <item name="android:textColor">@color/sdk_client_blue2</item>
+    <style name="cigna__ProviderProfileSecondaryButtonStyle" parent="@style/fwf__ProviderProfileSecondaryButtonStyle">
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/th_blue_logo</item>
     </style>
     <!-- END Provider Profile Buttons -->
 
-    <style name="sdk_client_ChipItemProviderListStyle" parent="@style/fwf__ChipItemStyle">
+    <style name="cigna_ChipItemProviderListStyle" parent="@style/fwf__ChipItemStyle">
         <item name="fwf__chip_item_background">@drawable/sdk_client__chip_white_background</item>
-        <item name="fwf__chip_item_label_text_color">@color/sdk_client_white</item>
-        <item name="fwf__chip_item_text_color">@color/sdk_client_blue2</item>
+        <item name="fwf__chip_item_label_text_color">@android:color/white</item>
+        <item name="fwf__chip_item_text_color">@color/th_blue_logo</item>
         <item name="fwf__chip_item_remove_icon">
-            @drawable/sdk_client__white_chip_remove_button_background
+            @drawable/sdk_client__blue_chip_remove_button_background
         </item>
     </style>
 
-    <style name="sdk_client_ChipItemProviderSearchCriteriaStyle" parent="@style/fwf__ChipItemStyle">
+    <style name="cigna_ChipItemProviderSearchCriteriaStyle" parent="@style/fwf__ChipItemStyle">
         <item name="fwf__chip_item_background">@drawable/sdk_client__chip_blue_background</item>
         <item name="fwf__chip_item_label_text_color">@color/mdl__gray</item>
-        <item name="fwf__chip_item_text_color">@color/sdk_client_white</item>
+        <item name="fwf__chip_item_text_color">@android:color/white</item>
         <item name="fwf__chip_item_remove_icon">
             @drawable/sdk_client__blue_chip_remove_button_background
         </item>
     </style>
 
     <!-- All Text Entry Cursor Color -->
-    <style name="sdk_client__EditTextStyle" parent="@style/fwf__EditTextStyle">
-        <item name="colorControlNormal">@color/sdk_client_blue_logo</item>
-        <item name="colorControlActivated">@color/sdk_client_blue_logo</item>
+    <style name="cigna__EditTextStyle" parent="@style/fwf__EditTextStyle">
+        <item name="colorControlNormal">@color/th_blue_logo</item>
+        <item name="colorControlActivated">@color/th_blue_logo</item>
     </style>
 
-    <style name="sdk_client_DialogActivityStyle" parent="@style/rodeo__DialogActivityStyle">
+    <style name="cigna_DialogActivityStyle" parent="@style/rodeo__DialogActivityStyle">
         <!--General Save/FAB Styles -->
-        <item name="fwf__fab_widget_background_tint">@color/sdk_client_blue</item>
-        <!--<item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>-->
-        <item name="fwf__fab_widget_icon_tint">@color/sdk_client_white</item>
-        <item name="fwf__fab_widget_invalid_icon_tint">@color/sdk_client_white</item>
-
+        <item name="fwf__fab_widget_background_tint">@color/th_orange_dark</item>
+        <!-- TODO deprecated  <item name="fwf__fab_widget_disabled_background_tint">@color/black_transparent</item>-->
+        <item name="fwf__fab_widget_icon_tint">@color/palette_digital_blue</item>
+        <item name="fwf__fab_widget_invalid_icon_tint">@color/palette_digital_blue</item>
         <!-- Color for the fail background FAB -->
-        <item name="fwf__fab_widget_alternative_tint">@color/sdk_client_quality_alert_orange</item>
+        <item name="fwf__fab_widget_alternative_tint">@color/th_quality_alert_orange</item>
         <item name="fwf__fab_widget_ripple_color">@color/mdl__light_gray</item>
-
         <!-- Ripple effect for touchable views -->
         <item name="colorControlHighlight">@color/mdl__light_gray</item>
         <!--Family Memeber's Image default circle place holder.-->
-        <!--<item name="fwf__circle_image_default_src">@drawable/fwf__sdk_client_blue_circle</item>-->
+        <!--<item name="fwf__circle_image_default_src">@drawable/fwf__cigna_blue_circle</item>-->
         <!-- Provider Profile background Drawable or Color.-->
-        <item name="provider_profile__background">@color/sdk_client_blue_logo</item>
-        <item name="fwf__phone_number_card_view_style">@style/sdk_client__PhoneCardViewStyle</item>
+        <item name="provider_profile__background">@color/th_blue_logo</item>
+        <item name="fwf__phone_number_card_view_style">@style/cigna__PhoneCardViewStyle</item>
         <item name="fwf__symptom_attachments_card_view_style">
-            @style/sdk_client__SymptomAttachmentsCardViewStyle
+            @style/cigna__SymptomAttachmentsCardViewStyle
         </item>
-        <item name="fwf__fab_next_widget_style">@style/sdk_client__FabWidgetStyleNext</item>
-        <item name="fwf__fab_call_widget_style">@style/sdk_client__FabWidgetStyleCall</item>
-        <item name="rodeo__button_dialog_cancel_style">@style/sdk_client__ButtonDialogCancelStyle</item>
+        <item name="fwf__fab_call_widget_style">@style/cigna__FabWidgetStyleCall</item>
+        <item name="rodeo__button_dialog_cancel_style">@style/cigna__ButtonDialogCancelStyle</item>
         <!-- Text` entry field under-line -->
-        <item name="fwf__focus_view_color">@color/sdk_client_blue_logo</item>
+        <item name="fwf__focus_view_color">@color/th_blue_logo</item>
         <!-- TextView text entry cursor color -->
-        <item name="fwf__EditTextStyle">@style/sdk_client__EditTextStyle</item>
+        <item name="fwf__EditTextStyle">@style/cigna__EditTextStyle</item>
         <!-- Style for the cancel button in medical history dialogs-->
-        <!--<item name="fwf__medical_history_cancel_button_dialog_style">-->
-            <!--@style/sdk_client__MedicalHistoryCancelButtonDialogStyle-->
-        <!--</item>-->
+        <item name="fwf__medical_history_cancel_button_dialog_style">
+            @style/cigna__MedicalHistoryCancelButtonDialogStyle
+        </item>
         <item name="fwf_alert_dialog_style">
-            @style/sdk_client__AlertDialogStyle
+            @style/cigna__AlertDialogStyle
         </item>
-
-        <item name="fwf__form_button_widget_style">
-            @style/sdk_client__FormButtonWidgetStyle
-        </item>
-
         <!--Styles for the number and icon color in the cancel dialog-->
-        <item name="fwf__call_number_style">@style/sdk_client__CallNumberStyle</item>
+        <item name="fwf__call_number_style">@style/cigna__CallNumberStyle</item>
 
         <!--Style for all the checkboxes in the app-->
-        <item name="fwf__checkbox_style">@style/sdk_client__CheckboxStyle</item>
+        <item name="fwf__checkbox_style">@style/cigna__CheckboxStyle</item>
 
         <!--Color for the quality icon in the widgets-->
-        <item name="fwf__warning_quality_icon_fill_color">@color/sdk_client_quality_alert_orange</item>
+        <item name="fwf__warning_quality_icon_fill_color">@color/th_quality_alert_orange</item>
+
+        <item name="fwf__form_button_widget_style">@style/cigna__FormButtonWidgetStyle</item>
 
     </style>
     <!-- ############ End of Custom Base Style ############ -->
 
     <!-- ######################## Specific Custom Styles ######################## -->
     <!-- ActionBar - ProgressBar color -->
-    <style name="sdk_client__ProgressBar_Horizontal" parent="@style/mdl__ProgressBar_Horizontal">
-        <item name="android:progressDrawable">@drawable/sdk_client_progress_horizontal</item>
+    <style name="cigna__ProgressBar_Horizontal" parent="@style/mdl__ProgressBar_Horizontal">
+        <item name="android:progressDrawable">@drawable/mdl__progress_horizontal</item>
     </style>
 
     <!-- ActionBar - ProgressBar color -->
-    <style name="sdk_client__CallNumberStyle" parent="@style/fwf__CallNumberStyle">
-        <item name="fwf__call_number_widget_icon_color">@color/sdk_client_blue</item>
-        <item name="fwf__call_number_widget_phone_number_color">@color/sdk_client_blue</item>
+    <style name="cigna__CallNumberStyle" parent="@style/fwf__CallNumberStyle">
+        <item name="fwf__call_number_widget_icon_color">@color/th_blue_logo</item>
+        <item name="fwf__call_number_widget_phone_number_color">@color/th_blue_logo</item>
     </style>
 
     <!-- ActionBar Title Text Color -->
-    <style name="sdk_client__ActionBarTitleTextAppearance" parent="@style/rodeo__ActionBarTitleTextAppearance">
-        <item name="android:textColor">@color/sdk_client_blue_logo</item>
+    <style name="cigna__ActionBarTitleTextAppearance" parent="@style/rodeo__ActionBarTitleTextAppearance">
+        <item name="android:textColor">@color/palette_digital_black</item>
     </style>
 
     <!-- ##### Find a provider, Reason For Visit- #### -->
     <!--Find a Provider inner Title Text Color, plus-->
-    <style name="sdk_client__PageTitleStyle" parent="rodeo__PageTitleStyle">
-        <item name="android:textColor">@color/sdk_client_white</item>
+    <style name="cigna__PageTitleStyle" parent="rodeo__PageTitleStyle">
+        <item name="android:textColor">@android:color/white</item>
     </style>
     <!-- My Pharmacy Intructions text. -->
-    <style name="sdk_client__PageSmallerInstructionsStyle" parent="rodeo__PageSmallerInstructionsStyle">
-        <item name="android:textColor">@color/sdk_client_white</item>
+    <style name="cigna__PageSmallerInstructionsStyle" parent="rodeo__PageSmallerInstructionsStyle">
+        <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">18sp</item>
     </style>
     <!-- My Pharmacy NOTE: text. -->
-    <style name="sdk_client__PageSmallerNotesStyle" parent="rodeo__PageSmallerNotesStyle">
-        <item name="android:textColor">@color/sdk_client_white</item>
+    <style name="cigna__PageSmallerNotesStyle" parent="rodeo__PageSmallerNotesStyle">
+        <item name="android:textColor">@android:color/white</item>
         <item name="android:text">@string/find_provider_pharmacy_note</item>
         <item name="android:textSize">14sp</item>
         <item name="android:visibility">visible</item>
     </style>
     <!--Configuration for 'Upload a Photo' 2nd card on Reason for Visit screen.-->
-    <style name="sdk_client__UploadPhotoButtonStyle" parent="fwf__UploadPhotoButtonStyle">
-        <!--<item name="fwf__upload_photo_button_background_color">@color/sdk_client_white</item>-->
-        <item name="fwf__upload_photo_button_icon_tint_color">@color/sdk_client_blue_logo</item>
-        <item name="fwf__text_view_alternate_text_color">@color/sdk_client_blue_logo</item>
-        <item name="fwf__upload_photo_nav_arrow_icon_tint_color">@color/sdk_client_white</item>
+    <style name="cigna__UploadPhotoButtonStyle" parent="fwf__UploadPhotoButtonStyle">
+        <!-- TODO deprecated <item name="fwf__upload_photo_button_background_color">@android:color/white</item>-->
+        <item name="fwf__upload_photo_button_icon_tint_color">@color/th_blue_logo</item>
+        <item name="fwf__text_view_alternate_text_color">@color/th_blue_logo</item>
+        <item name="fwf__upload_photo_nav_arrow_icon_tint_color">@color/th_blue_logo</item>
     </style>
     <!-- ##### End of Find a provider, Reason For Visit- #### -->
 
     <!-- ##### Find a provider, Medical History #### -->
     <!--Card View Icons -->
-    <style name="sdk_client__MedicalHistoryStyle" parent="@style/mdl__MedicalHistoryStyle">
+    <style name="cigna__MedicalHistoryStyle" parent="@style/mdl__MedicalHistoryStyle">
         <!-- This is just for reference purpose, go to parent to see the what attributes can be overridden -->
     </style>
 
     <!--Card View Colors -->
-    <style name="sdk_client__QuestionCardViewStyle" parent="fwf__QuestionCardViewStyle">
-        <item name="fwf__question_card_view_icon_tint_color">@color/sdk_client_orange_light</item>
-        <item name="fwf__question_card_view_title_text_color">@color/sdk_client_blue_logo</item>
-        <item name="fwf__question_card_view_summary_text_color">@color/sdk_client_blue_logo</item>
-        <item name="fwf__question_card_view_arrow_tint_color">@color/sdk_client_orange_light</item>
+    <style name="cigna__QuestionCardViewStyle" parent="fwf__QuestionCardViewStyle">
+        <item name="fwf__question_card_view_icon_tint_color">@color/th_orange_logo</item>
+        <item name="fwf__question_card_view_title_text_color">@color/th_blue_logo</item>
+        <item name="fwf__question_card_view_summary_text_color">@color/th_blue_logo</item>
+        <item name="fwf__question_card_view_arrow_tint_color">@color/th_orange_logo</item>
     </style>
     <!-- ##### End of Find a provider, Medical History #### -->
 
     <!-- ##### Find a provider, Provider List Card View #### -->
-    <style name="sdk_client__CardViewStyle" parent="@style/fwf__CardViewStyle">
+    <style name="cigna__CardViewStyle" parent="@style/fwf__CardViewStyle">
         <!-- Ripple effect for card view -->
         <item name="colorControlHighlight">@color/mdl__light_gray</item>
     </style>
     <!-- ##### Find a provider, Phone Number Card View #### -->
-    <style name="sdk_client__PhoneCardViewStyle" parent="@style/fwf__PhoneCardViewStyle">
+    <style name="cigna__PhoneCardViewStyle" parent="@style/fwf__PhoneCardViewStyle">
         <!-- 'Clear' button effect for card view -->
         <item name="fwf__data_reset_image_src">@null</item>
     </style>
     <!-- ##### Add a Photo - Delete a Photo, Symptoms Attachments Card View #### -->
-    <style name="sdk_client__SymptomAttachmentsCardViewStyle" parent="@style/fwf__SymptomAttachmentsCardViewStyle">
+    <style name="cigna__SymptomAttachmentsCardViewStyle" parent="@style/fwf__SymptomAttachmentsCardViewStyle">
         <!-- 'Clear' button effect for card view -->
-        <item name="fwf__data_reset_image_src">@drawable/ic_sdk_client_clear_field</item>
+        <item name="fwf__data_reset_image_src">@drawable/ic_clear_field</item>
     </style>
     <!-- ##### Dashboard Appointment Card View #### -->
-    <style name="sdk_client__AppointmentCardViewStyle" parent="@style/fwf__AppointmentCardViewStyle">
-        <item name="fwf__appointment_videocam_tint">@color/sdk_client_blue2</item>
-        <item name="fwf__appointment_call_icon_tint">@color/sdk_client_blue2</item>
-        <item name="fwf__appointment_card_cancel_text_color">@color/sdk_client_blue2</item>
-        <item name="fwf__card_view_background_color">@color/sdk_client_white</item>
+    <style name="cigna__AppointmentCardViewStyle" parent="@style/fwf__AppointmentCardViewStyle">
+        <item name="fwf__appointment_videocam_tint">@color/th_blue_logo</item>
+        <item name="fwf__appointment_call_icon_tint">@color/th_blue_logo</item>
+        <item name="fwf__appointment_card_cancel_text_color">@color/th_blue_logo</item>
+        <item name="fwf__card_view_background_color">@color/mdl__white</item>
         <item name="fwf__appointment_label_text_color">@android:color/black</item>
-        <item name="fwf__appointment_time_date_text_color">@color/sdk_client_blue2</item>
-        <item name="fwf__appointment_provider_text_color">@color/sdk_client_blue2</item>
-        <item name="fwf__provider_specialty_text_color">@color/sdk_client_blue2</item>
+        <item name="fwf__appointment_time_date_text_color">@color/th_blue_logo</item>
+        <item name="fwf__appointment_provider_text_color">@color/th_blue_logo</item>
+        <item name="fwf__provider_specialty_text_color">@color/th_blue_logo</item>
     </style>
     <!-- ##### End of Dashboard Appointment Card View #### -->
 
-    <style name="sdk_client__ProviderListCellStyle" parent="@style/mdl__ProviderListCellStyle">
-        <item name="mdl__provider_list_cell_phone_video_icon_color">@color/sdk_client_blue</item>
+    <!-- ##### Provider List card currently available provider #### -->
+    <style name="cigna__ProviderListCellStyle" parent="@style/mdl__ProviderListCellStyle">
+        <item name="mdl__provider_list_cell_phone_video_icon_color">@color/th_blue_logo</item>
     </style>
     <!-- ##### End of Find a provider, Provider List Card View #### -->
 
     <!-- ##### See a Physician - Search for a Provider Button Card View #### -->
-    <style name="sdk_client__ProviderSearchButtonCardViewStyle" parent="@style/fwf__ProviderSearchButtonCardViewStyle">
-        <item name="fwf__provider_search_bar_background_color">@color/sdk_client_white</item>
+    <style name="cigna__ProviderSearchButtonCardViewStyle" parent="@style/fwf__ProviderSearchButtonCardViewStyle">
+        <item name="fwf__provider_search_bar_background_color">@android:color/white</item>
         <item name="fwf__provider_search_bar_magnifying_glass_icon_color">@color/mdl__black</item>
         <item name="fwf__provider_search_bar_text_color">@color/fwf__gray</item>
     </style>
     <!-- ##### End of See a Physician - Search for a Provider Button Card View #### -->
 
     <!-- ##### Payment and CC Subhead #### -->
-    <style name="sdk_client__SubheadBarPaymentStyle" parent="@style/fwf__SubheadBarPaymentStyle">
+    <style name="cigna__SubheadBarPaymentStyle" parent="@style/fwf__SubheadBarPaymentStyle">
         <item name="fwf__subhead_bar_payment_background_color">@color/mdl__white</item>
         <item name="fwf__subhead_bar_payment_text_color">@color/mdl__black</item>
     </style>
     <!-- ##### End of Payment and CC Subhead #### -->
 
     <!-- ##### My Providers, Add Primary Care Physician Button #### -->
-    <style name="sdk_client__AddPrimaryCarePhysicianButtonStyle" parent="@style/mdl__AddPrimaryCarePhysicianButtonStyle">
-        <item name="backgroundTint">@color/sdk_client_white</item>
-        <item name="android:textColor">@color/sdk_client_blue_logo</item>
+    <style name="cigna__AddPrimaryCarePhysicianButtonStyle" parent="@style/mdl__AddPrimaryCarePhysicianButtonStyle">
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/th_blue_logo</item>
     </style>
     <!-- ##### End of My Providers, Add Primary Care Physician Button #### -->
 
     <!-- ##### User profile widget style #### -->
-    <style name="sdk_client__UserProfileWidgetStyle" parent="@style/fwf__UserProfileWidgetStyle">
-        <item name="fillerTextColor">@color/sdk_client_blue_logo</item>
-        <item name="profilePictureBackgroundColor">@color/sdk_client_white</item>
+    <style name="cigna__UserProfileWidgetStyle" parent="@style/fwf__UserProfileWidgetStyle">
+        <item name="fillerTextColor">@color/th_blue_logo</item>
+        <item name="profilePictureBackgroundColor">@android:color/white</item>
     </style>
     <!-- ##### End of User profile widget style #### -->
-    <style name="sdk_client__DashboardCardViewButtonStyle" parent="@style/fwf__DashboardCardViewButtonStyle">
-        <item name="backgroundTint">@color/sdk_client_orange_light</item>
-        <item name="android:textColor">@color/sdk_client_blue_logo</item>
+    <style name="cigna__DashboardCardViewButtonStyle" parent="@style/fwf__DashboardCardViewButtonStyle">
+        <item name="backgroundTint">@color/th_orange_logo</item>
+        <item name="android:textColor">@color/th_blue_logo</item>
     </style>
 
-    <style name="sdk_client__WaitingRoomAndVideoSessionStyle" parent="@style/mdl__WaitingRoomAndVideoSessionStyle">
-        <item name="mdl__waiting_room_text_appearance">@style/sdk_client__WaitingRoomTextAppearance
+    <style name="cigna__WaitingRoomAndVideoSessionStyle" parent="@style/mdl__WaitingRoomAndVideoSessionStyle">
+        <item name="mdl__waiting_room_text_appearance">@style/cigna__WaitingRoomTextAppearance
         </item>
         <item name="mdl__waiting_room_instructions_text">
             @string/consultation_waiting_room_instructions
         </item>
-        <item name="mdl__video_session_background_color">@color/sdk_client_blue_light</item>
-        <item name="mdl__video_session_control_buttons_background_color">@color/sdk_client_blue
-        </item>
-        <item name="mdl__video_session_primary_button_tint_color">@color/sdk_client_orange_dark</item>
-        <item name="mdl__video_session_secondary_buttons_tint_color">@color/sdk_client_white</item>
+        <item name="mdl__video_session_background_color">@color/th_blue_light</item>
+        <item name="mdl__video_session_control_buttons_background_color">@color/th_blue_logo</item>
+        <item name="mdl__video_session_primary_button_tint_color">@color/th_orange_dark</item>
+        <item name="mdl__video_session_secondary_buttons_tint_color">@android:color/white</item>
     </style>
 
-    <style name="sdk_client__WaitingRoomTextAppearance" parent="@style/mdl__WaitingRoomTextAppearance">
-        <item name="android:textColor">@color/sdk_client_white</item>
+    <style name="cigna__WaitingRoomTextAppearance" parent="@style/mdl__WaitingRoomTextAppearance">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="sdk_client__FindProviderButtonStyle" parent="@style/mdl__FindProviderButtonStyle">
-        <item name="backgroundTint">@color/sdk_client_white</item>
-        <item name="android:textColor">@color/sdk_client_orange_light</item>
+    <style name="cigna__FindProviderButtonStyle" parent="@style/mdl__FindProviderButtonStyle">
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/th_orange_logo</item>
         <item name="android:text">@string/mdl__dashboard_find_a_provider</item>
     </style>
     <!-- ##### Dashboard Appointment card Cancel Popup attributes #### -->
-    <style name="sdk_client__FabWidgetStyleCall" parent="@style/fwf__FabWidgetStyle.Call">
-        <item name="backgroundTint">@color/sdk_client_blue2</item>
+    <style name="cigna__FabWidgetStyleCall" parent="@style/fwf__FabWidgetStyle.Call">
+        <item name="backgroundTint">@color/th_blue_logo</item>
     </style>
 
-    <!-- ##### FAB style attributes - Next #### -->
-    <style name="sdk_client__FabWidgetStyleNext" parent="@style/fwf__FabWidgetStyle.Next">
-        <item name="fwf__fab_widget_icon_tint">@color/sdk_client_white</item>
-        <item name="fwf__fab_widget_invalid_icon_tint">@color/sdk_client_white</item>
-        <item name="backgroundTint">@color/sdk_client_blue</item>
-    </style>
-
-    <style name="sdk_client__ButtonDialogCancelStyle" parent="@style/fwf__ButtonDialogCancelStyle">
+    <style name="cigna__ButtonDialogCancelStyle" parent="@style/fwf__ButtonDialogCancelStyle">
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/sdk_client_blue2</item>
+        <item name="android:textColor">@color/th_blue_logo</item>
     </style>
     <!-- ##### End of Dashboard Appointment card Cancel Popup attributes #### -->
     <!-- ######################## End of specific Custom Styles ######################## -->
 
     <!-- ############ Dashboard ############ -->
-    <style name="sdk_client__SsoDashboardStyle" parent="mdl__SsoDashboardStyle">
+    <style name="cigna__SsoDashboardStyle" parent="mdl__SsoDashboardStyle">
         <!-- mdl__sso_dashboard_title_icon has higher priority than mdl__sso_dashboard_title_text, this must be a drawable resource -->
         <!--<item name="mdl__sso_dashboard_title_icon">@null</item>-->
         <!-- Text to use as title, this must be a string resource -->
@@ -551,25 +658,25 @@
         <!-- Layout to be used as header, if we change this layout the next header styles will be ignored -->
         <!--<item name="mdl__sso_dashboard_header_layout">@layout/mdl__sso_dashboard_header</item>-->
         <!-- Color to use as header background -->
-        <item name="mdl__sso_dashboard_header_background_color">@color/sdk_client_white</item>
+        <item name="mdl__sso_dashboard_header_background_color">@color/mdl__white</item>
         <!-- Text to use as header, this must be a string resource -->
         <item name="mdl__sso_dashboard_header_text">@string/dashboard_text</item>
         <!-- Text appearance for the header text, this must be a style resource -->
-        <item name="mdl__sso_dashboard_header_text_appearance">@style/sdk_client__HeaderTextAppearance
+        <item name="mdl__sso_dashboard_header_text_appearance">@style/cigna__HeaderTextAppearance
         </item>
-
+        <!-- Background color where Subscriber / dependent drop down / search provider button is displayed in dashboard  -->
         <item name="mdl__sso_dashboard_sub_header_background_color">
-            @color/sdk_client_blue2
+            @color/th_blue_logo
         </item>
 
-        <item name="mdl__switch_user_arrow_tint_color">@color/sdk_client_white</item>
+        <item name="mdl__switch_user_arrow_tint_color">@color/mdl__white</item>
 
         <item name="mdl__text_under_find_provider_text_appearance">
-            @style/sdk_client__TextUnderFindProviderTextAppearance
+            @style/cigna__TextUnderFindProviderTextAppearance
         </item>
 
         <!-- Card view and icons -->
-        <item name="fwf__sso_dashboard_card_view_style">@style/sdk_client__SsoDashboardCardViewStyle
+        <item name="fwf__sso_dashboard_card_view_style">@style/cigna__SsoDashboardCardViewStyle
         </item>
         <!--<item name="mdl__sso_dashboard_card_view_messages_icon">@drawable/mdl__messages_icon-->
         <!--</item>-->
@@ -581,110 +688,105 @@
         <!-- Layout to be used as footer, if we change this layout the next footer styles will be ignored -->
         <!--<item name="mdl__sso_dashboard_footer_layout">@layout/mdl__sso_dashboard_footer</item>-->
         <!-- Color to use as footer background -->
-        <item name="mdl__sso_dashboard_footer_background_color">@color/sdk_client_blue_logo</item>
+        <item name="mdl__sso_dashboard_footer_background_color">@color/th_blue_logo</item>
         <!-- Text to use as footer, this must be a string resource -->
         <item name="mdl__sso_dashboard_footer_text">@string/dashboard_footer</item>
         <!-- Text appearance for the footer text, this must be a style resource -->
-        <item name="mdl__sso_dashboard_footer_text_appearance">@style/sdk_client__FooterTextAppearance
+        <item name="mdl__sso_dashboard_footer_text_appearance">@style/cigna__FooterTextAppearance
 
         </item>
         <item name="mdl__sso_dashboard_terms_and_conditions_text_appearance">
-            @style/sdk_client__sso_dashboard_terms_and_conditions_text_appearance
+            @style/cigna__sso_dashboard_terms_and_conditions_text_appearance
         </item>
         <item name="mdl__sso_dashboard_terms_and_conditions_text_link_color">
-            @color/sdk_client_orange_light
+            @color/th_orange_logo
         </item>
 
         <item name="mdl__family_member_chooser_dialog_style">
-            @style/sdk_client__FamilyMemberChooserDialogStyle
+            @style/cigna__FamilyMemberChooserDialogStyle
         </item>
     </style>
 
-    <style name="sdk_client__HeaderTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
+    <style name="cigna__HeaderTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@android:color/black</item>
     </style>
 
-    <style name="sdk_client__SsoDashboardCardViewStyle" parent="@style/fwf__SsoDashboardCardViewStyle">
-        <item name="fwf__sso_dashboard_card_view_icon_tint_color">@color/sdk_client_orange_light</item>
+    <style name="cigna__SsoDashboardCardViewStyle" parent="@style/fwf__SsoDashboardCardViewStyle">
+        <item name="fwf__sso_dashboard_card_view_icon_tint_color">@color/th_orange_logo</item>
         <item name="fwf__sso_dashboard_card_view_title_text_color">@color/mdl__black</item>
         <item name="fwf__sso_dashboard_card_view_summary_text_color">@color/mdl__black</item>
         <item name="fwf__sso_dashboard_card_view_divider_color">@android:color/darker_gray</item>
     </style>
 
-    <style name="sdk_client__FooterTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
+    <style name="cigna__FooterTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@android:color/black</item>
     </style>
 
-    <style name="sdk_client__sso_dashboard_terms_and_conditions_text_appearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
-        <item name="android:textColor">@color/sdk_client_white</item>
+    <style name="cigna__sso_dashboard_terms_and_conditions_text_appearance" parent="@style/Base.TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="sdk_client__FamilyMemberChooserDialogStyle" parent="@style/mdl__FamilyMemberChooserDialogStyle">
-        <item name="mdl__family_member_chooser_dialog_background_color">@color/sdk_client_blue_logo
+    <style name="cigna__FamilyMemberChooserDialogStyle" parent="@style/mdl__FamilyMemberChooserDialogStyle">
+        <item name="mdl__family_member_chooser_dialog_background_color">@color/th_blue_logo
         </item>
         <item name="mdl__family_member_chooser_dialog_title_text_appearance">
-            @style/sdk_client__FamilyMemberChooserDialogTitleTextAppearance
+            @style/cigna__FamilyMemberChooserDialogTitleTextAppearance
         </item>
-        <item name="fwf__switch_user_account_item_style">@style/sdk_client__SwitchUserAccountItemStyle
+        <item name="fwf__switch_user_account_item_style">@style/cigna__SwitchUserAccountItemStyle
         </item>
     </style>
 
-    <style name="sdk_client__SwitchUserAccountItemStyle" parent="@style/fwf__SwitchUserAccountItemStyle">
-        <item name="fillerTextColor">@color/sdk_client_blue_logo</item>
-        <item name="profilePictureBackgroundColor">@color/sdk_client_white</item>
+    <style name="cigna__SwitchUserAccountItemStyle" parent="@style/fwf__SwitchUserAccountItemStyle">
+        <item name="fillerTextColor">@color/th_blue_logo</item>
+        <item name="profilePictureBackgroundColor">@android:color/white</item>
         <item name="lineOneTextAppearance">
-            @style/sdk_client__UserProfileWidgetStyleLineOneTextAppearance
+            @style/cigna__UserProfileWidgetStyleLineOneTextAppearance
         </item>
         <item name="lineTwoTextAppearance">
-            @style/sdk_client__UserProfileWidgetStyleLineTwoTextAppearance
+            @style/cigna__UserProfileWidgetStyleLineTwoTextAppearance
         </item>
     </style>
 
-    <style name="sdk_client__UserProfileWidgetStyleLineOneTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Body1">
-        <item name="android:textColor">@color/sdk_client_white</item>
+    <style name="cigna__UserProfileWidgetStyleLineOneTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="sdk_client__UserProfileWidgetStyleLineTwoTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Caption">
-        <item name="android:textColor">@color/sdk_client_white</item>
+    <style name="cigna__UserProfileWidgetStyleLineTwoTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="sdk_client__FamilyMemberChooserDialogTitleTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Title">
-        <item name="android:textColor">@color/sdk_client_white</item>
+    <style name="cigna__FamilyMemberChooserDialogTitleTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/mdl__white</item>
     </style>
 
-    <style name="sdk_client__TextUnderFindProviderTextAppearance" parent="@style/mdl__TextUnderFindProviderTextAppearance">
-        <item name="android:textColor">@color/sdk_client_white</item>
+    <style name="cigna__TextUnderFindProviderTextAppearance" parent="@style/mdl__TextUnderFindProviderTextAppearance">
+        <item name="android:textColor">@color/mdl__white</item>
         <item name="android:textStyle">bold</item>
     </style>
     <!-- ############ End of Dashboard ############ -->
 
-    <style name="sdk_client__CallNumberWidgetStyle" parent="@style/fwf__CallNumberWidgetStyle">
-        <item name="android:textColor">@color/sdk_client_blue_logo</item>
+    <style name="cigna__CallNumberWidgetStyle" parent="@style/fwf__CallNumberWidgetStyle">
+        <item name="android:textColor">@color/th_blue_logo</item>
     </style>
 
-    <style name="sdk_client__PhoneIconStyle" parent="@style/fwf__PhoneIconStyle">
-        <item name="android:tint">@color/sdk_client_blue_logo</item>
+    <style name="cigna__PhoneIconStyle" parent="@style/fwf__PhoneIconStyle">
+        <item name="android:tint">@color/th_blue_logo</item>
     </style>
 
-    <!--<style name="sdk_client__MedicalHistoryCancelButtonDialogStyle" parent="@style/fwf__MedicalHistoryCancelDialogButtonStyle">-->
-        <!--&lt;!&ndash; This is to support pre-lollipop devices &ndash;&gt;-->
-        <!--<item name="backgroundTint">@color/sdk_client_blue2</item>-->
-        <!--<item name="android:textColor">@color/sdk_client_white</item>-->
-
-        <!--<item name="android:textColorHint">@color/sdk_client_blue2</item>-->
-        <!--<item name="colorControlNormal">@color/sdk_client_blue2</item>-->
-        <!--<item name="colorControlActivated">@color/sdk_client_blue2</item>-->
-        <!--<item name="colorError">@color/sdk_client_quality_alert_orange</item>-->
-    <!--</style>-->
-
-    <style name="sdk_client__AlertDialogStyle" parent="@style/fwf_AlertDialogStyle">
-        <item name="colorAccent">@color/sdk_client_blue_logo</item>
-        <item name="android:textColor">@color/sdk_client_blue_logo</item>
+    <style name="cigna__MedicalHistoryCancelButtonDialogStyle" parent="@style/fwf__MedicalHistoryCancelDialogButtonStyle">
+        <item name="backgroundTint">@color/th_blue_logo</item>
+        <item name="android:textColor">@color/fwf__near_white</item>
     </style>
 
-    <style name="sdk_client__FormButtonWidgetStyle" parent="@style/fwf__FormButtonWidgetStyle">
-        <item name="backgroundTint">@color/sdk_client_blue</item>
-        <item name="android:textColor">@color/sdk_client_white</item>
+    <style name="cigna__AlertDialogStyle" parent="@style/fwf_AlertDialogStyle">
+        <item name="colorAccent">@color/th_blue_logo</item>
+        <item name="android:textColor">@color/th_blue_logo</item>
+    </style>
+
+
+    <style name="cigna__FormButtonWidgetStyle" parent="@style/fwf__FormButtonWidgetStyle">
+        <item name="backgroundTint">@color/palette_digital_blue</item>
+        <item name="android:textColor">@color/palette_digital_blue_10</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>

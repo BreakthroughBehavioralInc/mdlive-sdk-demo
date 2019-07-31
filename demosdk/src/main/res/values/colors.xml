@@ -15,9 +15,24 @@
     <color name="sdk_client_white">#FFFFFF</color>
     <color name="sdk_client_weak_gray">#999999</color>
 
+
+    <color name="th_orange_logo">#F1B434</color>
+    <color name="th_blue_logo">#188CCC</color>
+    <color name="th_gray_dark">#999999</color>
+    <color name="palette_digital_blue_10">#FFFFFF</color>
+    <color name="th_asset_button_primary_dark_bg">#F1B434</color>
+    <color name="th_asset_button_text_color_primary_dark">#303F9F</color>
+    <color name="palette_digital_blue">#0069AA</color>
+    <color name="th_blue_light">#00A9E0</color>
+    <color name="th_orange_dark">#E35205</color>
+    <color name="th_quality_alert_orange">#F68621</color>
+    <color name="palette_digital_black">#000000</color>
+    <color name="mdl__my_health_lifestyle_bmi_text_color">#303F9F</color>
+
+
     <!--** FAB tint Color - controlled by core methods 'enable()' & 'disable()' ** -->
-    <color name="fwf__green_aqua">@color/sdk_client_blue</color>
-    <color name="deep_aquamarine">@color/sdk_client_blue</color>
+    <color name="fwf__green_aqua">@color/palette_digital_blue_10</color>
+    <color name="deep_aquamarine">@color/palette_digital_blue</color>
     <color name="fwf__weak_gray">@color/sdk_client_weak_gray</color>
 
     <!--** Auto-complete Text Widgit Focus color ** -->
@@ -25,6 +40,9 @@
 
     <color name="colorControlActivated">@color/sdk_client_blue_logo</color>
     <color name="fwf__schedule_appointment_color">@color/sdk_client_blue_logo</color>
+
+    <!--** Phone and Video buttons Consultation Type Icon color. ** -->
+    <color name="consultation_type__button_color">@color/sdk_client_orange_dark</color>
 
 
    <!-- <color name="mdl__blue_button_2">@color/sdk_client_blue_light</color>
