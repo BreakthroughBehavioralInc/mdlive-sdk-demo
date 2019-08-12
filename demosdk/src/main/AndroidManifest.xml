@@ -133,6 +133,17 @@
             android:name="com.mdlive.mdlcore.activity.callsupport.MdlCallSupportActivity"
             android:theme="@style/client_defined_ActivityStyle"
             tools:replace="android:theme" />
+<!--
+
+        <activity
+            android:name="com.mdlive.mdlcore.activity.claimformpreview.MdlClaimFormPreviewActivity"
+            &lt;!&ndash;android:label="@string/activity__claim_form_activity"&ndash;&gt;
+            android:theme="@style/client_defined_ActivityStyle"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:taskAffinity="affinity.mdl.default"
+            android:windowSoftInputMode="adjustResize" />
+-->
 
         <provider
             android:name="android.support.v4.content.FileProvider"
