@@ -159,42 +159,42 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Production account
-//        MdlSSODetail ssoDetail = MdlSSODetail.builder()
-//                .ou("cspire")
-//                .firstName("emilio")
-//                .lastName("TEST5")
-//                .gender(FwfSSOGender.MALE)
-//                .birthdate("08-08-1988")
-//                .subscriberId("")
-//                .memberId("")
-//                .phone("jhu@mdlive.com")
-//                .email("qatestcoordinators@cspire.com")
-//                .address1("1234 Test Road")
-//                .address2("")
-//                .city("Sunrise")
-//                .state(FwfState.FL)
-//                .zipCode("33325")
-//                .relationship(FwfSSORelationship.SELF)
-//                .build();
-
-        // Staging account
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
                 .ou("cspire")
-                .firstName("emilio")
-                .lastName("TEST6")
+                .firstName("doctor")
+                .lastName("titletest")
                 .gender(FwfSSOGender.MALE)
                 .birthdate("08-08-1988")
                 .subscriberId("")
                 .memberId("")
                 .phone("2692679816")
-                .email("jhu@mdlive.com")
+                .email("ju@mdlive.com")
                 .address1("1234 Test Road")
                 .address2("")
                 .city("Sunrise")
                 .state(FwfState.FL)
-                .zipCode("33326")
+                .zipCode("33325")
                 .relationship(FwfSSORelationship.SELF)
                 .build();
+
+        // Staging account
+//        MdlSSODetail ssoDetail = MdlSSODetail.builder()
+//                .ou("cspire")
+//                .firstName("emilio")
+//                .lastName("TEST6")
+//                .gender(FwfSSOGender.MALE)
+//                .birthdate("08-08-1988")
+//                .subscriberId("")
+//                .memberId("")
+//                .phone("2692679816")
+//                .email("jhu@mdlive.com")
+//                .address1("1234 Test Road")
+//                .address2("")
+//                .city("Sunrise")
+//                .state(FwfState.FL)
+//                .zipCode("33326")
+//                .relationship(FwfSSORelationship.SELF)
+//                .build();
 
 
 
