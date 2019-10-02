@@ -48,8 +48,9 @@
    <!-- <color name="mdl__blue_button_2">@color/sdk_client_blue_light</color>
     <color name="fwf__selectedCardColor">@color/sdk_client_orange_light</color>
     <color name="mdl__caribbean_shoreline_green">@color/sdk_client_blue</color>
+    -->
 
-    //&lt;!&ndash; Lets get started page text color &ndash;&gt;
+    <!-- Lets get started page text color -->
     <color name="rodeo__page_title_text_color">@android:color/white</color>
     <color name="fwf__menu_button_text">@android:color/white</color>
 -->

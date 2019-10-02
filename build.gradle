@@ -36,8 +36,8 @@ allprojects {
     project.ext {
         // MDLive SDK library AAR
         //MDL_android_sdk = "com.mdlive.mdla:android-sdk:WHITELABEL_SDK_SNAPSHOT@aar"
-        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.32.0-CIGNA-2.0.1@aar"
-        //MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.32.0-CIGNA-SNAPSHOT@aar"
+        //MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.32.0-CIGNA-2.0.1@aar"
+        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.36.0-CIGNA-SNAPSHOT@aar"
 
     }
 }
