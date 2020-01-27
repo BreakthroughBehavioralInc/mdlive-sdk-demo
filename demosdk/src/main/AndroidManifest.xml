@@ -24,115 +24,115 @@
         <!-- MDLive Activity Configuration-->
         <activity
             android:name="com.mdlive.mdlcore.activity.ssodashboard.MdlSSODashboardActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.findprovider.MdlFindProviderActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.pageactivity.MdlPageActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.addmedication.MdlAddMedicationActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
         <activity
             android:name="com.mdlive.mdlcore.activity.addallergy.MdlAddAllergyActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.addmedicalcondition.MdlAddMedicalConditionActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
         <activity
             android:name="com.mdlive.mdlcore.activity.addprocedure.MdlAddProcedureActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.pharmacychange.MdlPharmacyChangeActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.providerprofile.MdlProviderProfileActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.providerlist.MdlProviderListActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.providersearchcriteria.MdlProviderSearchCriteriaActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.scheduleappointment.MdlScheduleAppointmentActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.sendmessage.MdlSendMessageActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.messages.MdlMessagesActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.addfamilymember.MdlAddFamilyMemberActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.checkeligibilitycost.MdlCheckEligibilityCostActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.confirmappointment.MdlConfirmAppointmentActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.editcreditcardwebview.MdlEditCreditCardWebViewActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.editprimarycarephysician.MdlEditPrimaryCarePhysicianActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.requestappointment.MdlRequestAppointmentActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.videosession.vendor.frozenmountain.FrozenMountainSessionActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.rating.MdlRatingActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <activity
             android:name="com.mdlive.mdlcore.activity.callsupport.MdlCallSupportActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
+            android:theme="@style/cspire_ActivityStyle"
             tools:replace="android:theme" />
 
         <provider

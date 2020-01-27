@@ -43,124 +43,25 @@ public class MainActivity extends AppCompatActivity {
     public void enterSDK(View v) {
         showProgressBar(true);
 
-//        MdlSSODetail ssoDetail = MdlSSODetail.builder()
-//                .ou("cspire")
-//                .firstName("Cspire")
-//                .lastName("Demo")
-//                .gender(FwfSSOGender.MALE)
-//                .birthdate("18-08-1968")
-//                .subscriberId("")
-//                .memberId("")
-//                .phone("8888888888")
-//                .email("test@mdlive.com")
-//                .address1("1234 Test Address")
-//                .address2("")
-//                .city("Sunrise")
-//                .state(FwfState.FL)
-//                .zipCode("33325")
-//                .relationship(FwfSSORelationship.SELF)
-//                .build();
 
-
-        /******     Staging Accounts       ******/
-
-        /******     Subcriber Plan            ******/
-//        MdlSSODetail ssoDetail = MdlSSODetail.builder()
-//                .ou("cspire")
-//                .firstName("freevisit")
-//                .lastName("noaddfamily")
-//                .gender(FwfSSOGender.MALE)
-//                .birthdate("08-08-1988")
-//                .subscriberId("")
-//                .memberId("")
-//                .phone("9178602754")
-//                .email("spradeep@mdlive.com")
-//                .address1("1234 Test Address")
-//                .address2("")
-//                .city("Sunrise")
-//                .state(FwfState.FL)
-//                .zipCode("33325")
-//                .relationship(FwfSSORelationship.SELF)
-//                .build();
-
-//        /******     DTC Plan                    ******/
-//        MdlSSODetail ssoDetail = MdlSSODetail.builder()
-//                .ou("cspire")
-//                .firstName("dtcvisit")
-//                .lastName("yesaddfamily")
-//                .gender(FwfSSOGender.MALE)
-//                .birthdate("09-09-1990")
-//                .subscriberId("")
-//                .memberId("")
-//                .phone("9178602754")
-//                .email("spradeep@mdlive.com")
-//                .address1("1234 Test Address")
-//                .address2("")
-//                .city("Sunrise")
-//                .state(FwfState.FL)
-//                .zipCode("33325")
-//                .relationship(FwfSSORelationship.SELF)
-//                .build();
-
-        /******     CIGNA Test account                    ******/
+        /******     CSPIRE Test account                    ******/
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
-                .ou("cigna")
-                .firstName("sdk")
-                .lastName("demo")
+                .ou("cspire")
+                .firstName("jeffrey")
+                .lastName("hu")
                 .gender(FwfSSOGender.MALE)
-                .birthdate("01-01-1988")
-                .subscriberId("sdktest0901")
-                .memberId("cignasdk2019|1656205449.2447784|YjM2YTY1YWNiYjk1MjM5MmU2YTg1NjQ2MTAzYzQ1NGU4YTc3OGNmZWEwMDZmM2E3M2JhZjE5ZTc5NWE1MDBmNQ==")
-                .phone("8888888888")
-                .email("test@mdlive.com")
-                .address1("1234 Test Address")
+                .birthdate("26-08-1989")
+                .subscriberId("")
+                .memberId("")
+                .phone("9545471030")
+                .email("jhu@mdlive.com")
+                .address1("123 Test Road")
                 .address2("")
-                .city("Sunrise")
-                .state(FwfState.FL)
-                .zipCode("33325")
+                .city("Test")
+                .state(FwfState.MS)
+                .zipCode("38606")
                 .relationship(FwfSSORelationship.SELF)
                 .build();
-
-
-        /******     Production Accounts       ******/
-
-//            /******     Subcriber Plan            ******/
-//            MdlSSODetail ssoDetail = MdlSSODetail.builder()
-//                    .ou("cspire")
-//                    .firstName("android")
-//                    .lastName("freevisit")
-//                    .gender(FwfSSOGender.MALE)
-//                    .birthdate("08-08-1988")
-//                    .subscriberId("")
-//                    .memberId("")
-//                    .phone("9178602754")
-//                    .email("spradeep@mdlive.com")
-//                    .address1("1234 Test Address")
-//                    .address2("")
-//                    .city("Sunrise")
-//                    .state(FwfState.FL)
-//                    .zipCode("33325")
-//                    .relationship(FwfSSORelationship.SELF)
-//                    .build();
-
-//            /******     DTC Plan                    ******/
-//            MdlSSODetail ssoDetail = MdlSSODetail.builder()
-//                    .ou("cspire")
-//                    .firstName("android")
-//                    .lastName("59visit")
-//                    .gender(FwfSSOGender.MALE)
-//                    .birthdate("08-08-1988")
-//                    .subscriberId("")
-//                    .memberId("")
-//                    .phone("9178602754")
-//                    .email("spradeep@mdlive.com")
-//                    .address1("1234 Test Address")
-//                    .address2("")
-//                    .city("Sunrise")
-//                    .state(FwfState.FL)
-//                    .zipCode("33325")
-//                    .relationship(FwfSSORelationship.SELF)
-//                    .build();
 
         final Disposable disposable = (Disposable) MdlApplicationSupport.getAuthenticationCenter()
                 .singleSignOn(ssoDetail)
