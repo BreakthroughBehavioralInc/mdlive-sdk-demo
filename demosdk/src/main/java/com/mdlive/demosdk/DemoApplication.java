@@ -24,7 +24,7 @@ public class DemoApplication extends MultiDexApplication {
                 .isSessionTimeoutEnabled(false)
                 .isSSOsession(true)
                 .shouldConfirmWizardsExit(false)
-                .phoneNumberFormatter(CSpirePhoneNumberFormatter.getInstance())
+                .phoneNumberFormatter(SdkPhoneNumberFormatter.getInstance())
                 .mapConfiguration(FwfMapConfiguration.builder()
                         .userLocationMarkerColor(FwfMapConfiguration.MarkerColor.AZURE)
                         .defaultPharmacyMarkerColor(FwfMapConfiguration.MarkerColor.RED)
@@ -54,16 +54,16 @@ public class DemoApplication extends MultiDexApplication {
 
     }
 
-    private static final class CSpirePhoneNumberFormatter implements FwfPhoneNumberWidget.FwfPhoneNumberFormatter {
+    private static final class SdkPhoneNumberFormatter implements FwfPhoneNumberWidget.FwfPhoneNumberFormatter {
 
         private static FwfPhoneNumberWidget.FwfPhoneNumberFormatter sPhoneNumberFormatter;
 
-        private CSpirePhoneNumberFormatter() {
+        private SdkPhoneNumberFormatter() {
         }
 
         static FwfPhoneNumberWidget.FwfPhoneNumberFormatter getInstance() {
             if (sPhoneNumberFormatter == null) {
-                sPhoneNumberFormatter = new CSpirePhoneNumberFormatter();
+                sPhoneNumberFormatter = new SdkPhoneNumberFormatter();
             }
             return sPhoneNumberFormatter;
         }

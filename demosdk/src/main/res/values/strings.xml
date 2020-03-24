@@ -44,4 +44,5 @@
 
     <!-- Family Members-->
     <string name="family_members__message_no_members">No family members\nhave been added to your account.</string>
+    <string name="switch_environment">Switch Environment</string>
 </resources>

@@ -4,18 +4,35 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <Button
-        android:id="@+id/enter"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:background="@color/mdl__red"
-        android:onClick="enterSDK"
-        android:text="@string/start_the_sdk"
-        android:textColor="@android:color/white"
-        android:textSize="20sp" />
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/mdl__sdk_ColorAccent"
+            android:onClick="switchEnvironment"
+            android:text="@string/switch_environment"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/mdl__red"
+            android:onClick="enterSDK"
+            android:text="@string/start_the_sdk"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
 
     <ProgressBar
         android:id="@+id/progress_bar"
