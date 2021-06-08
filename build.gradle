@@ -25,8 +25,15 @@ allprojects {
         }
         //MDLive
         maven {
-            url 'https://breakthroughbehavioralinc.bintray.com/maven/'
+            name = "GithubPackages"
+//            TODO: DROID-1612 try to link artifacts to a different repo, so clients has no acces to source code.
+            url = uri("https://maven.pkg.github.com/BreakthroughBehavioralInc/MDLA")
+            credentials {
+                username = System.getenv('GITHUB_USER')
+                password = System.getenv('GITHUB_PERSONAL_ACCESS_TOKEN')
+            }
         }
+//        mavenLocal()
         //AppBoy
         maven {
             url "http://appboy.github.io/appboy-android-sdk/sdk"
@@ -37,7 +44,12 @@ allprojects {
         // MDLive SDK library AAR
         //MDL_android_sdk = "com.mdlive.mdla:android-sdk:WHITELABEL_SDK_SNAPSHOT@aar"
         //MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.32.0-CIGNA-2.0.1@aar"
-        MDL_android_sdk = "com.mdlive.mdla:android-sdk:savsdk-1.0.1-beta01@aar"
+        //MDL_android_sdk = "com.mdlive.mdla:android-sdk:savsdk-1.0.1-beta01@aar"
+
+        //Local SDK
+//        MDL_android_sdk = "com.mdlive.mdla:android-sdk:0.2.1-SNAPSHOT@aar"
+        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.0-sav-sdk-1.0.2@aar"
+
 
     }
 }
