@@ -26,11 +26,10 @@ allprojects {
         //MDLive
         maven {
             name = "GithubPackages"
-//            TODO: DROID-1612 try to link artifacts to a different repo, so clients has no acces to source code.
             url = uri("https://maven.pkg.github.com/BreakthroughBehavioralInc/MDLA")
             credentials {
-                username = System.getenv('GITHUB_USER')
-                password = System.getenv('GITHUB_PERSONAL_ACCESS_TOKEN')
+                username = "mdlive-sdk"
+                password = "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"
             }
         }
 //        mavenLocal()
@@ -48,7 +47,7 @@ allprojects {
 
         //Local SDK
 //        MDL_android_sdk = "com.mdlive.mdla:android-sdk:0.2.1-SNAPSHOT@aar"
-        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.0-sav-sdk-1.0.2@aar"
+        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.0-sav-sdk-1.0.1@aar"
 
 
     }
