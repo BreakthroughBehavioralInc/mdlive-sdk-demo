@@ -47,7 +47,7 @@ allprojects {
 
         //Local SDK
 //        MDL_android_sdk = "com.mdlive.mdla:android-sdk:0.2.1-SNAPSHOT@aar"
-        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.0-sav-sdk-1.0.1@aar"
+        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.0-sav-sdk-1.0.5@aar"
 
 
     }
