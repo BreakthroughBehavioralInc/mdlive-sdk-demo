@@ -22,7 +22,7 @@ It is shared as a reference to show case the MDLIVE SDK features, capabilities a
 1. Fork this repo: https://github.com/BreakthroughBehavioralInc/mdlive-sdk-demo.
 2. Clone your own fork repo to your local environment.
 3. Import the code with Android Studio.
-4. add your GitHub credentials into "credentials" block, in priject gradle (credentials provided by us):
+4. add your GitHub credentials into "credentials" block, in project gradle (credentials provided by us):
 ```
  credentials {
                 username = System.getenv('GITHUB_USER')
