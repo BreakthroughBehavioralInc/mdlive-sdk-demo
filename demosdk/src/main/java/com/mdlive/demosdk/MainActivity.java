@@ -2,20 +2,19 @@ package com.mdlive.demosdk;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
-import com.mdlive.mdlcore.application.MdlApplicationSupport;
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.mdlive.mdlcore.application.MdlApplicationSupport;
 import com.mdlive.models.enumz.fwf.FwfSSOGender;
 import com.mdlive.models.enumz.fwf.FwfSSORelationship;
 import com.mdlive.models.enumz.fwf.FwfState;
 import com.mdlive.models.model.MdlSSODetail;
 import com.mdlive.models.model.MdlUserSession;
-
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
@@ -45,21 +44,40 @@ public class MainActivity extends AppCompatActivity {
 
 
         /******     CSPIRE Test account                    ******/
+//        MdlSSODetail ssoDetail = MdlSSODetail.builder()
+//                .ou("cspire")
+//                .firstName("jeffrey")
+//                .lastName("hu")
+//                .gender(FwfSSOGender.MALE)
+//                .birthdate("26-08-1989")
+//                .subscriberId("")
+//                .memberId("")
+//                .phone("9545471030")
+//                .email("jhu@mdlive.com")
+//                .address1("123 Test Road")
+//                .address2("")
+//                .city("Test")
+//                .state(FwfState.MS)
+//                .zipCode("38606")
+//                .relationship(FwfSSORelationship.SELF)
+//                .build();
+
+        /******     CIGNA Test account                    ******/
         MdlSSODetail ssoDetail = MdlSSODetail.builder()
-                .ou("cspire")
-                .firstName("jeffrey")
-                .lastName("hu")
+                .ou("Cigna")
+                .firstName("sdk")
+                .lastName("demo")
                 .gender(FwfSSOGender.MALE)
-                .birthdate("26-08-1989")
-                .subscriberId("")
-                .memberId("")
-                .phone("9545471030")
-                .email("jhu@mdlive.com")
-                .address1("123 Test Road")
+                .birthdate("01-01-1988")
+                .subscriberId("cignasdk2019")
+                .memberId("cignasdk2019|1656205449.2447784|YjM2YTY1YWNiYjk1MjM5MmU2YTg1NjQ2MTAzYzQ1NGU4YTc3OGNmZWEwMDZmM2E3M2JhZjE5ZTc5NWE1MDBmNQ==")
+                .phone("8888888888")
+                .email("test@mdlive.com")
+                .address1("1234 Test Address")
                 .address2("")
-                .city("Test")
-                .state(FwfState.MS)
-                .zipCode("38606")
+                .city("Sunrise")
+                .state(FwfState.FL)
+                .zipCode("33325")
                 .relationship(FwfSSORelationship.SELF)
                 .build();
 
