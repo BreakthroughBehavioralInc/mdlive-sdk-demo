@@ -11,8 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:allowBackup,android:label"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup,android:label,android:name,android:theme">
 
         <activity android:name="MainActivity">
             <intent-filter>
@@ -117,11 +117,6 @@
 
         <activity
             android:name="com.mdlive.mdlcore.activity.requestappointment.MdlRequestAppointmentActivity"
-            android:theme="@style/sdk_client__ActivityStyle"
-            tools:replace="android:theme" />
-
-        <activity
-            android:name="com.mdlive.mdlcore.activity.videosession.vendor.frozenmountain.FrozenMountainSessionActivity"
             android:theme="@style/sdk_client__ActivityStyle"
             tools:replace="android:theme" />
 
