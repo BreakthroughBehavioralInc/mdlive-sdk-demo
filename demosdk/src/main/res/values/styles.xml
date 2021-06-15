@@ -1,5 +1,9 @@
 <resources>
 
-   <!-- No MDLIVE Style entries needed to integrate the SDK into your app. -->
+    <!-- No MDLIVE Style entries needed to integrate the SDK into your app. -->
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+    </style>
 
 </resources>

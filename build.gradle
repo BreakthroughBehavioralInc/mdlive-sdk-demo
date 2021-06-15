@@ -24,15 +24,15 @@ allprojects {
             url "https://maven.google.com"
         }
         //MDLive
-        maven {
-            name = "GithubPackages"
-            url = uri("https://maven.pkg.github.com/BreakthroughBehavioralInc/MDLA")
-            credentials {
-                username = "mdlive-sdk"
-                password = "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"
-            }
-        }
-//        mavenLocal()
+//        maven {
+//            name = "GithubPackages"
+//            url = uri("https://maven.pkg.github.com/BreakthroughBehavioralInc/MDLA")
+//            credentials {
+//                username = "mdlive-sdk"
+//                password = "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"
+//            }
+//        }
+        mavenLocal()
         //AppBoy
         maven {
             url "http://appboy.github.io/appboy-android-sdk/sdk"
@@ -48,7 +48,7 @@ allprojects {
         //Local SDK
 //        MDL_android_sdk = "com.mdlive.mdla:android-sdk:0.2.1-SNAPSHOT@aar"
 //        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.0-sav-sdk-1.1.0-SNAPSHOT@aar"
-        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.0.0-sav-sdk-1.1.0@aar"
+        MDL_android_sdk = "com.mdlive.mdla:android-sdk:4.45.0-sav-sdk-2.0.0-SNAPSHOT@aar"
 
 
     }

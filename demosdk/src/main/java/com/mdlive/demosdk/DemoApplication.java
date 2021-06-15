@@ -1,5 +1,7 @@
 package com.mdlive.demosdk;
 
+import android.app.Activity;
+
 import androidx.annotation.NonNull;
 import androidx.multidex.MultiDexApplication;
 
@@ -7,7 +9,11 @@ import com.mdlive.mdlcore.application.configuration.MdlBootstrap;
 import com.mdlive.mdlcore.application.configuration.MdlConfiguration;
 import com.mdlive.mdlcore.fwfrodeo.fwf.model.FwfMapConfiguration;
 import com.mdlive.mdlcore.fwfrodeo.fwf.widget.FwfPhoneNumberWidget;
+import com.mdlive.mdlcore.tracker.analytics.AnalyticsEvent;
+import com.mdlive.mdlcore.tracker.analytics.AnalyticsUserAttribute;
 import com.mdlive.mdlcore.tracker.analytics.engines.AnalyticsEngine;
+
+import org.jetbrains.annotations.NotNull;
 
 /*
  * Copyright MDLive.  All rights reserved.
@@ -29,8 +35,7 @@ public class DemoApplication extends MultiDexApplication {
                         .userLocationMarkerColor(FwfMapConfiguration.MarkerColor.AZURE)
                         .defaultPharmacyMarkerColor(FwfMapConfiguration.MarkerColor.RED)
                         .selectedPharmacyMarkerColor(FwfMapConfiguration.MarkerColor.RED)
-                        .build())
-                .defaultFirebaseFilename("mdlive__firebase_defaults.json");
+                        .build());
         MdlBootstrap.start(this, configuration);
     }
 
@@ -42,16 +47,28 @@ public class DemoApplication extends MultiDexApplication {
         /**
          * This method is used for tracking all user events and are documented here https://breakthrough.atlassian.net/wiki/spaces/MP/pages/135755759/Android+4.0+Screen+and+Event+Tracking
          *
-         * @param eventName     Event name.
-         * @param eventAction   Action that triggered the event.
-         * @param eventCategory Event category.
+         * @param event Event.
          */
         @Override
-        public void logEvent(String eventName, String eventAction, String eventCategory) {
+        public void logEvent(AnalyticsEvent event) {
             // Send these analytics info to our desired analytics engine, in this case System.out
-            System.out.println("ConsoleAnalyticsEngine =====> Event Name: " + eventName + ", Event Action: " + eventAction + ", Event Category: " + eventCategory);
+            System.out.println("ConsoleAnalyticsEngine =====> Event Name: " + event.getMName());
         }
 
+        @Override
+        public void logScreenInit(@NotNull Activity activity, @NotNull String s, @NotNull String s1) {
+            System.out.println("hello");
+        }
+
+        @Override
+        public void setAttribute(@NotNull AnalyticsUserAttribute analyticsUserAttribute) {
+            System.out.println("hello");
+        }
+
+        @Override
+        public void setUserId(int i) {
+            System.out.println("hello");
+        }
     }
 
     private static final class CSpirePhoneNumberFormatter implements FwfPhoneNumberWidget.FwfPhoneNumberFormatter {

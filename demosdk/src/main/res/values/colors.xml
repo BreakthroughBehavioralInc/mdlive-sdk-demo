@@ -2,12 +2,11 @@
 <resources>
 
     <!--    ### SDK Default colors ####     -->
-    <color name="mdl__sdk_Primary">#1966d1</color>
-    <color name="mdl__sdk_Primary_Alternate">#002992</color>
-    <color name="mdl__sdk_ColorAccent">#fc971c</color>
-    <color name="mdl__sdk_Alert">#fc1c1c</color>
-    <color name="mdl__sdk_Secondary">#FFFFFF</color>
-    <color name="mdl__sdk_Secondary_Alternate">#FFFFFF</color>
-    <color name="mdl__sdk_Title">#000000</color>
+    <color name="primaryColor">#1966d1</color>
+    <color name="primaryColorDark">#002992</color>
+    <color name="colorAccent">#fc971c</color>
+    <color name="alert">#fc1c1c</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="onSurface">#000000</color>
 
 </resources>
