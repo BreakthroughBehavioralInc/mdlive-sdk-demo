@@ -34,7 +34,7 @@ public class DemoApplication extends MultiDexApplication {
                 .mapConfiguration(FwfMapConfiguration.builder()
                         .userLocationMarkerColor(FwfMapConfiguration.MarkerColor.AZURE)
                         .defaultPharmacyMarkerColor(FwfMapConfiguration.MarkerColor.RED)
-                        .selectedPharmacyMarkerColor(FwfMapConfiguration.MarkerColor.RED)
+                        .selectedPharmacyMarkerColor(FwfMapConfiguration.MarkerColor.MAGENTA)
                         .build());
         MdlBootstrap.start(this, configuration);
     }

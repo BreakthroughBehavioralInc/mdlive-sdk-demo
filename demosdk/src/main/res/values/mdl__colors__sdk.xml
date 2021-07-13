@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mdl__primary_color">#7b1fa2</color>
+    <color name="mdl__primary_variant_color">#5c007a</color>
+    <color name="mdl__on_primary_color">#FFFFFF</color>
+    <color name="mdl__secondary_color">#4db6ac</color>
+    <color name="mdl__secondary_variant_color">#00867d</color>
+    <color name="mdl__on_secondary_color">@color/primaryColorDark</color>
+    <color name="mdl__background_color">#c158dc</color>
+    <color name="mdl__on_background_color">#FFFFFF</color>
+    <color name="mdl__surface_color">#ffc0cb</color>
+    <color name="mdl__on_surface_color">@color/primaryColorDark</color>
+    <color name="mdl__error_color">@android:color/holo_red_dark</color>
+    <color name="mdl__on_error_color">#FFFFFF</color>
+    <color name="mdl__detail_lines_color">#FFFFFF</color>
+
+    <color name="mdl__on_surface_variant_color">#747474</color>
+    <color name="mdl__success_color">@android:color/holo_green_dark</color>
+    <color name="mdl__link_color">@color/primaryColor</color>
+
+</resources>

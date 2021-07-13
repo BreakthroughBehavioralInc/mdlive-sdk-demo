@@ -2,8 +2,47 @@
 
     <!-- No MDLIVE Style entries needed to integrate the SDK into your app. -->
 
-    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <item name="colorPrimary">@color/primaryColor</item>
     </style>
+
+<!--    <style name="Widget.Mdlive.ScrollBar" parent="">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">match_parent</item>-->
+<!--        &lt;!&ndash;zero does not work for page__account_details and etc&ndash;&gt;-->
+<!--        <item name="android:scrollbarFadeDuration">600000</item>-->
+<!--        <item name="android:scrollbarSize">3dp</item>-->
+<!--        <item name="android:scrollbarThumbVertical">@color/mdl__error_color</item>-->
+<!--        <item name="android:scrollbars">vertical</item>-->
+<!--    </style>-->
+
+<!--    <style name="Widget.Mdlive.QuestionCardView" parent="">-->
+<!--        <item name="mdl__question_card_view_icon_tint_color">?attr/mdl__success_color</item>-->
+<!--        <item name="mdl__question_card_view_title_text_color">?attr/mdl__success_color</item>-->
+<!--        <item name="mdl__question_card_view_summary_text_color">?attr/mdl__success_color</item>-->
+<!--        <item name="mdl__question_card_view_arrow_tint_color">?attr/mdl__success_color-->
+<!--        </item>-->
+<!--    </style>-->
+
+    <style name="Widget.Mdlive.PharmacyDisplay" parent="">
+        <item name="mdl__pharmacy_widget_phone_icon_color">@color/mdl__on_surface_variant_color</item>
+        <item name="mdl__pharmacy_widget_distance_icon_color">@color/mdl__on_surface_variant_color
+        </item>
+        <item name="mdl__pharmacy_widget_distance_text_color">@color/mdl__on_surface_variant_color
+        </item>
+        <item name="mdl__pharmacy_widget_change_pharmacy_button_text">
+            @string/pharmacy_advanced_search_text_change_pharmacy
+        </item>
+        <item name="mdl__pharmacy_widget_choose_pharmacy_button_text">
+            @string/pharmacy_advanced_search_text_choose_pharmacy
+        </item>
+        <item name="mdl__pharmacy_widget_name_text_color">@color/mdl__on_surface_color</item>
+        <item name="mdl__pharmacy_widget_address_text_color">@color/mdl__on_surface_color</item>
+        <item name="mdl__pharmacy_widget_directions_icon_color">@color/mdl__primary_color</item>
+        <item name="mdl__pharmacy_widget_directions_text_color">@color/mdl__primary_color</item>
+        <item name="mdl__pharmacy_widget_disclaimer_text_color">@color/mdl__on_surface_color</item>
+        <item name="mdl__pharmacy_widget_24_hour_icon_color">@color/mdl__white</item>
+    </style>
+
 
 </resources>
